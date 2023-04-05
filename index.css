@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+/*CABECERA*/ /*62.5%*/ 
+
+.cabecera {
+  border: 1px red solid;
+  background-color: aqua;
+  height: 55px;
+  font-size: 18px;
+
+}
+
+.cabecera nav ul>h1 {
+  font-size: 48px;
+}
+
+.cabecera>nav {
+  border: 1px solid yellow;
+  height: 100%;
+  text-decoration: none;
+
+}
+
+.cabecera nav > ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 1px solid blue;
+  height: 100%;
+  margin: 0px 120px;
+}
+
+/**/
