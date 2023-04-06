@@ -5,7 +5,8 @@
   font-family: sans-serif;
 }
 
-/*CABECERA*/ /*62.5%*/ 
+/*CABECERA*/
+/*62.5%*/
 
 .cabecera {
   border: 1px red solid;
@@ -26,7 +27,7 @@
 
 }
 
-.cabecera nav > ul {
+.cabecera nav>ul {
   display: flex;
   list-style: none;
   justify-content: space-evenly;
@@ -36,4 +37,138 @@
   margin: 0px 120px;
 }
 
-/**/
+/*PRESENTACION*/
+.presentacion {
+  border: 1px solid green;
+  position: relative;
+
+
+}
+
+.container_all {
+  margin: 0px 30px;
+}
+
+.presentacion article picture>img {
+  border: 2px solid red;
+  width: 100%;
+  height: 35rem;
+  object-fit: cover;
+}
+
+.presentacion article>div {
+  position: absolute;
+  border: 1px solid;
+  width: 60%;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/*QUE ES LA TECNOLOGIA*/
+
+.tecnologia_es {
+  margin: 30px 0px;
+  border: 1px solid yellow;
+  position: relative;
+
+}
+
+.tecnologia_es picture>img {
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+}
+
+.tecnologia_es>h2 {
+  position: absolute;
+  border: 1px solid white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.tecnologia_es p {
+  position: absolute;
+  border: 1px solid white;
+  align-items: center;
+  width: 50%;
+  top: 50%;
+  right: 5%;
+}
+
+/*PARTES DEL COMPUTADOR*/
+
+.partesComputador {
+  border: 1px rgb(67, 41, 92) solid;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin: 0px 0px 25px 0px;
+
+
+}
+
+.partesComputador>div {
+
+  border: 1px solid purple;
+  height: auto;
+}
+
+
+.partesComputador div picture>img {
+  width: 100%;
+}
+
+/*NOTICIAS*/
+
+.noticias {
+  border: 1px solid royalblue;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 0px 0px 25px 0px;
+}
+
+.noticias>div {
+  border: 1px solid yellow;
+}
+
+/*TUTORIALES BASICOS*/
+
+.partesComputador {
+  border: 1px rgb(67, 41, 92) solid;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin: 0px 0px 25px 0px;
+}
+
+.partesComputador>div {
+
+  border: 1px solid purple;
+  height: auto;
+
+}
+
+.partesComputador div picture>img {
+  width: 100%;
+}
+
+/*NOTICIAS*/
+
+.tutorial {
+  border: 1px solid royalblue;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 0px 0px 25px 0px;
+}
+
+.tutorial>div {
+
+  border: 1px solid purple;
+  height: auto;
+
+}
+
+.tutorial div video {
+  width: 100%;
+}
