@@ -46,7 +46,7 @@
 }
 
 .container_all {
-  margin: 0px 30px;
+  margin: 0px 50px;
 }
 
 .presentacion article picture>img {
@@ -105,13 +105,13 @@
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   margin: 0px 0px 25px 0px;
-
+  
 
 }
 
 .partesComputador>div {
-
   border: 1px solid purple;
+  border-radius: 8px;
   height: auto;
 }
 
@@ -122,38 +122,81 @@
 
 /*NOTICIAS*/
 
+.tiulo_N{
+  margin-bottom: 10px;
+}
+
 .noticias {
-  border: 1px solid royalblue;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   margin: 0px 0px 25px 0px;
+  gap: 15px;
+  
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: inset 0px 0px 15px -10px rgba(0,0,0,0.93);
 }
 
 .noticias>div {
-  border: 1px solid yellow;
+
+  border-radius: 8px;
+  background-color:rgb(225, 243, 255);
+  box-shadow: 0px 8px 18px -7px rgba(0,0,0,0.42);
+  transition: all 200ms ease;
+  
 }
 
+.noticias > div:hover{
+  background-color:rgb(182, 226, 255);
+}
+
+.noticias div  > h3{
+  margin-left: 15px ;
+}
+
+.noticias div  > h3,p{
+  padding: 2px;
+}
 /*TUTORIALES BASICOS*/
 
 .partesComputador {
-  border: 1px rgb(67, 41, 92) solid;
+  border: none;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   margin: 0px 0px 25px 0px;
+  gap: 17px;
+  padding: 5px;
+  
 }
 
 .partesComputador>div {
-
-  border: 1px solid purple;
+  overflow: hidden;
+  border: none;
   height: auto;
-
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: all 200ms ease;
+  transform: scale(1);
 }
+
+.partesComputador>div:hover{
+  transform: scale(1.05) translateY(-10px);
+  
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.30);
+  background-color: rgba(248, 252, 255, 0.548);
+  
+}
+
+
 
 .partesComputador div picture>img {
   width: 100%;
 }
 
-/*NOTICIAS*/
+.partesComputador div >  h3,p {
+  padding: 5px;
+}
+
+/*TUTORIAL*/
 
 .tutorial {
   border: 1px solid royalblue;
