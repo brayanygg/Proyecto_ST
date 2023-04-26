@@ -8,23 +8,60 @@
 /*CABECERA*/
 /*62.5%*/
 
-.cabecera {
-  border: 1px red solid;
-  background-color: aqua;
-  height: 55px;
-  font-size: 18px;
+body{
+  overflow-x: hidden;
+}
 
+.cabecera {
+  background-color: #2C84A4;
+  color: aliceblue;
+  height: 55px;
 }
 
 .cabecera nav ul>h1 {
-  font-size: 48px;
+  font-size: 3.5rem;
+}
+
+.cabecera nav ul li {
+  height: 100%;
+  width: 15.7vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 200ms ease;
+  position: relative;
+}
+
+.cabecera nav ul li::before {
+  content: ' ';
+  width: 0;
+  height: 3px;
+  background-color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transition: all 200ms ease;
+  position: absolute;
+}
+
+.cabecera nav ul li:hover::before {
+  width: 100%;
+  left: 0%;
+}
+
+.cabecera nav ul li:hover {
+  background-color: rgb(182, 226, 255, 0.20);
+  border-radius: 5px;
+}
+
+.cabecera nav ul li>a {
+  color: aliceblue;
+  text-decoration: none;
+  font-size: 1.4em;
 }
 
 .cabecera>nav {
-  border: 1px solid yellow;
   height: 100%;
-  text-decoration: none;
-
 }
 
 .cabecera nav>ul {
@@ -32,47 +69,178 @@
   list-style: none;
   justify-content: space-evenly;
   align-items: center;
-  border: 1px solid blue;
   height: 100%;
   margin: 0px 120px;
 }
 
 /*PRESENTACION*/
 .presentacion {
-  border: 1px solid green;
-  position: relative;
-
-
+  background-image: url(./assets/ImagenPrincipal.jpg);
+  background-position-y: 20%;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 35rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
 }
 
 .container_all {
   margin: 0px 50px;
+  
 }
 
-.presentacion article picture>img {
-  border: 2px solid red;
-  width: 100%;
-  height: 35rem;
-  object-fit: cover;
+.wave{
+  width: 300%;
+  height: 100%;
+  position: absolute;
+  background-position: bottom;
+  bottom: -8%;
+  background-image: url(./wave.svg);
+  background-repeat: no-repeat;
+  animation: wone 3s linear infinite alternate;
+}
+
+@keyframes wone{
+  0%{
+    margin-left: 0;
+  }
+  100%{
+    margin-right: -1600px;
+    
+  }
+}
+
+/*Se debe cambiar la imagen por una mas oscura para que el texto sea facilmente legible
+o en su defecto buscar una alternativa para ello puede ser con un background como se muestra
+a continuacion*/
+.presentacion article {
+  width: 80%;
+  opacity: 1;
+  background-color: rgba(40, 98, 138, 0.445);
+  box-shadow: 0px 0px 59px 12px rgba(0,0,0,0.75);
+  overflow: hidden;
+  animation: a 2s ease;
+}
+
+@keyframes a{
+  from{
+    opacity: 0;
+  }
 }
 
 .presentacion article>div {
-  position: absolute;
-  border: 1px solid;
-  width: 60%;
-  top: 80%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  width: 100%;
+  color: aliceblue;
+
+
+}
+
+/*Recomendable tratar la animacion escribir con JS en caso de que se valla a utlizar en varias lineas, en el caso de que se quiera 
+ utilizar solo en una linea por ejemplo en "Entra, explora y informate con edutec ☺" se puede dejar solo con css sin problemas */
+.presentacion article div>h2 {
+  font-size: 3rem;
+  -webkit-text-stroke: .1px black;
+  margin-left: 5.5%;
+  display: block;
+  white-space: nowrap;
+  border-right: 3px solid;
+  width: 35ch;
+  overflow: hidden;
+  animation: escribir 2.5s steps(35), cursor .3s infinite step-end alternate;
+
+}
+
+@keyframes escribir {
+  from {
+    width: 0
+  }
+}
+
+@keyframes cursor {
+  50% {
+    border-color: transparent
+  }
+
+}
+
+.presentacion .texto {
+  opacity: 1;
+  -webkit-text-stroke: .2px black;
+  transform: translateY(0px);
+  animation: aparecer 2s ease;
   text-align: center;
+  font-size: 1.2rem;
+}
+
+@keyframes aparecer {
+
+  from {
+    opacity: 0;
+    transform: translateY(80px);
+  }
 }
 
 /*QUE ES LA TECNOLOGIA*/
 
 .tecnologia_es {
   margin: 30px 0px;
-  border: 1px solid yellow;
+  width: 100%;
+  height: 20rem;
   position: relative;
+  overflow: hidden;
+}
 
+.tecnologia_es::before {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 0;
+  border-bottom: 0px solid transparent;
+  border-top: 0px #9AD0EC solid;
+  border-right: 0px solid transparent;
+  opacity: .80;
+  transition: all 400ms ease;
+}
+
+.tecnologia_es:hover::before {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 0;
+  border-bottom: 0px solid transparent;
+  border-top: 665px #9AD0EC solid;
+  border-right: 665px solid transparent;
+}
+
+.tecnologia_es::after {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-bottom: 0px #2C84A4 solid;
+  border-top: 0px solid transparent;
+  border-left: 0px solid transparent;
+  opacity: .80;
+  transition: all 400ms ease;
+}
+
+.tecnologia_es:hover::after {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-bottom: 904px #2C84A4 solid;
+  ;
+  border-top: 0px solid transparent;
+  border-left: 904px solid transparent;
 }
 
 .tecnologia_es picture>img {
@@ -81,21 +249,46 @@
   object-fit: cover;
 }
 
+
+
 .tecnologia_es>h2 {
   position: absolute;
+  font-size: 45px;
+  color: aliceblue;
   border: 1px solid white;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(2.0);
+  transition: all 400ms ease;
+}
+
+.tecnologia_es:hover h2 {
+  transform: translate(-130%, -50%);
+  border: none;
+}
+
+.tecnologia_es>div {
+  position: absolute;
+  top: 0;
+  width: 48%;
+
+  top: 50%;
+  left: 70%;
+  transform: translate(80%, -50%);
+  transition: all 400ms ease;
+  color: aliceblue;
+}
+
+.tecnologia_es:hover div {
+  transform: translate(-40%, -50%);
+  z-index: 1;
 }
 
 .tecnologia_es p {
-  position: absolute;
   border: 1px solid white;
   align-items: center;
-  width: 50%;
-  top: 50%;
-  right: 5%;
+  text-align: center;
+  line-height: 1.5rem;
 }
 
 /*PARTES DEL COMPUTADOR*/
@@ -105,8 +298,6 @@
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   margin: 0px 0px 25px 0px;
-  
-
 }
 
 .partesComputador>div {
@@ -122,7 +313,7 @@
 
 /*NOTICIAS*/
 
-.tiulo_N{
+.tiulo_N {
   margin-bottom: 10px;
 }
 
@@ -131,32 +322,34 @@
   grid-template-columns: repeat(2, 1fr);
   margin: 0px 0px 25px 0px;
   gap: 15px;
-  
+
   border-radius: 8px;
   padding: 20px;
-  box-shadow: inset 0px 0px 15px -10px rgba(0,0,0,0.93);
+  box-shadow: inset 0px 0px 15px -10px rgba(0, 0, 0, 0.93);
 }
 
 .noticias>div {
 
   border-radius: 8px;
-  background-color:rgb(225, 243, 255);
-  box-shadow: 0px 8px 18px -7px rgba(0,0,0,0.42);
+  background-color: rgb(225, 243, 255);
+  box-shadow: 0px 8px 18px -7px rgba(0, 0, 0, 0.42);
   transition: all 200ms ease;
-  
+
 }
 
-.noticias > div:hover{
-  background-color:rgb(182, 226, 255);
+.noticias>div:hover {
+  background-color: rgb(182, 226, 255);
 }
 
-.noticias div  > h3{
-  margin-left: 15px ;
+.noticias div>h3 {
+  margin-left: 15px;
 }
 
-.noticias div  > h3,p{
+.noticias div>h3,
+p {
   padding: 2px;
 }
+
 /*TUTORIALES BASICOS*/
 
 .partesComputador {
@@ -166,7 +359,6 @@
   margin: 0px 0px 25px 0px;
   gap: 17px;
   padding: 5px;
-  
 }
 
 .partesComputador>div {
@@ -178,21 +370,19 @@
   transform: scale(1);
 }
 
-.partesComputador>div:hover{
+.partesComputador>div:hover {
   transform: scale(1.05) translateY(-10px);
-  
+
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.30);
   background-color: rgba(248, 252, 255, 0.548);
-  
 }
-
-
 
 .partesComputador div picture>img {
   width: 100%;
 }
 
-.partesComputador div >  h3,p {
+.partesComputador div>h3,
+p {
   padding: 5px;
 }
 
@@ -209,7 +399,6 @@
 
   border: 1px solid purple;
   height: auto;
-
 }
 
 .tutorial div video {
