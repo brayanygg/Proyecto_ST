@@ -312,95 +312,177 @@ a continuacion*/
 }
 
 /*NOTICIAS*/
-
-.tiulo_N {
-  margin-bottom: 10px;
+a{
+  text-decoration: none;
+  color:#d2d4f7 ;
 }
-
-.noticias {
+.cajonN {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  margin: 0px 0px 25px 0px;
-  gap: 15px;
-
-  border-radius: 8px;
-  padding: 20px;
-  box-shadow: inset 0px 0px 15px -10px rgba(0, 0, 0, 0.93);
+  grid-template-columns: repeat(2,1fr);
+}
+.cardN {
+  background-color:#1a4362;
+  border-radius: 10px;
+  width:450px;
+  margin: 20px;
+  color: white;
+  box-shadow: 1px 1px 10px rgb(59, 59, 232);
+}
+.cardN div {
+  padding: 5px 10px;
+}
+.cardN div h4 {
+  padding: 10px;
+  font-size: 20px;
+}
+.fecha p {
+  height: 35px;  
+}
+.fecha {
+  display:flex;
+  justify-content: space-between;
+}
+.fecha p {
+  background-color: #2c84a4;
+  padding: 7px;
+  border-radius: 10px;
+  color: #d2d4f7;
+}
+.lmas {
+  background-color: #2c84a4;
+  padding: 7px;
+  margin: 10px;
+  border-radius: 10px;
+  transition: all 0.5s;
+}
+.lmas:hover {
+  padding: 10px;
+  box-shadow: 1px 1px 10px rgb(59, 59, 232);
 }
 
-.noticias>div {
-
-  border-radius: 8px;
-  background-color: rgb(225, 243, 255);
-  box-shadow: 0px 8px 18px -7px rgba(0, 0, 0, 0.42);
-  transition: all 200ms ease;
-
+.cajonN div {
+  border: 1px solid yellow;
 }
 
-.noticias>div:hover {
-  background-color: rgb(182, 226, 255);
-}
-
-.noticias div>h3 {
-  margin-left: 15px;
-}
-
-.noticias div>h3,
-p {
-  padding: 2px;
-}
 
 /*TUTORIALES BASICOS*/
 
 .partesComputador {
-  border: none;
+  border: 1px rgb(67, 41, 92) solid;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   margin: 0px 0px 25px 0px;
-  gap: 17px;
-  padding: 5px;
 }
 
 .partesComputador>div {
-  overflow: hidden;
-  border: none;
+
+  border: 1px solid purple;
   height: auto;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  transition: all 200ms ease;
-  transform: scale(1);
-}
 
-.partesComputador>div:hover {
-  transform: scale(1.05) translateY(-10px);
-
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.30);
-  background-color: rgba(248, 252, 255, 0.548);
 }
 
 .partesComputador div picture>img {
   width: 100%;
 }
 
-.partesComputador div>h3,
-p {
-  padding: 5px;
-}
-
-/*TUTORIAL*/
-
-.tutorial {
-  border: 1px solid royalblue;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  margin: 0px 0px 25px 0px;
-}
-
-.tutorial>div {
-
+/*tutoriales*/
+.cajonT {
   border: 1px solid purple;
+}
+.cajonT section {
+  margin: 20px;
+  border: 1px solid blue;
+}
+.cajonT {
+ display: grid;
+ grid-template-columns: repeat(3,1fr);
+}
+.cardT {
+  background-color: #1a4362;
+  color: white;
+  border-radius: 10px;
+  width:250px;
+  margin: 10px;
+  overflow: hidden;
+  box-shadow: 1px 1px 10px rgb(59, 59, 232);
+  padding: 0;
+}
+.cardT video {
+  width: 100%;
   height: auto;
 }
+.cardT h4 {
+  padding:10px 20px;
+  font-size: 20px;
+}
+.cardT p {
+  padding:  10px;
+  color: #d2d4f7;
+}
+.contF {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+.fecha {
+  display: flex;
+  justify-content: space-between;
+}
+.fecha p {
+  background-color: #3f4446;
+  padding: 7px;
+  border-radius: 10px;
+  color: #d2d4f7;
+  height: 30px;
+  margin: 10px;
+}
+.verM {
+  background-color: #2c84a4;
+  padding: 7px;
+  border-radius: 10px;
+  margin: 10px;
+  transition: 0.5s;
+}
+.verM:hover{
+  background-color: #2c84a4;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px;
+  box-shadow: 1px 1px 10px rgb(59, 59, 232);
+}
+.verM a {
+  text-decoration: none;
+  color:#d2d4f7;
+}
 
-.tutorial div video {
-  width: 100%;
+/*media query*/
+
+@media(max-width:420px){
+  .cajonN {
+    display: grid;
+    grid-template-columns:repeat(1,1fr);
+    justify-content: center;
+  }
+  .cardN {
+      background-color:#1a4362;
+      border-radius: 10px;
+      width: 90%;
+      margin: 20px;
+      color: white;
+      box-shadow: 1px 1px 10px rgb(59, 59, 232);
+  }
+  .cajonT {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    justify-content: center;
+}
+.cardT {
+    background-color: #1a4362;
+    color: white;
+    border-radius: 10px;
+    width: 300px;
+    overflow: hidden;
+    margin: 20px;
+    box-shadow: 1px 1px 10px rgb(59, 59, 232);
+}
 }
