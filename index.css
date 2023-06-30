@@ -2,13 +2,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family:Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /*CABECERA*/
 /*62.5%*/
 
-body{
+body {
   overflow-x: hidden;
 }
 
@@ -83,15 +83,15 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  
+
 }
 
 .container_all {
   margin: 0px 85px;
-  
+
 }
 
-.wave{
+.wave {
   width: 300%;
   height: 100%;
   position: absolute;
@@ -102,13 +102,14 @@ body{
   animation: wone 3s linear infinite alternate;
 }
 
-@keyframes wone{
-  0%{
+@keyframes wone {
+  0% {
     margin-left: 0;
   }
-  100%{
+
+  100% {
     margin-right: -1600px;
-    
+
   }
 }
 
@@ -119,13 +120,13 @@ a continuacion*/
   width: 80%;
   opacity: 1;
   background-color: rgba(40, 98, 138, 0.445);
-  box-shadow: 0px 0px 59px 12px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 59px 12px rgba(0, 0, 0, 0.75);
   overflow: hidden;
   animation: a 2s ease;
 }
 
-@keyframes a{
-  from{
+@keyframes a {
+  from {
     opacity: 0;
   }
 }
@@ -293,18 +294,17 @@ a continuacion*/
 
 /*Inicio modulo de Jesus*/
 /*PARTES DEL COMPUTADOR*/
-
 .computerParts {
-  position: relative; 
+  position: relative;
   margin: 0px 0px 25px 0px;
 }
 
-.containerCards{
+.containerCards {
   width: 100%;
   display: grid;
   grid-auto-flow: dense;
   grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
-  
+
 }
 
 
@@ -313,46 +313,46 @@ a continuacion*/
   height: auto;
   color: #fff;
   background-color: #328eaf;
-  box-shadow: 0px 3px 10px -2px rgba(0,0,0,0.75);
+  box-shadow: 0px 3px 10px -2px rgba(0, 0, 0, 0.75);
   transform: translateY(0);
   transition: all 200ms ease;
   margin: 6px;
   cursor: pointer;
-  
+
 }
 
-.cards:hover{
-transform: translateY(-5px);
-box-shadow: 0px 3px 10px 2px rgba(0,0,0,0.60);
+.cards:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 3px 10px 2px rgba(0, 0, 0, 0.60);
 }
 
-.cards> div{
-  padding: 5px 8px 8px 8px;
+.cards>div {
+  padding: 2px 8px 8px 5px;
   border: 2px solid transparent;
   border-radius: 0px 0px 5px 5px;
-  
-}
-.cards h3{
-  font-size: 19px;
-  margin: 0px 0px 5px 0px;
+
 }
 
-.cards p{
+.cards h3 {
+  font-size: 19px;
+  margin: 5px 0px 0px 8px;
+}
+
+.cards p {
   font-size: 15px;
 }
 
-.cards footer{
-  
+.cards footer {
   display: flex;
   justify-content: end;
-  
+
 }
 
-.cards span{
-font-size: 15px;
-background-color: #1a6197;
-padding: 2px;
-border-radius: 5px;
+.cards span {
+  font-size: 15px;
+  background-color: #1a6197;
+  padding: 2px;
+  border-radius: 5px;
 
 }
 
@@ -362,11 +362,9 @@ border-radius: 5px;
   border-radius: 5px 5px 0px 0px;
 }
 
-@media(max-width:420px){
-  
-}
+
 /*Tab*/
-.container_tab{
+.container_tab {
   position: fixed;
   opacity: 0;
   visibility: hidden;
@@ -380,7 +378,7 @@ border-radius: 5px;
   top: 50%;
   transform: translate(-50%, -50%);
 }
-   
+
 .tab::-webkit-scrollbar {
   width: 8px;
 
@@ -397,7 +395,7 @@ border-radius: 5px;
   box-shadow: 0px 0px 5px 9px rgba(179, 178, 178, 0.5) inset;
 }
 
-.tab{
+.tab {
   background-color: #f5f5f5;
   width: 50%;
   height: 95vh;
@@ -408,15 +406,16 @@ border-radius: 5px;
   border-radius: 5px;
 }
 
-.tab_close{
+.tab_close {
   transform: translateY(-200%);
 }
-.close{
+
+.close {
   display: flex;
   justify-content: end;
 }
 
-.close p{
+.close p {
   margin: 5px 10px;
   font-size: 18px;
   color: #ee0d0d;
@@ -425,73 +424,151 @@ border-radius: 5px;
   cursor: pointer;
 }
 
-.close p:hover{
+.close p:hover {
   transform: scale(1.2);
 }
 
-.inf{
+.inf {
   padding: 20px;
   font-size: 15.4px;
 }
 
-.tab h4{
+.tab h4 {
   margin: 5px 20px 0px 20px;
   font-size: 25px;
 }
-/*Fin modulo de Jesus*/
-/*NOTICIAS*/
-a{
-  text-decoration: none;
-  color:#d2d4f7 ;
-}
-.cajonN {
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
-}
-.cardN {
-  background-color:#1a4362;
-  border-radius: 10px;
-  width:450px;
-  margin: 20px;
-  color: white;
-  box-shadow: 1px 1px 10px rgb(59, 59, 232);
-}
-.cardN div {
-  padding: 5px 10px;
-}
-.cardN div h4 {
-  padding: 10px;
-  font-size: 20px;
-}
-.fecha p {
-  height: 35px;  
-}
-.fecha {
-  display:flex;
-  justify-content: space-between;
-}
-.fecha p {
-  background-color: #2c84a4;
-  padding: 7px;
-  border-radius: 10px;
-  color: #d2d4f7;
-}
-.lmas {
-  background-color: #2c84a4;
-  padding: 7px;
-  margin: 10px;
-  border-radius: 10px;
-  transition: all 0.5s;
-}
-.lmas:hover {
-  padding: 10px;
-  box-shadow: 1px 1px 10px rgb(59, 59, 232);
-}
 
-.cajonN div {
-  border: 1px solid yellow;
-}
 
+/*Diseño para dispositivos moviles*/
+
+@media(max-width: 400px) {
+  .container_all {
+    margin: 0px 15px;
+  }
+
+  .cards {
+    position: relative;
+    height: 30vh;
+    margin: 10px 0px;
+    overflow: hidden;
+  }
+
+  .card-image {
+
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .card-image img {
+    height: 100%;
+  }
+
+  .cards h3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .cards:hover .card-info {
+    transform: translateY(-204px);
+  }
+
+  .cards:hover h3 {
+    display: none;
+  }
+
+  .card-info {
+    background-color: #296a9b6b;
+    transform: translateY(0px);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 300ms ease;
+  }
+
+  .text {
+    text-align: center;
+
+  }
+
+  .card-info p {
+    font-size: 17px;
+  }
+
+  .cards footer {
+    display: none;
+  }
+
+
+
+  /*Fin modulo de Jesus*/
+  /*NOTICIAS*/
+  a {
+    text-decoration: none;
+    color: #d2d4f7;
+  }
+
+  .cajonN {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cardN {
+    background-color: #1a4362;
+    border-radius: 10px;
+    width: 450px;
+    margin: 20px;
+    color: white;
+    box-shadow: 1px 1px 10px rgb(59, 59, 232);
+  }
+
+  .cardN div {
+    padding: 5px 10px;
+  }
+
+  .cardN div h4 {
+    padding: 10px;
+    font-size: 20px;
+  }
+
+  .fecha p {
+    height: 35px;
+  }
+
+  .fecha {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .fecha p {
+    background-color: #2c84a4;
+    padding: 7px;
+    border-radius: 10px;
+    color: #d2d4f7;
+  }
+
+  .lmas {
+    background-color: #2c84a4;
+    padding: 7px;
+    margin: 10px;
+    border-radius: 10px;
+    transition: all 0.5s;
+  }
+
+  .lmas:hover {
+    padding: 10px;
+    box-shadow: 1px 1px 10px rgb(59, 59, 232);
+  }
+
+  .cajonN div {
+    border: 1px solid yellow;
+  }
+
+}
 
 /*TUTORIALES BASICOS*/
 
@@ -517,45 +594,54 @@ a{
 .cajonT {
   border: 1px solid purple;
 }
+
 .cajonT section {
   margin: 20px;
   border: 1px solid blue;
 }
+
 .cajonT {
- display: grid;
- grid-template-columns: repeat(3,1fr);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
+
 .cardT {
   background-color: #1a4362;
   color: white;
   border-radius: 10px;
-  width:250px;
+  width: 250px;
   margin: 10px;
   overflow: hidden;
   box-shadow: 1px 1px 10px rgb(59, 59, 232);
   padding: 0;
 }
+
 .cardT video {
   width: 100%;
   height: auto;
 }
+
 .cardT h4 {
-  padding:10px 20px;
+  padding: 10px 20px;
   font-size: 20px;
 }
+
 .cardT p {
-  padding:  10px;
+  padding: 10px;
   color: #d2d4f7;
 }
+
 .contF {
   display: flex;
   justify-content: space-between;
   margin: 10px;
 }
+
 .fecha {
   display: flex;
   justify-content: space-between;
 }
+
 .fecha p {
   background-color: #3f4446;
   padding: 7px;
@@ -564,6 +650,7 @@ a{
   height: 30px;
   margin: 10px;
 }
+
 .verM {
   background-color: #2c84a4;
   padding: 7px;
@@ -571,40 +658,45 @@ a{
   margin: 10px;
   transition: 0.5s;
 }
-.verM:hover{
+
+.verM:hover {
   background-color: #2c84a4;
   padding: 10px;
   border-radius: 10px;
   margin: 10px;
   box-shadow: 1px 1px 10px rgb(59, 59, 232);
 }
+
 .verM a {
   text-decoration: none;
-  color:#d2d4f7;
+  color: #d2d4f7;
 }
 
 /*media query*/
 
-@media(max-width:420px){
+@media(max-width:420px) {
   .cajonN {
     display: grid;
-    grid-template-columns:repeat(1,1fr);
+    grid-template-columns: repeat(1, 1fr);
     justify-content: center;
   }
+
   .cardN {
-      background-color:#1a4362;
-      border-radius: 10px;
-      width: 90%;
-      margin: 20px;
-      color: white;
-      box-shadow: 1px 1px 10px rgb(59, 59, 232);
+    background-color: #1a4362;
+    border-radius: 10px;
+    width: 90%;
+    margin: 20px;
+    color: white;
+    box-shadow: 1px 1px 10px rgb(59, 59, 232);
   }
+
   .cajonT {
     display: grid;
-    grid-template-columns: repeat(1,1fr);
+    grid-template-columns: repeat(1, 1fr);
     justify-content: center;
-}
-.cardT {
+  }
+
+  .cardT {
     background-color: #1a4362;
     color: white;
     border-radius: 10px;
@@ -612,5 +704,5 @@ a{
     overflow: hidden;
     margin: 20px;
     box-shadow: 1px 1px 10px rgb(59, 59, 232);
-}
+  }
 }
