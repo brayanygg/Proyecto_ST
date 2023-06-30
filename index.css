@@ -182,117 +182,30 @@ a continuacion*/
     transform: translateY(80px);
   }
 }
-
-/*QUE ES LA TECNOLOGIA*/
-
-.tecnologia_es {
-  margin: 30px 0px;
-  width: 100%;
-  height: 20rem;
-  position: relative;
-  overflow: hidden;
-}
-
-.tecnologia_es::before {
-  content: "";
-  width: 0;
-  height: 0;
-  position: absolute;
-  top: 0;
-  border-bottom: 0px solid transparent;
-  border-top: 0px #9AD0EC solid;
-  border-right: 0px solid transparent;
-  opacity: .80;
-  transition: all 400ms ease;
-}
-
-.tecnologia_es:hover::before {
-  content: "";
-  width: 0;
-  height: 0;
-  position: absolute;
-  top: 0;
-  border-bottom: 0px solid transparent;
-  border-top: 665px #9AD0EC solid;
-  border-right: 665px solid transparent;
-}
-
-.tecnologia_es::after {
-  content: "";
-  width: 0;
-  height: 0;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  border-bottom: 0px #2C84A4 solid;
-  border-top: 0px solid transparent;
-  border-left: 0px solid transparent;
-  opacity: .80;
-  transition: all 400ms ease;
-}
-
-.tecnologia_es:hover::after {
-  content: "";
-  width: 0;
-  height: 0;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  border-bottom: 904px #2C84A4 solid;
-  ;
-  border-top: 0px solid transparent;
-  border-left: 904px solid transparent;
-}
-
-.tecnologia_es picture>img {
-  width: 100%;
-  height: 20rem;
-  object-fit: cover;
-}
-
-
-
-.tecnologia_es>h2 {
-  position: absolute;
-  font-size: 45px;
-  color: aliceblue;
-  border: 1px solid white;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(2.0);
-  transition: all 400ms ease;
-}
-
-.tecnologia_es:hover h2 {
-  transform: translate(-130%, -50%);
-  border: none;
-}
-
-.tecnologia_es>div {
-  position: absolute;
-  top: 0;
-  width: 48%;
-
-  top: 50%;
-  left: 70%;
-  transform: translate(80%, -50%);
-  transition: all 400ms ease;
-  color: aliceblue;
-}
-
-.tecnologia_es:hover div {
-  transform: translate(-40%, -50%);
-  z-index: 1;
-}
-
-.tecnologia_es p {
-  border: 1px solid white;
-  align-items: center;
-  text-align: center;
-  line-height: 1.5rem;
-}
-
 /*Inicio modulo de Jesus*/
+/*QUE ES LA TECNOLOGIA*/
+.tecnologia_es{
+  position: relative;
+  margin-top: 10em;
+  background-color: #62a7db;
+  border-radius: 145px 5px;
+}
+
+.tec{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.tec h2{
+  font-size: 42px;
+  margin: 5px;
+  
+}
+.tecText{
+  position: absolute;
+}
+
 /*PARTES DEL COMPUTADOR*/
 .computerParts {
   position: relative;
