@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family:Arial, Helvetica, sans-serif;
 }
 
 /*CABECERA*/
@@ -87,7 +87,7 @@ body{
 }
 
 .container_all {
-  margin: 0px 50px;
+  margin: 0px 85px;
   
 }
 
@@ -291,26 +291,154 @@ a continuacion*/
   line-height: 1.5rem;
 }
 
+/*Inicio modulo de Jesus*/
 /*PARTES DEL COMPUTADOR*/
 
-.partesComputador {
-  border: 1px rgb(67, 41, 92) solid;
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
+.computerParts {
+  position: relative; 
   margin: 0px 0px 25px 0px;
 }
 
-.partesComputador>div {
-  border: 1px solid purple;
-  border-radius: 8px;
-  height: auto;
-}
-
-
-.partesComputador div picture>img {
+.containerCards{
   width: 100%;
+  display: grid;
+  grid-auto-flow: dense;
+  grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+  
 }
 
+
+.cards {
+  border-radius: 5px;
+  height: auto;
+  color: #fff;
+  background-color: #328eaf;
+  box-shadow: 0px 3px 10px -2px rgba(0,0,0,0.75);
+  transform: translateY(0);
+  transition: all 200ms ease;
+  margin: 6px;
+  cursor: pointer;
+  
+}
+
+.cards:hover{
+transform: translateY(-5px);
+box-shadow: 0px 3px 10px 2px rgba(0,0,0,0.60);
+}
+
+.cards> div{
+  padding: 5px 8px 8px 8px;
+  border: 2px solid transparent;
+  border-radius: 0px 0px 5px 5px;
+  
+}
+.cards h3{
+  font-size: 19px;
+  margin: 0px 0px 5px 0px;
+}
+
+.cards p{
+  font-size: 15px;
+}
+
+.cards footer{
+  
+  display: flex;
+  justify-content: end;
+  
+}
+
+.cards span{
+font-size: 15px;
+background-color: #1a6197;
+padding: 2px;
+border-radius: 5px;
+
+}
+
+.cards img {
+  width: 100%;
+  height: 125px;
+  border-radius: 5px 5px 0px 0px;
+}
+
+@media(max-width:420px){
+  
+}
+/*Tab*/
+.container_tab{
+  position: fixed;
+  opacity: 0;
+  visibility: hidden;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #444444bd;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+   
+.tab::-webkit-scrollbar {
+  width: 8px;
+
+}
+
+.tab::-webkit-scrollbar-thumb {
+  background-color: rgba(168, 158, 175, 0.473);
+  border-radius: 60px;
+
+
+}
+
+.tab::-webkit-scrollbar-thumb:hover {
+  box-shadow: 0px 0px 5px 9px rgba(179, 178, 178, 0.5) inset;
+}
+
+.tab{
+  background-color: #f5f5f5;
+  width: 50%;
+  height: 95vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  transition: all 300ms;
+  transform: translateY(0%);
+  border-radius: 5px;
+}
+
+.tab_close{
+  transform: translateY(-200%);
+}
+.close{
+  display: flex;
+  justify-content: end;
+}
+
+.close p{
+  margin: 5px 10px;
+  font-size: 18px;
+  color: #ee0d0d;
+  transition: all 200ms ease;
+  transform: scale(1);
+  cursor: pointer;
+}
+
+.close p:hover{
+  transform: scale(1.2);
+}
+
+.inf{
+  padding: 20px;
+  font-size: 15.4px;
+}
+
+.tab h4{
+  margin: 5px 20px 0px 20px;
+  font-size: 25px;
+}
+/*Fin modulo de Jesus*/
 /*NOTICIAS*/
 a{
   text-decoration: none;
