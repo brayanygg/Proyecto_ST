@@ -7,7 +7,9 @@
 
 /*CABECERA*/
 /*62.5%*/
-
+html{
+  scroll-behavior: smooth;
+}
 body{
   overflow-x: hidden;
 }
@@ -18,13 +20,14 @@ body{
   height: 55px;
 }
 
-.cabecera nav ul>h1 {
+h1 {
+  color: aliceblue;
   font-size: 3.5rem;
 }
 
 .cabecera nav ul li {
   height: 100%;
-  width: 15.7vh;
+  width: auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -55,10 +58,12 @@ body{
 }
 
 .cabecera nav ul li>a {
-  color: aliceblue;
-  text-decoration: none;
-  font-size: 1.4em;
+    color: aliceblue;
+    padding: 15px;
+    font-size: 1.4em;
+  
 }
+
 
 .cabecera>nav {
   height: 100%;
