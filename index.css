@@ -2,13 +2,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /*CABECERA*/
 /*62.5%*/
 
-body{
+body {
   overflow-x: hidden;
 }
 
@@ -83,15 +83,16 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  
+
 }
 
 .container_all {
-  margin: 0px 50px;
-  
+  margin: 0px 85px;
+
 }
 
-.wave{
+/*
+.wave {
   width: 300%;
   height: 100%;
   position: absolute;
@@ -102,15 +103,17 @@ body{
   animation: wone 3s linear infinite alternate;
 }
 
-@keyframes wone{
-  0%{
+@keyframes wone {
+  0% {
     margin-left: 0;
   }
-  100%{
+
+  100% {
     margin-right: -1600px;
-    
+
   }
 }
+*/
 
 /*Se debe cambiar la imagen por una mas oscura para que el texto sea facilmente legible
 o en su defecto buscar una alternativa para ello puede ser con un background como se muestra
@@ -119,13 +122,13 @@ a continuacion*/
   width: 80%;
   opacity: 1;
   background-color: rgba(40, 98, 138, 0.445);
-  box-shadow: 0px 0px 59px 12px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 59px 12px rgba(0, 0, 0, 0.75);
   overflow: hidden;
   animation: a 2s ease;
 }
 
-@keyframes a{
-  from{
+@keyframes a {
+  from {
     opacity: 0;
   }
 }
@@ -181,190 +184,587 @@ a continuacion*/
     transform: translateY(80px);
   }
 }
-
+/*Inicio modulo de Jesus*/
 /*QUE ES LA TECNOLOGIA*/
-
 .tecnologia_es {
-  margin: 30px 0px;
-  width: 100%;
-  height: 20rem;
   position: relative;
+  margin: 3em 0em 1em 0em;
+  background-color: #62a7db;
+  border-radius: 145px 5px;
   overflow: hidden;
+  height: 70vh;
+  padding: 10px;
 }
 
-.tecnologia_es::before {
-  content: "";
-  width: 0;
-  height: 0;
-  position: absolute;
-  top: 0;
-  border-bottom: 0px solid transparent;
-  border-top: 0px #9AD0EC solid;
-  border-right: 0px solid transparent;
-  opacity: .80;
-  transition: all 400ms ease;
+.tec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-.tecnologia_es:hover::before {
-  content: "";
-  width: 0;
-  height: 0;
-  position: absolute;
-  top: 0;
-  border-bottom: 0px solid transparent;
-  border-top: 665px #9AD0EC solid;
-  border-right: 665px solid transparent;
+.tec h2 {
+  font-size: 42px;
+  margin: 5px;
+  color: #fff;
+  transition: all 200ms ease;
 }
 
-.tecnologia_es::after {
-  content: "";
-  width: 0;
-  height: 0;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  border-bottom: 0px #2C84A4 solid;
-  border-top: 0px solid transparent;
-  border-left: 0px solid transparent;
-  opacity: .80;
-  transition: all 400ms ease;
+.tecSvg img {
+  max-width: 100%;
+  height: auto;
 }
-
-.tecnologia_es:hover::after {
-  content: "";
-  width: 0;
-  height: 0;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  border-bottom: 904px #2C84A4 solid;
-  ;
-  border-top: 0px solid transparent;
-  border-left: 904px solid transparent;
-}
-
-.tecnologia_es picture>img {
+.tecText {
   width: 100%;
-  height: 20rem;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #62a7dbab;
+  transition: all 300ms ease;
+  padding: 2em;
+  text-align: center;
+  font-size: 20px;
+  transition: all 200ms ease;
+  color: #f5f5f5;
+  transform: translateY(505%);
+}
+
+
+.tecnologia_es:hover .tecText {
+  transform: translateY(-110%);
+    
+}
+
+.tecnologia_es:hover h2 {
+  transform: translateY(-500px);
+}
+.wcp{
+  display: none;
+}
+
+/*PARTES DEL COMPUTADOR*/
+.computerParts {
+  position: relative;
+  margin: 0px 0px 25px 0px;
+}
+
+.containerCards {
+  width: 100%;
+  display: grid;
+  grid-auto-flow: dense;
+  grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+
+}
+
+
+.cards {
+  border-radius: 5px;
+  height: auto;
+  color: #fff;
+  background-color: #328eaf;
+  box-shadow: 0px 3px 10px -2px rgba(0, 0, 0, 0.75);
+  transform: translateY(0);
+  transition: all 200ms ease;
+  margin: 6px;
+  cursor: pointer;
+
+}
+
+.cards:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 3px 10px 2px rgba(0, 0, 0, 0.60);
+}
+
+.cards>div {
+  padding: 2px 8px 8px 5px;
+  border: 2px solid transparent;
+  border-radius: 0px 0px 5px 5px;
+
+}
+
+.cards h3 {
+  font-size: 19px;
+  margin: 5px 0px 0px 8px;
+}
+
+.cards p {
+  font-size: 15px;
+}
+
+.cards footer {
+  display: flex;
+  justify-content: end;
+
+}
+
+.cards span {
+  font-size: 15px;
+  background-color: #1a6197;
+  padding: 2px;
+  border-radius: 5px;
+
+}
+
+.cards img {
+  width: 100%;
+  height: 125px;
+  border-radius: 5px 5px 0px 0px;
   object-fit: cover;
 }
 
 
-
-.tecnologia_es>h2 {
-  position: absolute;
-  font-size: 45px;
-  color: aliceblue;
-  border: 1px solid white;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(2.0);
-  transition: all 400ms ease;
-}
-
-.tecnologia_es:hover h2 {
-  transform: translate(-130%, -50%);
-  border: none;
-}
-
-.tecnologia_es>div {
-  position: absolute;
-  top: 0;
-  width: 48%;
-
-  top: 50%;
-  left: 70%;
-  transform: translate(80%, -50%);
-  transition: all 400ms ease;
-  color: aliceblue;
-}
-
-.tecnologia_es:hover div {
-  transform: translate(-40%, -50%);
-  z-index: 1;
-}
-
-.tecnologia_es p {
-  border: 1px solid white;
-  align-items: center;
-  text-align: center;
-  line-height: 1.5rem;
-}
-
-/*PARTES DEL COMPUTADOR*/
-
-.partesComputador {
-  border: 1px rgb(67, 41, 92) solid;
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  margin: 0px 0px 25px 0px;
-}
-
-.partesComputador>div {
-  border: 1px solid purple;
-  border-radius: 8px;
-  height: auto;
-}
-
-
-.partesComputador div picture>img {
+/*Tab*/
+.container_tab {
+  position: fixed;
+  opacity: 0;
+  visibility: hidden;
   width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #444444bd;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
-/*NOTICIAS*/
-a{
-  text-decoration: none;
-  color:#d2d4f7 ;
-}
-.cajonN {
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
-}
-.cardN {
-  background-color:#1a4362;
-  border-radius: 10px;
-  width:450px;
-  margin: 20px;
-  color: white;
-  box-shadow: 1px 1px 10px rgb(59, 59, 232);
-}
-.cardN div {
-  padding: 5px 10px;
-}
-.cardN div h4 {
-  padding: 10px;
-  font-size: 20px;
-}
-.fecha p {
-  height: 35px;  
-}
-.fecha {
-  display:flex;
-  justify-content: space-between;
-}
-.fecha p {
-  background-color: #2c84a4;
-  padding: 7px;
-  border-radius: 10px;
-  color: #d2d4f7;
-}
-.lmas {
-  background-color: #2c84a4;
-  padding: 7px;
-  margin: 10px;
-  border-radius: 10px;
-  transition: all 0.5s;
-}
-.lmas:hover {
-  padding: 10px;
-  box-shadow: 1px 1px 10px rgb(59, 59, 232);
+.tab::-webkit-scrollbar {
+  width: 8px;
+
 }
 
-.cajonN div {
-  border: 1px solid yellow;
+.tab::-webkit-scrollbar-thumb {
+  background-color: rgba(168, 158, 175, 0.473);
+  border-radius: 60px;
+
+
+}
+
+.tab::-webkit-scrollbar-thumb:hover {
+  box-shadow: 0px 0px 5px 9px rgba(179, 178, 178, 0.5) inset;
+}
+
+.tab {
+  background-color: #f5f5f5;
+  width: 50%;
+  height: 95vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  transition: all 300ms;
+  transform: translateY(0%);
+  border-radius: 5px;
+}
+
+.tab_close {
+  transform: translateY(-200%);
+}
+
+.close {
+  display: flex;
+  justify-content: end;
+}
+
+.close p {
+  margin: 5px 10px;
+  font-size: 18px;
+  color: #ee0d0d;
+  transition: all 200ms ease;
+  transform: scale(1);
+  cursor: pointer;
+}
+
+.close p:hover {
+  transform: scale(1.2);
+}
+
+.inf {
+  padding: 20px;
+  font-size: 15.4px;
+}
+
+.tab h4 {
+  margin: 5px 20px 0px 20px;
+  font-size: 25px;
 }
 
 
+/*Diseño para dispositivos moviles*/
+/*PC*/
+@media(max-width: 500px) {
+  .container_all {
+    margin: 0px 15px;
+  }
+
+  .tecnologia_es{
+    margin-top: 1.5em;
+    background-color: #62a7db;
+    border-radius: 145px 145px 10px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 8vh;
+    box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.30);
+  }
+
+  .wcp{
+    display: block;
+  }
+  .tecnologia_es h2{
+    font-size: 25px;
+    color: #fff;
+  }
+
+  .titleParts{
+    display: none;
+  }
+  
+  .tecSvg,
+  .tec,
+  .tecText{
+    display: none;
+  }
+
+  .cards {
+    position: relative;
+    height: 30vh;
+    margin: 10px 0px;
+    overflow: hidden;
+  }
+
+  .card-image {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .card-image img {
+    height: 100%;
+  }
+
+  .cards h3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .cards:hover .card-info {
+    transform: translateY(-204px);
+  }
+
+  .cards:hover h3 {
+    display: none;
+  }
+
+  .card-info {
+    background-color: #296a9b6b;
+    transform: translateY(0px);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 300ms ease;
+  }
+
+  .text {
+    text-align: center;
+
+  }
+
+  .card-info p {
+    font-size: 17px;
+  }
+
+  .cards footer {
+    display: none;
+  }
+}
+/*Tec*/
+@media screen and (max-width: 768px) {
+  .tecnologia_es:hover .tecText {
+    transform: translateY(-300px);
+  }
+ 
+  .tecText {
+    
+    position: static;
+    transform: none;
+    padding: 2em;
+    font-size: 15px;
+  }
+
+  .tecSvg {
+    margin-top: 2em;
+  }
+
+  .tec h2{
+    position: absolute;
+    bottom: 80px;
+  }  
+
+  .tecnologia_es:hover h2 {
+    transform: translateY(-1000px);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .tec h2 {
+    font-size: 32px;
+  }
+}
+  /*Fin modulo de Jesus*/
+  /*Inicio modulo hender*/
+  /*NOTICIAS*/
+  #cajonN {
+    height: 20em;
+    overflow: scroll;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(500px,1fr));
+    margin: 0px 0px 20px 0px;
+    justify-items: center;
+  }
+  #cajonN::-webkit-scrollbar{
+    width: 8px;
+  }
+  #cajonN::-webkit-scrollbar-thumb{
+    background-color: gray;
+  }
+  .cardN {
+    background-color:#a1caff;
+    border-radius: 10px;
+    width:500px;
+    margin: 10px 0px;
+    color: black;
+    box-shadow: 4px 4px 5px rgb(144, 144, 145);
+    height: 8em;
+    overflow: hidden;
+  }
+  .cardN div {
+    padding: 0px 10px;
+  }
+
+  .cardN div h4 {
+    font-size: 18px;
+    border-bottom: 2px solid black;
+    text-align: left;
+    margin: 10px 0px 10px 0px;
+  }
+  
+  
+  .fechaN{
+    display: grid;
+    justify-content: right;
+    
+  }
+  .fechaN a{
+    color: black;
+    text-decoration: none;
+    background: none;
+  }
+  .lmas {
+    background-color: #88acb8;
+    padding: 7px;
+    margin: 5px;
+    border: transparent;
+    border-radius: 10px;
+    transition: all 200ms;
+  }
+  .lmas:hover {
+   background-color: #2c84a4;
+  }
+  
+  .emergente{
+    position: fixed;
+    top: 5%;
+    left: 10%;
+    width: 80%;
+    height: 90%;
+    background-color: rgb(255, 255, 255);
+    border: 1px transparent;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    border-radius: 8px;
+    border-left: 20px solid rgb(81, 136, 255);
+    border-right: 20px solid rgb(81, 22, 219);
+    overflow: scroll;
+  }
+  .transicion{
+    transition: 500ms;
+    opacity: 0;
+  }
+  .emergente::-webkit-scrollbar{
+    width: 8px;
+  }
+  .emergente::-webkit-scrollbar-thumb{
+    background-color: gray;
+  }
+  .emergente button{
+    margin-left: 90%;
+    width:20px;
+    height: 20px;
+    border-radius: 4px;
+    border-style: none;
+    background-color: rgb(76, 168, 190);
+    transition: 500ms;
+    border: none;
+  }
+  .emergente button:hover{
+    box-shadow: 2px 2px 3px gray;
+    color: rgb(255, 255, 255);
+    
+  }
+  #textos{
+    text-align: center;
+    padding: 20px;
+    text-align: justify;
+  }
+  #textos img{
+    height: 24em;
+    width: 80%
+  }
+  #textos h4{
+    font-size: 30px;
+    padding-bottom: 15px;
+  }
+  /*media queri*/
+  @media (max-width: 415px){
+   .container_all {
+    margin: 0px 15px;
+  }
+  
+    .cardbody{
+      display: grid;
+      grid-template-columns: repeat(1,1fr);
+      justify-content: center;
+    }
+    #textos img{
+    height: 8em;
+    width: 100%
+  }
+    #cajonN{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    justify-content: center;
+    height: 42em;
+    }
+    .cardN {
+    background-color:#a1caff;
+    border-radius: 10px;
+    width:250px;
+    height: auto;
+    margin: 10px 0px;
+    color: black;
+    box-shadow: 4px 4px 5px rgb(144, 144, 145);
+    overflow: hidden;
+  }
+  .cardN div h4 {
+    padding: 2px 3px;
+    font-size: 30px;
+    border-bottom: 2px solid black;
+    text-align: left;
+    margin: 15px;
+  }
+  .cardN div p{
+    margin: 10px;
+    padding: 0;
+    font-size: 20px;
+    text-align: justify;
+  }
+  .lmas {
+    background-color: #88acb8;
+    padding: 7px;
+    margin: 5px 5px;
+    border: 1px solid rgb(90, 89, 89);
+    border-radius: 10px;
+    transition: all 0.5s;
+  }
+  .emergente{
+    position: fixed;
+    top:25%;
+    left: 25%;
+    transform: translate(-50%,-50%);
+    width:300px;
+    height: 600px;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    border-radius: 8px;
+    border-left: 20px solid rgb(81, 136, 255);
+    border-right: 20px solid rgb(81, 22, 219);
+    overflow-y: scroll;;
+  }
+  }
+  @media (max-width: 375px){
+    .container_all {
+    margin: 0px 15px;
+  }
+  
+    .cardbody{
+      display: grid;
+      grid-template-columns: repeat(1,1fr);
+      justify-content: center;
+    }
+    #textos img{
+    height: 8em;
+    width: 100%
+  }
+    #cajonN{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    justify-content: center;
+    height: 42em;
+    }
+    .cardN {
+    background-color:#a1caff;
+    border-radius: 10px;
+    width:250px;
+    height: auto;
+    margin: 10px 0px;
+    color: black;
+    box-shadow: 4px 4px 5px rgb(144, 144, 145);
+    overflow: hidden;
+  }
+  .cardN div h4 {
+    padding: 2px 3px;
+    font-size: 30px;
+    border-bottom: 2px solid black;
+    text-align: left;
+    margin: 15px;
+  }
+  .cardN div p{
+    margin: 10px;
+    padding: 0;
+    font-size: 20px;
+    text-align: justify;
+  }
+  .lmas {
+    background-color: #88acb8;
+    padding: 7px;
+    margin: 5px 5px;
+    border: 1px solid rgb(90, 89, 89);
+    border-radius: 10px;
+    transition: all 0.5s;
+  }
+  .emergente{
+    position: fixed;
+    top:25%;
+    left: 25%;
+    transform: translate(-50%,-50%);
+    width:300px;
+    height: 600px;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    border-radius: 8px;
+    border-left: 20px solid rgb(81, 136, 255);
+    border-right: 20px solid rgb(81, 22, 219);
+    overflow-y: scroll;;
+  }
+  }
+  /*Final modulo hender
 /*TUTORIALES BASICOS*/
 
 .partesComputador {
@@ -389,45 +789,54 @@ a{
 .cajonT {
   border: 1px solid purple;
 }
+
 .cajonT section {
   margin: 20px;
   border: 1px solid blue;
 }
+
 .cajonT {
- display: grid;
- grid-template-columns: repeat(3,1fr);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
+
 .cardT {
   background-color: #1a4362;
   color: white;
   border-radius: 10px;
-  width:250px;
+  width: 250px;
   margin: 10px;
   overflow: hidden;
   box-shadow: 1px 1px 10px rgb(59, 59, 232);
   padding: 0;
 }
+
 .cardT video {
   width: 100%;
   height: auto;
 }
+
 .cardT h4 {
-  padding:10px 20px;
+  padding: 10px 20px;
   font-size: 20px;
 }
+
 .cardT p {
-  padding:  10px;
+  padding: 10px;
   color: #d2d4f7;
 }
+
 .contF {
   display: flex;
   justify-content: space-between;
   margin: 10px;
 }
+
 .fecha {
   display: flex;
   justify-content: space-between;
 }
+
 .fecha p {
   background-color: #3f4446;
   padding: 7px;
@@ -436,6 +845,7 @@ a{
   height: 30px;
   margin: 10px;
 }
+
 .verM {
   background-color: #2c84a4;
   padding: 7px;
@@ -443,40 +853,45 @@ a{
   margin: 10px;
   transition: 0.5s;
 }
-.verM:hover{
+
+.verM:hover {
   background-color: #2c84a4;
   padding: 10px;
   border-radius: 10px;
   margin: 10px;
   box-shadow: 1px 1px 10px rgb(59, 59, 232);
 }
+
 .verM a {
   text-decoration: none;
-  color:#d2d4f7;
+  color: #d2d4f7;
 }
 
 /*media query*/
 
-@media(max-width:420px){
+@media(max-width:420px) {
   .cajonN {
     display: grid;
-    grid-template-columns:repeat(1,1fr);
+    grid-template-columns: repeat(1, 1fr);
     justify-content: center;
   }
+
   .cardN {
-      background-color:#1a4362;
-      border-radius: 10px;
-      width: 90%;
-      margin: 20px;
-      color: white;
-      box-shadow: 1px 1px 10px rgb(59, 59, 232);
+    background-color: #1a4362;
+    border-radius: 10px;
+    width: 90%;
+    margin: 20px;
+    color: white;
+    box-shadow: 1px 1px 10px rgb(59, 59, 232);
   }
+
   .cajonT {
     display: grid;
-    grid-template-columns: repeat(1,1fr);
+    grid-template-columns: repeat(1, 1fr);
     justify-content: center;
-}
-.cardT {
+  }
+
+  .cardT {
     background-color: #1a4362;
     color: white;
     border-radius: 10px;
@@ -484,5 +899,209 @@ a{
     overflow: hidden;
     margin: 20px;
     box-shadow: 1px 1px 10px rgb(59, 59, 232);
+  }
 }
+
+/*Modulo Jesus Footer*/
+footer{
+  background-color:  #328eaf;
+  position: relative;
+}
+.foot{
+  
+  display: flex;
+  width: 100%;
+  height: 55vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  padding: 80px 50px 0px 50px;
+}
+.footer{
+  position: relative;
+}
+.wave{
+  position: absolute;
+  top:0;
+  width: 100%;
+  background: #fff
+  }
+
+.foot h2{
+  color: #FFF;
+  font-size: 100px;
+  z-index: 1;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-style: normal;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-left: 40px;
+  }
+
+  .socials{
+    display: flex;
+    margin: 0px 40px 0px 0px;
+    align-items: center;
+    font-size: 20px;
+  }
+.socials h3{
+  margin-right: 20px;
+  color: #fff;
+}
+  .icon{
+    margin: 0px 10px;
+    width: 35px;
+    cursor: pointer;
+  }
+
+.us{
+  display: flex;
+  width: 80;
+  justify-content: center;
+  justify-content: space-evenly;
+  padding: 20px;
+  font-size: 22px;
+  color: #fff;
+}
+.line{
+  width: 90%;
+  position: absolute;
+  left: 5%;
+  bottom: 22%;
+}
+.copy {
+  background-color: #1a6197ab;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  font-size: 16px;
+  padding-bottom: 4px;
+}
+
+/* Media queries */
+@media (max-width: 1120px) {
+footer {
+  background-color: #328eaf;
+  position: relative;
+}
+
+.foot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 50px 0px 50px;
+}
+
+.wave {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background: #fff;
+}
+
+.foot h2 {
+  color: #fff;
+  font-size: 100px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-style: normal;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-left: 40px;
+}
+
+.socials {
+  display: flex;
+justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+
+.socials h3 {
+ color: #FFF;
+}
+
+.icon {
+  margin: 0px 10px;
+  width: 35px;
+  cursor: pointer;
+}
+
+.us {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  font-size: 22px;
+  color: #fff;
+  text-align: center;
+}
+
+.line {
+  width: 90%;
+  position: absolute;
+  left: 5%;
+  bottom: 22%;
+}
+
+.copy {
+  background-color: #1a6197ab;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  font-size: 16px;
+  padding-bottom: 4px;
+}
+}
+
+@media (max-width: 768px) {
+  .foot {
+    padding: 40px;
+  }
+
+  .foot h2 {
+    font-size: 60px;
+    margin-left: 20px;
+  }
+
+  .socials {
+    margin: 0;
+    margin-top: 20px;
+  }
+
+  .socials h3 {
+    display: none;
+   }
+
+  .icon {
+    width: 30px;
+  }
+
+  .us {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .foot h2 {
+    font-size: 40px;
+    margin-left: 10px;
+  }
+
+  .socials {
+    margin-top: 10px;
+  }
+
+  .socials h3 {
+    display: none;
+   }
+
+  .icon {
+    width: 25px;
+  }
+
+  .us {
+    font-size: 16px;
+  }
 }
