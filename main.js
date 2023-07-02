@@ -1,4 +1,5 @@
 //Modulo de Jesus
+
 // Obtener el elemento del contenedor de las tarjetas por su ID
 const containerCard = document.getElementById('containerCards');
 
@@ -88,9 +89,9 @@ function openTab(tabId) {
       tabContent.scrollTop = 0;
     }, 500);
   }
-  
-  // Mapeo de las tarjetas con las pestañas correspondientes
-  const cardToTabMapping = {
+
+// Mapeo de las tarjetas con las pestañas correspondientes
+const cardToTabMapping = {
     procesadorCard: "procesadorTab",
     memoriaRamCard: "memoriaRamTab",
     motherboardCard: "motherboardTab",
@@ -102,9 +103,9 @@ function openTab(tabId) {
     graphicsCard: "graphicsTab",
     networkCard: "networkTab",
   };
-  
-  // Asignar eventos de clic a las tarjetas y botones de cerrar
-  Object.entries(cardToTabMapping).forEach(([cardId, tabId]) => {
+
+// Asignar eventos de clic a las tarjetas y botones de cerrar
+Object.entries(cardToTabMapping).forEach(([cardId, tabId]) => {
     const card = document.getElementById(cardId);
     const closeBtn = document.querySelector(`#${tabId} .close`);
   
@@ -132,5 +133,18 @@ function openTab(tabId) {
       }
     });
   });
-  
-  
+
+  //Modulo Hender
+
+  function openModal(modalId,transicion){
+    var modal = document.getElementById(modalId);
+    var transicion = document.getElementById(transicion);
+    modal.showModal();
+    transicion.style.opacity = "1";
+  };
+  function cerrarModal(modalId,transicion){
+    var close = document.getElementById(modalId);
+    var transicion = document.getElementById(transicion);
+    transicion.style.opacity = "0";
+    close.close();
+  }

@@ -91,6 +91,7 @@ body {
 
 }
 
+/*
 .wave {
   width: 300%;
   height: 100%;
@@ -112,6 +113,7 @@ body {
 
   }
 }
+*/
 
 /*Se debe cambiar la imagen por una mas oscura para que el texto sea facilmente legible
 o en su defecto buscar una alternativa para ello puede ser con un background como se muestra
@@ -184,26 +186,61 @@ a continuacion*/
 }
 /*Inicio modulo de Jesus*/
 /*QUE ES LA TECNOLOGIA*/
-.tecnologia_es{
+.tecnologia_es {
   position: relative;
-  margin-top: 10em;
+  margin: 3em 0em 1em 0em;
   background-color: #62a7db;
   border-radius: 145px 5px;
+  overflow: hidden;
+  height: 70vh;
+  padding: 10px;
 }
 
-.tec{
+.tec {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-.tec h2{
+
+.tec h2 {
   font-size: 42px;
   margin: 5px;
+  color: #fff;
+  transition: all 200ms ease;
+}
+
+.tecSvg img {
+  max-width: 100%;
+  height: auto;
+}
+.tecText {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #62a7dbab;
+  transition: all 300ms ease;
+  padding: 2em;
+  text-align: center;
+  font-size: 20px;
+  transition: all 200ms ease;
+  color: #f5f5f5;
   
 }
-.tecText{
-  position: absolute;
+
+
+.tecnologia_es:hover .tecText {
+  transform: translateY(-110%);
+    
+}
+
+.tecnologia_es:hover h2 {
+  transform: translateY(-500px);
+}
+.wcp{
+  display: none;
 }
 
 /*PARTES DEL COMPUTADOR*/
@@ -353,10 +390,40 @@ a continuacion*/
 
 
 /*Diseño para dispositivos moviles*/
-
-@media(max-width: 400px) {
+/*PC*/
+@media(max-width: 500px) {
   .container_all {
     margin: 0px 15px;
+  }
+
+  .tecnologia_es{
+    margin-top: 1.5em;
+    background-color: #62a7db;
+    border-radius: 145px 145px 10px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 8vh;
+    box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.30);
+  }
+
+  .wcp{
+    display: block;
+  }
+  .tecnologia_es h2{
+    font-size: 25px;
+    color: #fff;
+  }
+
+  .titleParts{
+    display: none;
+  }
+  
+  .tecSvg,
+  .tec,
+  .tecText{
+    display: none;
   }
 
   .cards {
@@ -415,74 +482,289 @@ a continuacion*/
   .cards footer {
     display: none;
   }
+}
+/*Tec*/
+@media screen and (max-width: 768px) {
+  .tecnologia_es:hover .tecText {
+    transform: translateY(-300px);
+  }
+ 
+  .tecText {
+    
+    position: static;
+    transform: none;
+    padding: 2em;
+    font-size: 15px;
+  }
 
+  .tecSvg {
+    margin-top: 2em;
+  }
 
+  .tec h2{
+    position: absolute;
+    bottom: 80px;
+  }  
 
+  .tecnologia_es:hover h2 {
+    transform: translateY(-1000px);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .tec h2 {
+    font-size: 32px;
+  }
+}
   /*Fin modulo de Jesus*/
+  /*Inicio modulo hender*/
   /*NOTICIAS*/
-  a {
-    text-decoration: none;
-    color: #d2d4f7;
-  }
-
-  .cajonN {
+  #cajonN {
+    height: 20em;
+    overflow: scroll;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fill,minmax(500px,1fr));
+    margin: 0px 0px 20px 0px;
+    justify-items: center;
   }
-
+  #cajonN::-webkit-scrollbar{
+    width: 8px;
+  }
+  #cajonN::-webkit-scrollbar-thumb{
+    background-color: gray;
+  }
   .cardN {
-    background-color: #1a4362;
+    background-color:#a1caff;
     border-radius: 10px;
-    width: 450px;
-    margin: 20px;
-    color: white;
-    box-shadow: 1px 1px 10px rgb(59, 59, 232);
+    width:500px;
+    margin: 10px 0px;
+    color: black;
+    box-shadow: 4px 4px 5px rgb(144, 144, 145);
+    height: 8em;
+    overflow: hidden;
   }
-
   .cardN div {
-    padding: 5px 10px;
+    padding: 0px 10px;
   }
 
   .cardN div h4 {
-    padding: 10px;
-    font-size: 20px;
+    font-size: 18px;
+    border-bottom: 2px solid black;
+    text-align: left;
+    margin: 10px 0px 10px 0px;
   }
-
-  .fecha p {
-    height: 35px;
+  
+  
+  .fechaN{
+    display: grid;
+    justify-content: right;
+    
   }
-
-  .fecha {
-    display: flex;
-    justify-content: space-between;
+  .fechaN a{
+    color: black;
+    text-decoration: none;
+    background: none;
   }
-
-  .fecha p {
-    background-color: #2c84a4;
-    padding: 7px;
-    border-radius: 10px;
-    color: #d2d4f7;
-  }
-
   .lmas {
-    background-color: #2c84a4;
+    background-color: #88acb8;
     padding: 7px;
+    margin: 5px;
+    border: transparent;
+    border-radius: 10px;
+    transition: all 200ms;
+  }
+  .lmas:hover {
+   background-color: #2c84a4;
+  }
+  
+  .emergente{
+    position: fixed;
+    top: 5%;
+    left: 10%;
+    width: 80%;
+    height: 90%;
+    background-color: rgb(255, 255, 255);
+    border: 1px transparent;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    border-radius: 8px;
+    border-left: 20px solid rgb(81, 136, 255);
+    border-right: 20px solid rgb(81, 22, 219);
+    overflow: scroll;
+  }
+  .transicion{
+    transition: 500ms;
+    opacity: 0;
+  }
+  .emergente::-webkit-scrollbar{
+    width: 8px;
+  }
+  .emergente::-webkit-scrollbar-thumb{
+    background-color: gray;
+  }
+  .emergente button{
+    margin-left: 90%;
+    width:20px;
+    height: 20px;
+    border-radius: 4px;
+    border-style: none;
+    background-color: rgb(76, 168, 190);
+    transition: 500ms;
+    border: none;
+  }
+  .emergente button:hover{
+    box-shadow: 2px 2px 3px gray;
+    color: rgb(255, 255, 255);
+    
+  }
+  #textos{
+    text-align: center;
+    padding: 20px;
+    text-align: justify;
+  }
+  #textos img{
+    height: 24em;
+    width: 80%
+  }
+  #textos h4{
+    font-size: 30px;
+    padding-bottom: 15px;
+  }
+  /*media queri*/
+  @media (max-width: 415px){
+   .container_all {
+    margin: 0px 15px;
+  }
+  
+    .cardbody{
+      display: grid;
+      grid-template-columns: repeat(1,1fr);
+      justify-content: center;
+    }
+    #textos img{
+    height: 8em;
+    width: 100%
+  }
+    #cajonN{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    justify-content: center;
+    height: 42em;
+    }
+    .cardN {
+    background-color:#a1caff;
+    border-radius: 10px;
+    width:250px;
+    height: auto;
+    margin: 10px 0px;
+    color: black;
+    box-shadow: 4px 4px 5px rgb(144, 144, 145);
+    overflow: hidden;
+  }
+  .cardN div h4 {
+    padding: 2px 3px;
+    font-size: 30px;
+    border-bottom: 2px solid black;
+    text-align: left;
+    margin: 15px;
+  }
+  .cardN div p{
     margin: 10px;
+    padding: 0;
+    font-size: 20px;
+    text-align: justify;
+  }
+  .lmas {
+    background-color: #88acb8;
+    padding: 7px;
+    margin: 5px 5px;
+    border: 1px solid rgb(90, 89, 89);
     border-radius: 10px;
     transition: all 0.5s;
   }
-
-  .lmas:hover {
-    padding: 10px;
-    box-shadow: 1px 1px 10px rgb(59, 59, 232);
+  .emergente{
+    position: fixed;
+    top:25%;
+    left: 25%;
+    transform: translate(-50%,-50%);
+    width:300px;
+    height: 600px;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    border-radius: 8px;
+    border-left: 20px solid rgb(81, 136, 255);
+    border-right: 20px solid rgb(81, 22, 219);
+    overflow-y: scroll;;
   }
-
-  .cajonN div {
-    border: 1px solid yellow;
   }
-
-}
-
+  @media (max-width: 375px){
+    .container_all {
+    margin: 0px 15px;
+  }
+  
+    .cardbody{
+      display: grid;
+      grid-template-columns: repeat(1,1fr);
+      justify-content: center;
+    }
+    #textos img{
+    height: 8em;
+    width: 100%
+  }
+    #cajonN{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    justify-content: center;
+    height: 42em;
+    }
+    .cardN {
+    background-color:#a1caff;
+    border-radius: 10px;
+    width:250px;
+    height: auto;
+    margin: 10px 0px;
+    color: black;
+    box-shadow: 4px 4px 5px rgb(144, 144, 145);
+    overflow: hidden;
+  }
+  .cardN div h4 {
+    padding: 2px 3px;
+    font-size: 30px;
+    border-bottom: 2px solid black;
+    text-align: left;
+    margin: 15px;
+  }
+  .cardN div p{
+    margin: 10px;
+    padding: 0;
+    font-size: 20px;
+    text-align: justify;
+  }
+  .lmas {
+    background-color: #88acb8;
+    padding: 7px;
+    margin: 5px 5px;
+    border: 1px solid rgb(90, 89, 89);
+    border-radius: 10px;
+    transition: all 0.5s;
+  }
+  .emergente{
+    position: fixed;
+    top:25%;
+    left: 25%;
+    transform: translate(-50%,-50%);
+    width:300px;
+    height: 600px;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    border-radius: 8px;
+    border-left: 20px solid rgb(81, 136, 255);
+    border-right: 20px solid rgb(81, 22, 219);
+    overflow-y: scroll;;
+  }
+  }
+  /*Final modulo hender
 /*TUTORIALES BASICOS*/
 
 .partesComputador {
@@ -617,5 +899,209 @@ a continuacion*/
     overflow: hidden;
     margin: 20px;
     box-shadow: 1px 1px 10px rgb(59, 59, 232);
+  }
+}
+
+/*Modulo Jesus Footer*/
+footer{
+  background-color:  #328eaf;
+  position: relative;
+}
+.foot{
+  
+  display: flex;
+  width: 100%;
+  height: 55vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  padding: 80px 50px 0px 50px;
+}
+.footer{
+  position: relative;
+}
+.wave{
+  position: absolute;
+  top:0;
+  width: 100%;
+  background: #fff
+  }
+
+.foot h2{
+  color: #FFF;
+  font-size: 100px;
+  z-index: 1;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-style: normal;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-left: 40px;
+  }
+
+  .socials{
+    display: flex;
+    margin: 0px 40px 0px 0px;
+    align-items: center;
+    font-size: 20px;
+  }
+.socials h3{
+  margin-right: 20px;
+  color: #fff;
+}
+  .icon{
+    margin: 0px 10px;
+    width: 35px;
+    cursor: pointer;
+  }
+
+.us{
+  display: flex;
+  width: 80;
+  justify-content: center;
+  justify-content: space-evenly;
+  padding: 20px;
+  font-size: 22px;
+  color: #fff;
+}
+.line{
+  width: 90%;
+  position: absolute;
+  left: 5%;
+  bottom: 22%;
+}
+.copy {
+  background-color: #1a6197ab;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  font-size: 16px;
+  padding-bottom: 4px;
+}
+
+/* Media queries */
+@media (max-width: 1120px) {
+footer {
+  background-color: #328eaf;
+  position: relative;
+}
+
+.foot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 50px 0px 50px;
+}
+
+.wave {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background: #fff;
+}
+
+.foot h2 {
+  color: #fff;
+  font-size: 100px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-style: normal;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-left: 40px;
+}
+
+.socials {
+  display: flex;
+justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+
+.socials h3 {
+ color: #FFF;
+}
+
+.icon {
+  margin: 0px 10px;
+  width: 35px;
+  cursor: pointer;
+}
+
+.us {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  font-size: 22px;
+  color: #fff;
+  text-align: center;
+}
+
+.line {
+  width: 90%;
+  position: absolute;
+  left: 5%;
+  bottom: 22%;
+}
+
+.copy {
+  background-color: #1a6197ab;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  font-size: 16px;
+  padding-bottom: 4px;
+}
+}
+
+@media (max-width: 768px) {
+  .foot {
+    padding: 40px;
+  }
+
+  .foot h2 {
+    font-size: 60px;
+    margin-left: 20px;
+  }
+
+  .socials {
+    margin: 0;
+    margin-top: 20px;
+  }
+
+  .socials h3 {
+    display: none;
+   }
+
+  .icon {
+    width: 30px;
+  }
+
+  .us {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .foot h2 {
+    font-size: 40px;
+    margin-left: 10px;
+  }
+
+  .socials {
+    margin-top: 10px;
+  }
+
+  .socials h3 {
+    display: none;
+   }
+
+  .icon {
+    width: 25px;
+  }
+
+  .us {
+    font-size: 16px;
   }
 }
