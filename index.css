@@ -5,7 +5,6 @@
   font-family: sans-serif;
 }
 
-/*CABECERA*/
 /*62.5%*/
 html{
   scroll-behavior: smooth;
@@ -13,7 +12,9 @@ html{
 body{
   overflow-x: hidden;
 }
+/* MODULO BRAYAN CSS. */
 
+/* BARRA DE NAVEGACION */
 .cabecera {
   background-color: #2C84A4;
   color: aliceblue;
@@ -23,31 +24,6 @@ body{
 h1 {
   color: aliceblue;
   font-size: 3.5rem;
-}
-.sobreNos_principal{
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-
-}
-.sobreNos_titulo{
-  display: flex;
-  justify-content: center;
-  color: #2c84a4;
-  font-weight: 800;
-  font-size: 2.5rem;
-  margin-top: 3rem;
-}
-.sobreNos_principal figure{
-  background-image: url("./assets/aboutUs.jpg");
-  background-position: 1%;
-  background-size: cover;
-  width: 100%;
-  height: 20rem;
-}
-
-.sobreNos_principal p{
-  margin-top: 3rem;
 }
 
 .cabecera nav ul li {
@@ -102,7 +78,284 @@ h1 {
   height: 100%;
   margin: 0px 120px;
 }
+/* SECCION SOBRE NOSOTROS. */
+.sobreNos_principal{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 
+}
+.sobreNos_titulo{
+  display: flex;
+  justify-content: center;
+  color: #2c84a4;
+  font-weight: 800;
+  font-size: 2.5rem;
+  margin-top: 3rem;
+}
+.sobreNos_principal figure{
+  background-image: url("./assets/aboutUs.jpg");
+  background-position: 1%;
+  background-size: cover;
+  width: 100%;
+  height: 20rem;
+}
+
+.sobreNos_principal p{
+  margin-top: 3rem;
+}
+/* VENTANA MODAL DEL INICIO DE SESION */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #444444bd;
+  display: flex;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .6s .6s;
+  --transform: translateY(-100vh);
+  --transition: transform .8s;
+  z-index: 2;
+}
+.modal--show{
+  opacity: 1;
+  pointer-events: unset;
+  transition: opacity .6s;
+  --transform: translateY(0);
+  --transition: transform .5s .5s;
+}
+.modal__container {
+  margin: auto;
+  width: 90%;
+  max-width: 320;
+  max-height: 90%;
+  background: #ececec;
+  border-radius: 6px;
+  padding: 2em 1.5em;
+  display: grid;
+  gap: 1em;
+  place-items: center;
+  transform: var(--transform);
+  transition: var(--transition);
+  width: 320px;
+  height: 400px;
+  color: #353535;
+  box-sizing: border-box; 
+}
+.modal__container h1{
+  font-size: 2.5rem;
+}
+
+
+.modal__close {
+  cursor: pointer;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-weight: 700;
+  font-size: 30px;
+  text-decoration: none;
+  color: black;
+  transition: background-color .3s;
+}
+.modal__close:hover{
+color: #2C84A4;
+}
+
+.modal__container h1 {
+  margin: 0 0 20px 0;
+  color: rgb(12, 12, 12);
+  border-radius: 5px;
+  ;
+  padding: 0 0 20px;
+  text-align: center;
+  font-size: 30px;
+  height: 30px;
+  width: 90%;
+
+}
+
+.modal__container label {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  display: block;
+
+}
+
+.modal__container input {
+  width: 100%;
+  margin-bottom: 20px;
+
+}
+
+.modal__container input[type="text"],
+.modal__container input[type="password"] {
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  outline: none;
+  height: 40px;
+  color: #2c2c2c;
+  font-size: 16px;
+}
+
+.modal__container input[type="submit"] {
+  border: none;
+  outline: none;
+  height: 30px;
+  background: #2C84A4;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 20px;
+}
+
+.modal__container input[type="submit"]:hover {
+  cursor: pointer;
+  background: #4d4d4d;
+  color: #000;
+}
+
+.modal__container a {
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 20px;
+  color: darkgrey;
+}
+
+.modal__container a:hover {
+  color: #000000;
+}
+/* VENTANA MODAL DEL REGISTRO */
+
+.modalRes{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #444444bd;
+  display: flex;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .6s .6s;
+--transform: translateY(-100vh);
+--transition: transform .8s;
+z-index: 2;
+}
+
+.modal--showRes{
+  opacity: 1;
+  pointer-events: unset;
+  transition: opacity .6s;
+  --transform: translateY(0);
+  --transition: transform .5s .5s;
+  }
+
+.modal__containerRes{
+  margin: auto;
+  width: 90%;
+  max-width: 320;
+  max-height: 90%;
+  background: #ececec;
+  border-radius: 6px;
+  padding: 2em 1.5em;
+  display: grid;
+  gap: 1em;
+  place-items: center;
+  transform: var(--transform);
+  transition: var(--transition);
+  width: 320px;
+  height: 400px;
+  color: #353535;
+  box-sizing: border-box; 
+}
+
+.modal__containerRes h1 {
+  margin: 0 0 20px 0;
+  color: rgb(12, 12, 12);
+  border-radius: 5px;
+  ;
+  padding: 0 0 20px;
+  text-align: center;
+  font-size: 30px;
+  height: 30px;
+  width: 90%;
+
+}
+
+.modal__containerRes label {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  display: block;
+
+}
+
+.modal__containerRes input {
+  width: 100%;
+  margin-bottom: 20px;
+
+}
+
+.modal__containerRes input[type="text"],
+.modal__containerRes input[type="password"] {
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  outline: none;
+  height: 40px;
+  color: #2c2c2c;
+  font-size: 16px;
+}
+
+.modal__containerRes input[type="submit"] {
+  border: none;
+  outline: none;
+  height: 30px;
+  background: #2C84A4;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 20px;
+}
+
+.modal__containerRes input[type="submit"]:hover {
+  cursor: pointer;
+  background: #4d4d4d;
+  color: #000;
+}
+
+.modal__containerRes a {
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 20px;
+  color: darkgrey;
+}
+
+.modal__containerRes a:hover {
+  color: #000000;
+}
+
+.modal__closeRes {
+  cursor: pointer;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-weight: 700;
+  font-size: 30px;
+  text-decoration: none;
+  color: black;
+  transition: background-color .3s;
+
+}
+
+.modal__closeRes:hover {
+  color: #2C84A4;
+
+}
 /*PRESENTACION*/
 .presentacion {
   background-image: url(./assets/presentacion.jpg);
