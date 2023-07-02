@@ -23,8 +23,9 @@ closeModal.addEventListener('click', (e)=>{
 
 //ESCUCHA DEL EVENTO CLICK SOBRE LA ZONA EXTERIOR DEL INICIO DE SESION PARA CERRAR LA VENTANA MODAL.
 modalInicioS.addEventListener('click', (e)=>{
-    e.preventDefault();
-    modalInicioS.classList.remove('modal--show');
+    if(e.target === modalInicioS){
+        modalInicioS.classList.remove('modal--show');
+    };
 });
 
 //ESCUCHA DEL EVENTO CLICK SOBRE LA BARRA DE NAVEGACION PARA MOSTRAR LA VENTANA MODAL.
@@ -40,6 +41,7 @@ closeModalRes.addEventListener('click', (e)=>{
 });
 
 modalRes.addEventListener('click', (e) =>{
-    e.preventDefault();
-    modalRes.classList.remove('modal--showRes');
+    if(e.target === modalRes){
+        modalRes.classList.remove('modal--showRes');
+    };
 })
