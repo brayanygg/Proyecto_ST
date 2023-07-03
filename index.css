@@ -6,7 +6,9 @@
 }
 
 /*62.5%*/
-
+a{
+  text-decoration: none;
+}
 html{
   scroll-behavior: smooth;
 }
@@ -1194,6 +1196,9 @@ a continuacion*/
 footer{
   background-color:  #328eaf;
   position: relative;
+}
+footer a{
+  color: white;
 }
 .foot{
   

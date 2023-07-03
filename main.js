@@ -3,7 +3,7 @@ const saludo = document.querySelector(".saludo");
 let user = "";
 
 //DECLARACION DE CONSTANTES PARA LA VENTANA MODAL DEL INICIO DE SESION Y REGISTRO.
-const openModal = document.querySelector('.inicioS');
+const abrirModal = document.querySelector('.inicioS');
 const modalInicioS = document.querySelector('.modal');
 const closeModal = document.querySelector('.modal__close');
 
@@ -28,7 +28,7 @@ const parrafoR = document.getElementById("warnings");
 //INICIO DE SESION
 
 //ESCUCHA DEL EVENTO CLICK SOBRE LA BARRA DE NAVEGACION PARA MOSTRAR LA VENTANA MODAL.
-openModal.addEventListener('click', (e)=>{
+abrirModal.addEventListener('click', (e)=>{
     e.preventDefault();
     modalInicioS.classList.add('modal--show');
 });
