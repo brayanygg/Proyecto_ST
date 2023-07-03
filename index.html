@@ -16,6 +16,9 @@
     <!-- BARRA DE NAVEGACION. -->
     <header class="cabecera">
         <nav>
+                <p class="saludo">
+                    
+                </p>
             <ul>
                 <li>
                     <a href="#noticiasH">Noticias</a>
@@ -37,14 +40,16 @@
     <section class="modal">
         <div class="modal__container">
             <h1>Inciar sesión</h1>
-            <form  method="GET" onsubmit="return valida();">
+            <form  action="" method="POST" id="form">
                 <label for="username">Usuario</label>
-                <input type="text" placeholder="Ingrese Usuario">
+                <input type="text" placeholder="Ingrese Usuario" id="nombre">
                 <label for="password">Contraseña</label>
-                <input type="password" placeholder="Ingrese Contraseña">
-                <input type="submit" value="Ingresar">
-                <a href="#">Olvidaste tu contraseña?</a><br>
-                <a href="#">No tienes una cuenta?</a>
+                <input type="password" placeholder="Ingrese Contraseña" id="contraseña">
+                <a href="#" id="crearC">No tienes una cuenta?</a>
+                <button type="submit">Ingresar</button>
+                <p class="warnings" id="alertas">
+
+                </p>
               </form>
             <span class="modal__close">x</span>
         </div>
@@ -54,14 +59,17 @@
     <section class="modalRes">
         <div class="modal__containerRes">
             <h1>Registrarse</h1>
-            <form  method="GET" onsubmit="return valida();" >
+            <form  action="" class="registro" id="formR">
                 <label for="correo">Correo</label>
-                <input type="text" placeholder="Ingrese Correo">
+                <input type="text" placeholder="Ingrese Correo" id="email">
                 <label for=" username">Usuario</label>
-                <input type="text" placeholder="Ingrese Usuario">
+                <input type="text" placeholder="Ingrese Usuario" id="name">
                 <label for="password">Contraseña</label>
-                <input type="password" placeholder="Ingrese Contraseña">
-                <input type="submit" value="registrar">
+                <input type="password" placeholder="Ingrese Contraseña" id="contra">
+                <button type="submit">Registrarse</button>
+                <p class="warnings" id="warnings">
+
+                </p>
             </form>
             <span class="modal__closeRes">x</span>
         </div>
@@ -264,7 +272,7 @@
                 <h2>Tutoriales basicos de computacion</h2>
                 <article class="cajonT">
                     <section class="cardT">
-                        <video src="#" poster="./llaves.jpg"></video>
+                        <video src="#"></video>
                         <h4>Nombre</h4>
                         <p class="pieT">Lorem ipsum dolor sit amet.</p>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commo esciunt qui iste praesentium enim officiis ipsam quod nostrum.</p>
@@ -276,7 +284,7 @@
                        </div>
                     </section>
                     <section class="cardT">
-                        <video src="#" poster="./llaves.jpg"></video>
+                        <video src="#"></video>
                         <h4>Nombre</h4>
                         <p class="pieT">Lorem ipsum dolor sit amet.</p>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commo esciunt qui iste praesentium enim officiis ipsam quod nostrum.</p>
@@ -288,7 +296,7 @@
                        </div>
                     </section>
                     <section class="cardT">
-                        <video src="#" poster="./llaves.jpg"></video>
+                        <video src="#"></video>
                         <h4>Nombre</h4>
                         <p class="pieT">Lorem ipsum dolor sit amet.</p>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commo esciunt qui iste praesentium enim officiis ipsam quod nostrum.</p>
@@ -300,7 +308,7 @@
                        </div>
                     </section>
                     <section class="cardT">
-                        <video src="#" poster="./llaves.jpg"></video>
+                        <video src="#"></video>
                         <h4>Nombre</h4>
                         <p class="pieT">Lorem ipsum dolor sit amet.</p>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commo esciunt qui iste praesentium enim officiis ipsam quod nostrum.</p>
@@ -312,7 +320,7 @@
                        </div>
                     </section>
                     <section class="cardT">
-                        <video src="#" poster="./llaves.jpg"></video>
+                        <video src="#"></video>
                         <h4>Nombre</h4>
                         <p class="pieT">Lorem ipsum dolor sit amet.</p>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commo esciunt qui iste praesentium enim officiis ipsam quod nostrum.</p>

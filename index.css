@@ -64,8 +64,6 @@ h1 {
     font-size: 1.4em;
   
 }
-
-
 .cabecera>nav {
   height: 100%;
 }
@@ -77,6 +75,13 @@ h1 {
   align-items: center;
   height: 100%;
   margin: 0px 120px;
+}
+.saludo{
+  width: auto;
+  height: auto;
+  border-radius: 5px;
+  padding: 10px;
+  position: absolute;
 }
 /* SECCION SOBRE NOSOTROS. */
 .sobreNos_principal{
@@ -103,6 +108,7 @@ h1 {
 
 .sobreNos_principal p{
   margin-top: 3rem;
+  text-align: center;
 }
 /* VENTANA MODAL DEL INICIO DE SESION */
 .modal {
@@ -167,12 +173,12 @@ color: #2C84A4;
 
 .modal__container h1 {
   margin: 0 0 20px 0;
-  color: rgb(12, 12, 12);
+  color: #2C84A4;
   border-radius: 5px;
-  ;
   padding: 0 0 20px;
   text-align: center;
   font-size: 30px;
+  font-weight: 800;
   height: 30px;
   width: 90%;
 
@@ -195,7 +201,7 @@ color: #2C84A4;
 .modal__container input[type="text"],
 .modal__container input[type="password"] {
   border: none;
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid black;
   background: transparent;
   outline: none;
   height: 40px;
@@ -203,21 +209,6 @@ color: #2C84A4;
   font-size: 16px;
 }
 
-.modal__container input[type="submit"] {
-  border: none;
-  outline: none;
-  height: 30px;
-  background: #2C84A4;
-  color: #fff;
-  font-size: 18px;
-  border-radius: 20px;
-}
-
-.modal__container input[type="submit"]:hover {
-  cursor: pointer;
-  background: #4d4d4d;
-  color: #000;
-}
 
 .modal__container a {
   text-decoration: none;
@@ -228,6 +219,16 @@ color: #2C84A4;
 
 .modal__container a:hover {
   color: #000000;
+}
+.modal__container button{
+  padding: 10px 40px;
+  margin-top: 40px;
+  border: none;
+  font-size: 14px;
+  background-color: #2C84A4;
+  color: white;
+  cursor: pointer;
+  outline: none;
 }
 /* VENTANA MODAL DEL REGISTRO */
 
@@ -269,19 +270,19 @@ z-index: 2;
   transform: var(--transform);
   transition: var(--transition);
   width: 320px;
-  height: 400px;
+  height: auto;
   color: #353535;
   box-sizing: border-box; 
 }
 
 .modal__containerRes h1 {
   margin: 0 0 20px 0;
-  color: rgb(12, 12, 12);
+  color: #2C84A4;
   border-radius: 5px;
-  ;
   padding: 0 0 20px;
   text-align: center;
   font-size: 30px;
+  font-weight: 800;
   height: 30px;
   width: 90%;
 
@@ -304,35 +305,23 @@ z-index: 2;
 .modal__containerRes input[type="text"],
 .modal__containerRes input[type="password"] {
   border: none;
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid black;
   background: transparent;
   outline: none;
   height: 40px;
   color: #2c2c2c;
   font-size: 16px;
+  background-color: #f2f2f2;
 }
 
-.modal__containerRes input[type="submit"] {
+.modal__containerRes button{
+  padding: 10px 40px;
   border: none;
-  outline: none;
-  height: 30px;
-  background: #2C84A4;
-  color: #fff;
-  font-size: 18px;
-  border-radius: 20px;
-}
-
-.modal__containerRes input[type="submit"]:hover {
+  font-size: 14px;
+  background-color: #2C84A4;
+  color: white;
   cursor: pointer;
-  background: #4d4d4d;
-  color: #000;
-}
-
-.modal__containerRes a {
-  text-decoration: none;
-  font-size: 12px;
-  line-height: 20px;
-  color: darkgrey;
+  outline: none;
 }
 
 .modal__containerRes a:hover {
@@ -354,7 +343,21 @@ z-index: 2;
 
 .modal__closeRes:hover {
   color: #2C84A4;
+}
 
+.warnings{
+  width: 200px;
+  text-align: center;
+  margin: auto;
+  color: red;
+  padding-top: 20px;
+}
+.alertas{
+  width: 200px;
+  text-align: center;
+  margin: auto;
+  color: red;
+  padding-top: 20px;
 }
 /*PRESENTACION*/
 .presentacion {
@@ -405,6 +408,7 @@ a continuacion*/
   box-shadow: 0px 0px 59px 12px rgba(0,0,0,0.75);
   overflow: hidden;
   animation: a 2s ease;
+  border-radius: 15px;
 }
 
 @keyframes a{
