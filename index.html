@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
-
+    
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,39 +11,82 @@
 </head>
 
 <body>
+    <!-- MODULO HTML BRAYAN. -->
+
+    <!-- BARRA DE NAVEGACION. -->
     <header class="cabecera">
         <nav>
+                <p class="saludo">
+                    
+                </p>
             <ul>
                 <li>
-                    <a href="#">Home</a>
+                    <a href="#noticiasH">Noticias</a>
                 </li>
                 <li>
-                    <a href="#">Noticias</a>
+                    <a href="./sobreN.html">Acerca de</a>
                 </li>
-                <h1>Edutec</h1>
-                <li>
-                    <a href="#">Acerca de</a>
+                    <h1>Edutec</h1>
+                <li class="registroM">
+                    <a href="#">Registrarse</a>
                 </li>
-                <li>
-                    <a href="#">menu</a>
+                <li class="inicioS">
+                    <a href="#">Iniciar sesion</a>
                 </li>
             </ul>
         </nav>
     </header>
+    <!-- VENTANA MODAL DEL INICIO DE SESION. -->
+    <section class="modal">
+        <div class="modal__container">
+            <h1>Inciar sesión</h1>
+            <form  action="" method="POST" id="form">
+                <label for="username">Usuario</label>
+                <input type="text" placeholder="Ingrese Usuario" id="nombre">
+                <label for="password">Contraseña</label>
+                <input type="password" placeholder="Ingrese Contraseña" id="contraseña">
+                <a href="#" id="crearC">No tienes una cuenta?</a>
+                <button type="submit">Ingresar</button>
+                <p class="warnings" id="alertas">
+
+                </p>
+              </form>
+            <span class="modal__close">x</span>
+        </div>
+    </section>
+
+    <!-- VENTANA MODAL DEL REGISTRO. -->
+    <section class="modalRes">
+        <div class="modal__containerRes">
+            <h1>Registrarse</h1>
+            <form  action="" class="registro" id="formR">
+                <label for="correo">Correo</label>
+                <input type="text" placeholder="Ingrese Correo" id="email">
+                <label for=" username">Usuario</label>
+                <input type="text" placeholder="Ingrese Usuario" id="name">
+                <label for="password">Contraseña</label>
+                <input type="password" placeholder="Ingrese Contraseña" id="contra">
+                <button type="submit">Registrarse</button>
+                <p class="warnings" id="warnings">
+
+                </p>
+            </form>
+            <span class="modal__closeRes">x</span>
+        </div>
+    </section>
     <main>
         <section class="presentacion">
             <article>
                 <div>
-                    <h2> Entra, explora y informate con edutec ☺ </h2>
+                    <h2> Entra, explora e informate con Edutec</h2>
                     <div class="texto">
-                        <p>Edutec, es una pagina creada con la finalidad de llevar informacion a aquellas
-                            personas que no
-                            han tenido oportunidad
-                            de informarse sobre las nuevas tecnologias de computacion y sus tantas
-                            ramas y areas </p>
-                        <p>Una explicacion breve de la Tecnologia Moderna de la Computacion para ampliar tu
-                            conocimiento!!
-                        </p>
+                    <p>Edutec, es una pagina creada con la finalidad de llevar informacion a aquellas personas <br> 
+                        que busquen informarse sobre las nuevas tecnologias de computacion
+                    </p>
+                    <p>
+                        Una explicacion breve de la Tecnologia Moderna en Computacion para ampliar tus conocimientos
+                    </p>
+
                     </div>
                 </div>
             </article>
@@ -586,6 +629,7 @@
                 <!--Inicio Modulo de Hender-->
                 <!-- NOTICIAS -->
                 <h2> Noticias de tecnologia </h2>
+
                 <article id="cajonN">
                     <section class="cardbody">
                         <dialog id="modal1">
@@ -1635,7 +1679,7 @@
                 <h2>Tutoriales basicos de computacion</h2>
                 <article class="cajonT">
                     <section class="cardT">
-                        <video src="#" poster="./llaves.jpg"></video>
+                        <video src="#"></video>
                         <h4>Nombre</h4>
                         <p class="pieT">Lorem ipsum dolor sit amet.</p>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commo esciunt qui iste praesentium
@@ -1648,7 +1692,7 @@
                         </div>
                     </section>
                     <section class="cardT">
-                        <video src="#" poster="./llaves.jpg"></video>
+                        <video src="#"></video>
                         <h4>Nombre</h4>
                         <p class="pieT">Lorem ipsum dolor sit amet.</p>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commo esciunt qui iste praesentium
@@ -1661,7 +1705,7 @@
                         </div>
                     </section>
                     <section class="cardT">
-                        <video src="#" poster="./llaves.jpg"></video>
+                        <video src="#"></video>
                         <h4>Nombre</h4>
                         <p class="pieT">Lorem ipsum dolor sit amet.</p>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commo esciunt qui iste praesentium
@@ -1674,7 +1718,7 @@
                         </div>
                     </section>
                     <section class="cardT">
-                        <video src="#" poster="./llaves.jpg"></video>
+                        <video src="#"></video>
                         <h4>Nombre</h4>
                         <p class="pieT">Lorem ipsum dolor sit amet.</p>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commo esciunt qui iste praesentium
@@ -1687,7 +1731,7 @@
                         </div>
                     </section>
                     <section class="cardT">
-                        <video src="#" poster="./llaves.jpg"></video>
+                        <video src="#"></video>
                         <h4>Nombre</h4>
                         <p class="pieT">Lorem ipsum dolor sit amet.</p>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commo esciunt qui iste praesentium
@@ -1727,6 +1771,7 @@
            <p class="copy">Copyright © 2023 •Eductec.</p>
         </footer>
     </main>
+    <script src="./main.js"></script>
 </body>
 <script src="./main.js"></script>
 
