@@ -474,7 +474,7 @@ a continuacion*/
     transform: translateY(80px);
   }
 }
-/*Inicio modulo de Jesus*/
+/*Inicio modulo(2) Jesus*/
 /*QUE ES LA TECNOLOGIA*/
 .tecnologia_es {
   position: relative;
@@ -533,6 +533,43 @@ a continuacion*/
   display: none;
 }
 
+/*Tec Responsive*/
+@media screen and (max-width: 768px) {
+  .tecnologia_es:hover .tecText {
+    transform: translateY(-300px);
+  }
+ 
+  .tecText {
+    
+    position: static;
+    transform: none;
+    padding: 2em;
+    font-size: 15px;
+  }
+
+  .tecSvg {
+    margin-top: 2em;
+  }
+
+  .tec h2{
+    position: absolute;
+    bottom: 80px;
+  }  
+
+  .tecnologia_es:hover h2 {
+    transform: translateY(-1000px);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .tec h2 {
+    font-size: 32px;
+  }
+}
+
+/*Fin modulo 2*/
+
+/*Incio modulo(3) Jesus*/
 /*PARTES DEL COMPUTADOR*/
 .computerParts {
   position: relative;
@@ -773,41 +810,9 @@ a continuacion*/
     display: none;
   }
 }
-/*Tec*/
-@media screen and (max-width: 768px) {
-  .tecnologia_es:hover .tecText {
-    transform: translateY(-300px);
-  }
- 
-  .tecText {
-    
-    position: static;
-    transform: none;
-    padding: 2em;
-    font-size: 15px;
-  }
+  /*Fin modulo(3)*/
 
-  .tecSvg {
-    margin-top: 2em;
-  }
-
-  .tec h2{
-    position: absolute;
-    bottom: 80px;
-  }  
-
-  .tecnologia_es:hover h2 {
-    transform: translateY(-1000px);
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .tec h2 {
-    font-size: 32px;
-  }
-}
-  /*Fin modulo de Jesus*/
-  /*Inicio modulo hender*/
+  /*Inicio modulo(4) hender/Jesus */
   /*NOTICIAS*/
   #cajonN {
     height: 20em;
@@ -1054,150 +1059,79 @@ a continuacion*/
     overflow-y: scroll;;
   }
   }
-  /*Final modulo hender
-/*TUTORIALES BASICOS*/
+  /*Final modulo(4)*/
 
-.partesComputador {
-  border: 1px rgb(67, 41, 92) solid;
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  margin: 0px 0px 25px 0px;
-}
-
-.partesComputador>div {
-
-  border: 1px solid purple;
-  height: auto;
-
-}
-
-.partesComputador div picture>img {
-  width: 100%;
-}
-
+/*Incio modulo(5) Jesus*/
 /*tutoriales*/
-.cajonT {
-  border: 1px solid purple;
-}
-
-.cajonT section {
-  margin: 20px;
-  border: 1px solid blue;
-}
-
-.cajonT {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-}
-
-.cardT {
-  background-color: #1a4362;
-  color: white;
-  border-radius: 10px;
-  width: 250px;
-  margin: 10px;
-  overflow: hidden;
-  box-shadow: 1px 1px 10px rgb(59, 59, 232);
-  padding: 0;
-}
-
-.cardT video {
+.containerTutorials{
   width: 100%;
-  height: auto;
-}
-
-.cardT h4 {
-  padding: 10px 20px;
-  font-size: 20px;
-}
-
-.cardT p {
-  padding: 10px;
-  color: #d2d4f7;
-}
-
-.contF {
-  display: flex;
-  justify-content: space-between;
-  margin: 10px;
-}
-
-.fecha {
-  display: flex;
-  justify-content: space-between;
-}
-
-.fecha p {
-  background-color: #3f4446;
-  padding: 7px;
-  border-radius: 10px;
-  color: #d2d4f7;
-  height: 30px;
-  margin: 10px;
-}
-
-.verM {
-  background-color: #2c84a4;
-  padding: 7px;
-  border-radius: 10px;
-  margin: 10px;
-  transition: 0.5s;
-}
-
-.verM:hover {
-  background-color: #2c84a4;
+  background-color: #2c2c2c11;
+  display: grid;
+  grid-auto-flow: dense;
+  grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+  text-align: center;
+  color: #fff;
   padding: 10px;
   border-radius: 10px;
-  margin: 10px;
-  box-shadow: 1px 1px 10px rgb(59, 59, 232);
 }
 
-.verM a {
-  text-decoration: none;
-  color: #d2d4f7;
+.cardsVids{
+  width: 17.5em ;
+  background-color: #2f82a0;
+  border-radius: 8px;
+  box-shadow: 0px 5px 14px -3px rgba(0,0,0,0.75);
+  transform: translateY(0px);
+  transition: all 200ms ease;
+  margin: 5px 5px 12px 5px;
 }
 
-/*media query*/
-
-@media(max-width:420px) {
-  .cajonN {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    justify-content: center;
-  }
-
-  .cardN {
-    background-color: #1a4362;
-    border-radius: 10px;
-    width: 90%;
-    margin: 20px;
-    color: white;
-    box-shadow: 1px 1px 10px rgb(59, 59, 232);
-  }
-
-  .cajonT {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    justify-content: center;
-  }
-
-  .cardT {
-    background-color: #1a4362;
-    color: white;
-    border-radius: 10px;
-    width: 300px;
-    overflow: hidden;
-    margin: 20px;
-    box-shadow: 1px 1px 10px rgb(59, 59, 232);
-  }
+.cardsVids:hover{
+  transform: translateY(-3px);
 }
 
-/*Modulo Jesus Footer*/
-footer{
+
+.textVids h3{
+  margin-bottom: 5px;
+}
+
+.textVids p{
+  margin: 5px;
+}
+
+.cardsVids video{
+width: 100%;
+border-radius: 8px 8px 0px 0px;
+}
+
+.textVids{
+  border: 1px soli red;
+  padding: 5px;
+}
+.DateVids{
+  background-color: #5e9ece;
+  padding: 2.4px;
+  border-radius: 5px;
+}
+
+.clf{
+  background-color: #659eca;
+  padding: 2.4px;
+  border-radius: 5px;
+  color: #000000;
+  
+}
+.footerVids{
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 8px 8px 10px;
+}
+
+/*Inicio Modulo(5) Footer Jesus*/
+.footer{
   background-color:  #328eaf;
   position: relative;
 }
-footer a{
+.footer a{
   color: white;
 }
 .foot{
@@ -1211,9 +1145,7 @@ footer a{
   justify-content: space-between;
   padding: 80px 50px 0px 50px;
 }
-.footer{
-  position: relative;
-}
+
 .wave{
   position: absolute;
   top:0;
@@ -1398,3 +1330,4 @@ justify-content: center;
     font-size: 16px;
   }
 }
+/*Fin modulo(4)*/
