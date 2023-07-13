@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
+ 
 }
 
 /*62.5%*/
@@ -11,10 +12,12 @@ a{
 }
 html{
   scroll-behavior: smooth;
+
 }
 body{
   overflow-x: hidden;
 }
+
 /* MODULO BRAYAN CSS. */
 
 /* BARRA DE NAVEGACION */
@@ -108,6 +111,7 @@ h1 {
   width: 100%;
   height: 20rem;
 }
+
 
 .sobreNos_principal p{
   margin-top: 3rem;
@@ -497,7 +501,7 @@ a continuacion*/
   font-size: 42px;
   margin: 5px;
   color: #fff;
-  transition: all 200ms ease;
+  transition: all 700ms ease;
 }
 
 .tecSvg img {
@@ -515,7 +519,7 @@ a continuacion*/
   padding: 2em;
   text-align: center;
   font-size: 20px;
-  transition: all 200ms ease;
+  transition: all 500ms ease;
   color: #f5f5f5;
   transform: translateY(505%);
 }
@@ -717,6 +721,11 @@ a continuacion*/
   font-size: 25px;
 }
 
+.imgP{
+  width: 100%;
+  height: 100%;
+}
+
 
 /*Diseño para dispositivos moviles*/
 /*PC*/
@@ -815,250 +824,98 @@ a continuacion*/
 
   /*Inicio modulo(4) hender/Jesus */
   /*NOTICIAS*/
-  #cajonN {
-    height: 20em;
-    overflow: scroll;
-    display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(500px,1fr));
-    margin: 0px 0px 20px 0px;
-    justify-items: center;
-  }
-  #cajonN::-webkit-scrollbar{
-    width: 8px;
-  }
-  #cajonN::-webkit-scrollbar-thumb{
-    background-color: gray;
-  }
-  .cardN {
-    background-color:#a1caff;
-    border-radius: 10px;
-    width:500px;
-    margin: 10px 0px;
-    color: black;
-    box-shadow: 4px 4px 5px rgb(144, 144, 145);
-    height: 8em;
+  
+  .news{
+    background-color: #2c2c2c07;
+    border-radius: 8px;;    
+    height: 43.5vh;
     overflow: hidden;
-  }
-  .cardN div {
-    padding: 0px 10px;
+    overflow-y: scroll;
+    margin-bottom: 25px;
   }
 
-  .cardN div h4 {
-    font-size: 18px;
-    border-bottom: 2px solid black;
-    text-align: left;
-    margin: 10px 0px 10px 0px;
-  }
-  
-  
-  .fechaN{
+  .containerCardsNews{
     display: grid;
-    justify-content: right;
-    
+    grid-auto-flow: dense;
+    grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
   }
-  .fechaN a{
-    color: black;
-    text-decoration: none;
-    background: none;
-  }
-  .lmas {
-    background-color: #88acb8;
-    padding: 7px;
-    margin: 5px;
-    border: transparent;
-    border-radius: 10px;
-    transition: all 200ms;
-  }
-  .lmas:hover {
-   background-color: #2c84a4;
-  }
-  
-  .emergente{
-    position: fixed;
-    top: 5%;
-    left: 10%;
-    width: 80%;
-    height: 90%;
-    background-color: rgb(255, 255, 255);
-    border: 1px transparent;
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
-    border-radius: 8px;
-    border-left: 20px solid rgb(81, 136, 255);
-    border-right: 20px solid rgb(81, 22, 219);
-    overflow: scroll;
-  }
-  .transicion{
-    transition: 500ms;
-    opacity: 0;
-  }
-  .emergente::-webkit-scrollbar{
+
+  .news::-webkit-scrollbar {
     width: 8px;
+  
   }
-  .emergente::-webkit-scrollbar-thumb{
-    background-color: gray;
+  
+  .news::-webkit-scrollbar-thumb {
+    background-color: rgba(168, 158, 175, 0.473);
+    border-radius: 60px;
+  
+  
   }
-  .emergente button{
-    margin-left: 90%;
-    width:20px;
-    height: 20px;
-    border-radius: 4px;
-    border-style: none;
-    background-color: rgb(76, 168, 190);
-    transition: 500ms;
-    border: none;
+  
+  .news::-webkit-scrollbar-thumb:hover {
+    box-shadow: 0px 0px 5px 9px rgba(179, 178, 178, 0.5) inset;
   }
-  .emergente button:hover{
-    box-shadow: 2px 2px 3px gray;
-    color: rgb(255, 255, 255);
+
+  .cardNew{
+    border-radius: 8px;
+    margin: 12px 8px;
+    height: 18vh;
+    padding: 9px;
+    background-color: #89bee6;
+    transition: all 200ms;
+    transform: scale(1);
+    box-shadow: 0px 0px 27px -12px rgba(0,0,0,0.75);
+  }
+
+.cardNew:hover{
+  transform: scale(1.015);
+  box-shadow: 0px 6px 12px -3px rgba(0,0,0,0.75);
+}
+  .lineNew{
+    margin-bottom: 5px;
     
   }
-  #textos{
-    text-align: center;
-    padding: 20px;
-    text-align: justify;
+ 
+  .ftoNew{
+    display: flex;
+    justify-content: end;
+    
   }
-  #textos img{
-    height: 24em;
-    width: 80%
+  .autor{
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    color: #7a7a7a;
+    margin-bottom: 5px;
   }
-  #textos h4{
-    font-size: 30px;
-    padding-bottom: 15px;
+
+  .pictures img{
+    width: 100%;
   }
-  /*media queri*/
-  @media (max-width: 415px){
-   .container_all {
-    margin: 0px 15px;
-  }
-  
-    .cardbody{
-      display: grid;
-      grid-template-columns: repeat(1,1fr);
-      justify-content: center;
-    }
-    #textos img{
-    height: 8em;
-    width: 100%
-  }
-    #cajonN{
-    display: grid;
-    grid-template-columns: repeat(1,1fr);
-    justify-content: center;
-    height: 42em;
-    }
-    .cardN {
-    background-color:#a1caff;
-    border-radius: 10px;
-    width:250px;
-    height: auto;
-    margin: 10px 0px;
-    color: black;
-    box-shadow: 4px 4px 5px rgb(144, 144, 145);
-    overflow: hidden;
-  }
-  .cardN div h4 {
-    padding: 2px 3px;
-    font-size: 30px;
-    border-bottom: 2px solid black;
-    text-align: left;
-    margin: 15px;
-  }
-  .cardN div p{
-    margin: 10px;
-    padding: 0;
-    font-size: 20px;
-    text-align: justify;
-  }
-  .lmas {
-    background-color: #88acb8;
-    padding: 7px;
-    margin: 5px 5px;
-    border: 1px solid rgb(90, 89, 89);
-    border-radius: 10px;
-    transition: all 0.5s;
-  }
-  .emergente{
-    position: fixed;
-    top:25%;
-    left: 25%;
-    transform: translate(-50%,-50%);
-    width:300px;
-    height: 600px;
-    background-color: rgb(255, 255, 255);
+  .ftoNew button{
+    font-size: 1em;
+    border-radius: 5px;
+    background-color: #b7cfe2;
     border: none;
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
-    border-radius: 8px;
-    border-left: 20px solid rgb(81, 136, 255);
-    border-right: 20px solid rgb(81, 22, 219);
-    overflow-y: scroll;;
+    padding: 4px;
+    cursor: pointer;
+    margin: 0px 5px 0px 0px;
+    transition: all 300ms ease;
   }
+
+  .ftoNew button:hover{
+    background-color: #468ec5;
+    color: #fff;
+
   }
-  @media (max-width: 375px){
-    .container_all {
-    margin: 0px 15px;
+  .cardNew h4{
+    font-size: 1.5em;
+    border-bottom: 1px solid #000000;
+    padding-bottom: 3px;
+    margin-bottom: 3px;
   }
-  
-    .cardbody{
-      display: grid;
-      grid-template-columns: repeat(1,1fr);
-      justify-content: center;
-    }
-    #textos img{
-    height: 8em;
-    width: 100%
-  }
-    #cajonN{
-    display: grid;
-    grid-template-columns: repeat(1,1fr);
-    justify-content: center;
-    height: 42em;
-    }
-    .cardN {
-    background-color:#a1caff;
-    border-radius: 10px;
-    width:250px;
-    height: auto;
-    margin: 10px 0px;
-    color: black;
-    box-shadow: 4px 4px 5px rgb(144, 144, 145);
-    overflow: hidden;
-  }
-  .cardN div h4 {
-    padding: 2px 3px;
-    font-size: 30px;
-    border-bottom: 2px solid black;
-    text-align: left;
-    margin: 15px;
-  }
-  .cardN div p{
-    margin: 10px;
-    padding: 0;
-    font-size: 20px;
-    text-align: justify;
-  }
-  .lmas {
-    background-color: #88acb8;
-    padding: 7px;
-    margin: 5px 5px;
-    border: 1px solid rgb(90, 89, 89);
-    border-radius: 10px;
-    transition: all 0.5s;
-  }
-  .emergente{
-    position: fixed;
-    top:25%;
-    left: 25%;
-    transform: translate(-50%,-50%);
-    width:300px;
-    height: 600px;
-    background-color: rgb(255, 255, 255);
-    border: none;
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
-    border-radius: 8px;
-    border-left: 20px solid rgb(81, 136, 255);
-    border-right: 20px solid rgb(81, 22, 219);
-    overflow-y: scroll;;
-  }
+  .cardNew p{
+    font-size: 1.1em;
   }
   /*Final modulo(4)*/
 

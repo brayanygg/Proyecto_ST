@@ -183,7 +183,50 @@ storageCards.forEach(Card => {
     containerCard.innerHTML += inf;
 });
 
-//Generar Tarjetas dinamicas Modulo 5
+//Generar Tarjetas dinamicas Modulo 4 Noticias
+const containerNews = document.getElementById('containerCardsNews');
+let storageNews = [];
+
+class CardNews {
+  constructor(title, text, id) {
+    this.title = title;
+    this.text = text;
+    this.id = id;
+  }
+}
+    
+
+    let cardsnew1 = new CardNews('Intel dice Adios a su serie CoreI!' , 'Intel ha oficializado que ya no utilizará la denominación "Core i" para susprocesadores.', 'newCardOne');
+    let cardsnew2 = new CardNews('¿la computación cuántica?', 'La computación cuántica. ¿Se avecina la nueva era de la computación? ', 'newCardTwo' );
+    let cardsnew3 = new CardNews('chatGpt5 una IA conversacional', 'Nuevas funciones de esta IA que podrian cambiar la comunicacion humana-computadora.', 'newCardThree');
+    let cardsnew4 = new CardNews('Riesgos en la IA?', 'Grandes referentes dle mundo dudan de la seguridad de la IA y llaman a su detención ', 'newCardFour');
+    let cardsnew5 = new CardNews('Nueva Funcion de ChatBot Bing', 'Mira las nuevas funciones del chatbot bing desarrollado por Microsoft para sus usuarios.', 'newCardFive' );
+    let cardsnew6 = new CardNews('Ordenador gaming Lenovo rebajado 1100€!', 'Este ordenador gaming de Lenovo con una RTX 3060 de 12GB está ahora rebajado a 1.100 euros ', 'newCardSix' );
+    let cardsnew7 = new CardNews('Como volver tu Wifi mas potente', 'Si buscas una solución rápida, barata y práctica para amplificar tu red WiFi, solo necesitas una lata de vacía.', 'newCardSeven' );
+    let cardsnew8 = new CardNews('Intel presenta un Chip para IA', 'El fabricante reveló los detalles del chip que impulsara los modelos de Inteligencia Artificial ', 'newCardEigth' );
+    let cardsnew9 = new CardNews('Microsoft acaba la peor funcion de windows11', 'La compañía va a hacer un cambio importante en la integración de Microsoft Teams que llegó con Windows 11.', 'newCardNine');
+    let cardsnew10 = new CardNews('Acusan a OpenAi por robar datos personales!', 'Una demanda para OpenAi por robar datos personales de forma ilegal para entrenar su IA', 'newCardTen' );
+    let cardsnew11 = new CardNews(' Instagram tendrá su propio ChatGPT', 'Instagram ha comenzado a probar la integración con un chatbot de inteligencia artificial, a lo ChatGPT.', 'newCardEleven');
+    let cardsnew12 = new CardNews('PCI-Express6.0 El nuevo standard.', 'PCI-Express 6.0: todo lo que necesitas saber del nuevo estándar en PC', 'newCardTwelve');
+    
+    storageNews.push(cardsnew1, cardsnew2, cardsnew3, cardsnew4, cardsnew5, cardsnew6, cardsnew7, cardsnew8, cardsnew9, cardsnew10, cardsnew11, cardsnew12);
+    
+    storageNews.forEach(CardNews => {
+        let infNew = `
+          <div class="cardNew"> 
+            <h4>${CardNews.title}</h4>
+            <p>${CardNews.text}</p>
+            <footer class="ftoNew">
+              <button class="open" id="${CardNews.id}">Leer más →</button>
+            </footer>
+          </div>
+        `;
+        
+        containerNews.innerHTML += infNew;
+      });
+
+
+//Generar Tarjetas dinamicas Modulo 5 TUTORIAL
 const containerVids = document.getElementById('containerTutorials')
 let storageVids = [];
 
@@ -281,7 +324,20 @@ const cardToTabMapping = {
     mouseCard: "mouseTab",
     graphicsCard: "graphicsTab",
     networkCard: "networkTab",
-
+    
+    newCardOne: "newTabOne",
+    newCardTwo: "newTabTwo",
+    newCardThree: "newTabThree",
+    newCardFour: "newTabFour",
+    newCardFive: "newTabFive",
+    newCardSix: "newTabSix",
+    newCardSeven: "newTabSeven",
+    newCardEigth: "newTabEigth",
+    newCardNine: "newTabNine",
+    newCardTen: "newTabTen",
+    newCardEleven: "newTabEleven",
+    newCardTwelve: "newTabTwelve",
+    
   };
 
 // Asignar eventos de clic a las tarjetas y botones de cerrar

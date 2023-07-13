@@ -37,7 +37,7 @@
         </nav>
     </header>
     <!-- VENTANA MODAL DEL INICIO DE SESION. -->
-    <section class="modal">
+   <section class="modal">
         <div class="modal__container">
             <h1>Inciar sesión</h1>
             <form  action="" method="POST" id="form">
@@ -74,6 +74,7 @@
             <span class="modal__closeRes">x</span>
         </div>
     </section>
+
     <main>
         <section class="presentacion">
             <article>
@@ -210,6 +211,9 @@
                                         hipersegmentación (hyper-threading) y la ejecución especulativa, para mejorar el
                                         rendimiento.
                                     </p>
+                                    <picture class="picture" >
+                                    <img class="imgP" src="./imgPc/a.jpg" alt="">
+                                </picture>
                                 </div>
                             </div>
                         </div>
@@ -252,6 +256,9 @@
                                         los datos y programas que se están utilizando en el momento, permitiendo un
                                         rendimiento eficiente y ágil del sistema.
                                     </p>
+                                    <picture class="picture" >
+                                        <img class="imgP" src="./imgPc/b.jpg" alt="">
+                                    </picture>
                                 </div>
                             </div>
                         </div>
@@ -291,6 +298,9 @@
                                         componentes. Su diseño, calidad y características determinan en gran medida el
                                         rendimiento, estabilidad y capacidad de expansión del sistema.
                                     </p>
+                                    <picture class="picture" >
+                                        <img class="imgP" src="./imgPc/c.jpg" alt="">
+                                    </picture>
                                 </div>
                             </div>
                         </div>
@@ -333,6 +343,9 @@
                                         una fuente de poder adecuada para cubrir los requerimientos de energía del
                                         equipo y protegerlo de posibles daños.
                                     </p>
+                                    <picture class="picture" >
+                                        <img class="imgP" src="./imgPc/d.jpg" alt="">
+                                    </picture>
                                 </div>
                             </div>
                         </div>
@@ -372,6 +385,9 @@
                                         ordenador, proporcionando el espacio necesario para almacenar y acceder a la
                                         vasta cantidad de datos que utilizamos en nuestra vida digital.
                                     </p>
+                                    <picture class="picture" >
+                                        <img class="imgP" src="./imgPc/e.jpg" alt="">
+                                    </picture>
                                 </div>
                             </div>
                         </div>
@@ -420,6 +436,9 @@
                                         características adicionales influyen en la comodidad, la productividad y la
                                         calidad visual de la experiencia del usuario al utilizar un ordenador.
                                     </p>
+                                    <picture class="picture" >
+                                        <img class="imgP" src="./imgPc/f.jpg" alt="">
+                                    </picture>
                                 </div>
                             </div>
                         </div>
@@ -467,6 +486,9 @@
                                         actividades y tareas en el entorno informático, contribuyendo a la
                                         productividad, la creatividad y la interacción con la tecnología digital.
                                     </p>
+                                    <picture class="picture" >
+                                        <img class="imgP" src="./imgPc/g.jpg" alt="">
+                                    </picture>
                                 </div>
                             </div>
                         </div>
@@ -524,6 +546,9 @@
                                         navegación, la selección y la ejecución de tareas, y contribuye a una
                                         experiencia de uso más eficiente y cómoda.
                                     </p>
+                                    <picture class="picture" >
+                                        <img class="imgP" src="./imgPc/h.jpg" alt="">
+                                    </picture>
                                 </div>
                             </div>
                         </div>
@@ -573,6 +598,9 @@
                                         experiencias visuales inmersivas y disfrutar de un rendimiento gráfico
                                         excepcional.
                                     </p>
+                                    <picture class="picture" >
+                                        <img class="imgP" src="./imgPc/i.jpg" alt="">
+                                    </picture>
                                 </div>
                             </div>
                         </div>
@@ -620,6 +648,9 @@
                                         compartidos, navegar por Internet, interactuar en entornos colaborativos y
                                         disfrutar de servicios y aplicaciones en línea de manera eficiente y segura.
                                     </p>
+                                    <picture class="picture" >
+                                        <img class="imgP" src="./imgPc/j.jpg" alt="">
+                                    </picture>
                                 </div>
                             </div>
                         </div>
@@ -629,16 +660,27 @@
                 <!--Inicio Modulo de Hender-->
                 <!-- NOTICIAS -->
                 <h2 id="notes"> Noticias de tecnologia </h2>
+                    <article class="news" id="news">
 
-                <article id="cajonN">
-                    <section class="cardbody">
-                        <dialog id="modal1">
-                            <div id="transicion1" class="transicion">
-                                <div class="emergente">
-                                    <div id="textos">
-                                        <button onclick="cerrarModal('modal1','transicion1')" class="cerrar">X</button>
-                                        <h4> Intel dice Adios a su serie CoreI!</h4>
-                                        <img src="./imagenes noticias/core-ultra.jpg" alt="imagen de intel">
+                        <div class="containerCardsNews" id="containerCardsNews" >
+
+                        </div>
+
+                        <div class="containerTabsNews">
+                            <div class="container_tab" id="newTabOne">
+                                <div class="tab tab_close">
+                                    <div class="close">
+                                        <p>x</p>
+                                    </div>
+                                    <h4> Intel dice Adios a su serie CoreI!</h4>
+                                    <div class="inf">
+                                        <span class="autor">
+                                            <p >Autor: Gabriel Erad</p>
+                                            <p>Publicado el, 15/06/2023</p>
+                                        </span>
+                                        <picture class="picturesw" >
+                                            <img class="imgP" src="./imagenes noticias/core-ultra.jpg" alt="">
+                                        </picture>
                                         <p>
                                             Intel ha oficializado el cambio de nomenclatura para sus procesadores. La
                                             compañia estadounidense dejara de ofrecer chips bajo las denominaciones
@@ -672,9 +714,6 @@
                                             nueva
                                             generacion, por ejemplo: Intel Core Ultra 5,7,9.
                                             <br><br>
-                                            <img src="./imagenes noticias/intel-core-ultra.jpg"
-                                                alt="imagen de los procesadores">
-                                            <br>
                                             Intel ha querido dejar en claro que los cambios de nomenclatura para sus
                                             proximos procesadores
                                             no es solo un lavado de cara. La compañia ha comentado que, con el estreno
@@ -700,37 +739,31 @@
                                     </div>
                                 </div>
                             </div>
-                        </dialog>
-                        <div onclick="openModal('modal1','transicion1')" class="cardN">
-                            <div>
-                                <h4> Intel dice Adios a su serie CoreI!</h4>
-                                <p>Intel ha oficializado que ya no utilizará la denominación "Core i" para sus
-                                    procesadores.</p>
-                            </div>
-                            <div class="fechaN">
-                                <span class="lmas">
-                                    <a>Leer más →</a>
-                                </span>
-                            </div>
-                        </div>
-                    </section>
-                    <section class="cardbody">
-                        <dialog id="modal2">
-                            <div id="transicion2" class="transicion">
-                                <div class="emergente">
-                                    <div id="textos">
-                                        <button onclick="cerrarModal('modal2','transicion2')" class="cerrar">X</button>
-                                        <h4>La era de la computación cuantica?</h4>
+
+                            <div class="container_tab" id="newTabTwo">
+                                <div class="tab tab_close">
+                                    <div class="close">
+                                        <p>x</p>
+                                    </div>
+                                    <h4>La era de la computación cuantica?</h4>
+                                    <div class="inf">
+                                        <span class="autor">
+                                            <p >Autor: Amazings</p>
+                                            <p>Publicado el, 13/07/2023</p>
+                                        </span>
+                                        <picture class="pictures" >
+                                            <img src="./imagenes noticias/computadora cuantica.jpg" alt="imagen referente a computadora cuantica">
+                                        </picture>
                                         <p>
-                                            En los últimos años, la computación cuántica ha emergido como uno de los
-                                            campos más emocionantes y prometedores de la ciencia y la tecnología. Esta
-                                            revolucionaria disciplina utiliza principios de la física cuántica para
-                                            desarrollar ordenadores capaces de resolver problemas que superan las
-                                            capacidades de los sistemas clásicos. En este artículo, ofreceremos una
-                                            visión general de la computación cuántica, explorando sus fundamentos,
-                                            aplicaciones potenciales y los desafíos que aún deben superarse.
-                                            <br><br>
-                                        <h4>Los Fundamentos de la Computación Cuántica:</h4> <br>
+                                        En los últimos años, la computación cuántica ha emergido como uno de los
+                                        campos más emocionantes y prometedores de la ciencia y la tecnología. Esta
+                                        revolucionaria disciplina utiliza principios de la física cuántica para
+                                        desarrollar ordenadores capaces de resolver problemas que superan las
+                                        capacidades de los sistemas clásicos. En este artículo, ofreceremos una
+                                        visión general de la computación cuántica, explorando sus fundamentos,
+                                        aplicaciones potenciales y los desafíos que aún deben superarse.
+                                        <br><br>
+                                        <h3>Los Fundamentos de la Computación Cuántica:</h3> <br>
                                         A diferencia de los ordenadores clásicos, que utilizan bits para almacenar y
                                         procesar información en forma de 0s y 1s, los ordenadores cuánticos emplean
                                         qubits, que pueden representar tanto 0 como 1 simultáneamente gracias a un
@@ -738,7 +771,7 @@
                                         que los ordenadores cuánticos realicen cálculos en paralelo, lo que los hace
                                         potencialmente mucho más rápidos para ciertos tipos de problemas.
                                         <br><br>
-                                        <h4>Aplicaciones Potenciales de la Computación Cuántica:</h4><br>
+                                        <h3>Aplicaciones Potenciales de la Computación Cuántica:</h3><br>
                                         La computación cuántica tiene el potencial de revolucionar numerosos campos y
                                         sectores. Algunas de las áreas en las que se espera un impacto significativo
                                         incluyen:<br>
@@ -757,10 +790,7 @@
                                         pueden ayudar a comprender mejor la física de materiales y reacciones químicas,
                                         lo que puede tener aplicaciones en el desarrollo de nuevos materiales,
                                         medicamentos y procesos químicos más eficientes.<br><br>
-                                        <img src="./imagenes noticias/computadora cuantica.jpg"
-                                            alt="imagen referente a computadora cuantica">
-                                        <br>
-                                        <h4>Retos y Avances en la Computación Cuántica</h4>
+                                        <h3>Retos y Avances en la Computación Cuántica</h3>
                                         <br>
                                         Aunque la computación cuántica tiene un potencial enorme, todavía enfrenta
                                         varios desafíos significativos. Algunos de ellos incluyen la necesidad de
@@ -787,28 +817,23 @@
                                     </div>
                                 </div>
                             </div>
-                        </dialog>
-                        <div onclick="openModal('modal2','transicion2')" class="cardN">
-                            <div>
-                                <h4>¿la computación cuántica?</h4>
-                                <p>La computación cuántica. ¿Se avecina la nueva era de la computación?</p>
-                            </div>
-                            <div class="fechaN">
-                                <span class="lmas">
-                                    <a>Leer más →</a>
-                                </span>
-                            </div>
-                        </div>
-                    </section>
-                    <section class="cardbody">
-                        <dialog id="modal3">
-                            <div id="transicion3" class="transicion">
-                                <div class="emergente">
-                                    <div id="textos">
-                                        <button onclick="cerrarModal('modal3','transicion3')" class="cerrar">X</button>
-                                        <h4>ChatGPT 5: Un vistazo al futuro de la inteligencia artificial conversacional
-                                        </h4>
+
+                            <div class="container_tab" id="newTabThree">
+                                <div class="tab tab_close">
+                                    <div class="close">
+                                        <p>x</p>
+                                    </div>
+                                    <h4>ChatGPT 5: Un vistazo al futuro de la inteligencia artificial conversacional</h4>
+                                    <div class="inf">
+                                        <span class="autor">
+                                            <p >Autor: Amazings</p>
+                                            <p>Publicado el, 23/06/2023</p>
+                                        </span>
+                                        <picture class="pictures" >
+                                            <img src="./imagenes noticias/chatpgt5.jpg" alt="imagen referente a chatpgt">
+                                        </picture>
                                         <p>
+                                    
                                             La inteligencia artificial (IA) ha avanzado a pasos agigantados en las
                                             últimas décadas, y una de las manifestaciones más impresionantes de este
                                             progreso es el desarrollo de sistemas de conversación basados en IA. Entre
@@ -852,8 +877,6 @@
                                             evitación de sesgos en las respuestas generadas. Además, se implementarán
                                             salvaguardias para prevenir el mal uso y garantizar que la tecnología se
                                             utilice de manera responsable y segura.<br><br>
-                                            <img src="./imagenes noticias/chatpgt5.jpg"
-                                                alt="imagen referente a chatpgt"><br><br>
                                             ChatGPT 5 representa pues un emocionante vistazo al futuro de la
                                             inteligencia artificial conversacional. Con su mejora en la comprensión
                                             contextual, generación de respuestas creativas, personalización, expansión
@@ -866,27 +889,21 @@
                                     </div>
                                 </div>
                             </div>
-                        </dialog>
-                        <div onclick="openModal('modal3','transicion3')" class="cardN">
-                            <div>
-                                <h4>chatGpt5 una IA conversacional</h4>
-                                <p>Nuevas funciones de esta IA que podrian cambiar la comunicacion humana-computadora.
-                                </p>
-                            </div>
-                            <div class="fechaN">
-                                <span class="lmas">
-                                    <a>Leer más →</a>
-                                </span>
-                            </div>
-                        </div>
-                    </section>
-                    <section class="cardbody">
-                        <dialog id="modal4">
-                            <div id="transicion4" class="transicion">
-                                <div class="emergente">
-                                    <div id="textos">
-                                        <button onclick="cerrarModal('modal4','transicion4')" class="cerrar">X</button>
-                                        <h4>La polémica sobre los riesgos de la inteligencia artificial</h4>
+
+                            <div class="container_tab" id="newTabFour">
+                                <div class="tab tab_close">
+                                    <div class="close">
+                                        <p>x</p>
+                                    </div>
+                                    <h4>La polémica sobre los riesgos de la inteligencia artificial</h4>
+                                    <div class="inf">
+                                        <span class="autor">
+                                            <p >Autor:Larosa, F., Hoyas, S., García-Martínez, J. et al. Halting generative AI advancements may slow down progress in climate research. Nat. Clim. Chang.  </p>
+                                            <p>Publicado el, 30/05/2023</p>
+                                        </span>
+                                        <picture class="pictures" >
+                                            <img src="./imagenes noticias/riesgosIA.jpg" alt="computadoras">
+                                        </picture>
                                         <p>
                                             El pasado mes de marzo, expertos y expertas en inteligencia artificial y
                                             referentes empresariales de todo el mundo hicieron un gran llamamiento para
@@ -953,197 +970,174 @@
                                             escritas. Las herramientas de inteligencia artificial también contribuyen a
                                             hacer accesible la información”, añade Sergio Hoyas, investigador también
                                             del IUMPA y coautor igualmente del documento.<br><br>
-                                            <img src="./imagenes noticias/riesgosIA.jpg" alt="computadoras"><br>
                                             <small>Usar sistemas informáticos lo más avanzados posible es vital para la
-                                                investigación climática. Por ejemplo, el Centro de Simulaciones
-                                                Climáticas de la NASA (NCCS) no sería operativo sin su supercomputadora
-                                                Discover, de la cual en la imagen se muestra su parte central. (Foto:
-                                                NASA / Pat Izzo)</small> <br><br>
-                                        <h4>Inteligencia artificial e impacto climático</h4>
-                                        En cualquier caso, los investigadores e investigadoras de la UPV, el KTH y la UA
-                                        reconocen que el uso de la inteligencia artificial al servicio del medio
-                                        ambiente no es del todo sencillo, ya que el entrenamiento de grandes modelos
-                                        lingüísticos como GPT-3 y GPT-4 conlleva costes medioambientales y económicos.
-                                        Estimar cuánto contribuye la inteligencia artificial a las emisiones de gases de
-                                        efecto invernadero es controvertido, pero en su documento el equipo de la UPV,
-                                        el KTH y la UA, remite a estudios recientes que demuestran que, aunque la
-                                        inteligencia artificial ayuda al medio ambiente, también lo perjudica. El
-                                        entrenamiento de GPT-3, por ejemplo, con 175.000 millones de parámetros,
-                                        equivale a 188 veces las emisiones de dióxido de carbono de un vuelo de ida de
-                                        Nueva York a San Francisco. Pero, al mismo tiempo, los modelos de inteligencia
-                                        artificial ayudan a optimizar el consumo de energía y a aumentar la eficiencia
-                                        en sectores de altas emisiones.<br><br>
-                                        “En cualquier caso, en una balanza entre beneficios y perjuicios derivados de la
-                                        inteligencia artificial, creemos que el impacto de no aprovechar técnicas como
-                                        las de procesamiento del lenguaje natural sería muy negativo. ¿Por qué te vas
-                                        restringir a utilizar la última tecnología cuando tienes una urgencia como esta?
-                                        El Instituto Future of Life parece que obvia el problema del cambio climático.
-                                        Detener la inteligencia artificial no ayuda lo más mínimo a la lucha contra esta
-                                        crisis climática”, concluye Alberto Conejero. (Fuente: UPV).
+                                            investigación climática. Por ejemplo, el Centro de Simulaciones
+                                            Climáticas de la NASA (NCCS) no sería operativo sin su supercomputadora
+                                            Discover, de la cual en la imagen se muestra su parte central. (Foto:
+                                            NASA / Pat Izzo)</small> <br><br>
+                                            <h4>Inteligencia artificial e impacto climático</h4>
+                                            En cualquier caso, los investigadores e investigadoras de la UPV, el KTH y la UA
+                                            reconocen que el uso de la inteligencia artificial al servicio del medio
+                                            ambiente no es del todo sencillo, ya que el entrenamiento de grandes modelos
+                                            lingüísticos como GPT-3 y GPT-4 conlleva costes medioambientales y económicos.
+                                            Estimar cuánto contribuye la inteligencia artificial a las emisiones de gases de
+                                            efecto invernadero es controvertido, pero en su documento el equipo de la UPV,
+                                            el KTH y la UA, remite a estudios recientes que demuestran que, aunque la
+                                            inteligencia artificial ayuda al medio ambiente, también lo perjudica. El
+                                            entrenamiento de GPT-3, por ejemplo, con 175.000 millones de parámetros,
+                                            equivale a 188 veces las emisiones de dióxido de carbono de un vuelo de ida de
+                                            Nueva York a San Francisco. Pero, al mismo tiempo, los modelos de inteligencia
+                                            artificial ayudan a optimizar el consumo de energía y a aumentar la eficiencia
+                                            en sectores de altas emisiones.<br><br>
+                                            “En cualquier caso, en una balanza entre beneficios y perjuicios derivados de la
+                                            inteligencia artificial, creemos que el impacto de no aprovechar técnicas como
+                                            las de procesamiento del lenguaje natural sería muy negativo. ¿Por qué te vas
+                                            restringir a utilizar la última tecnología cuando tienes una urgencia como esta?
+                                            El Instituto Future of Life parece que obvia el problema del cambio climático.
+                                            Detener la inteligencia artificial no ayuda lo más mínimo a la lucha contra esta
+                                            crisis climática”, concluye Alberto Conejero. (Fuente: UPV).
                                         </p>
                                     </div>
                                 </div>
                             </div>
-                        </dialog>
-                        <div onclick="openModal('modal4','transicion4')" class="cardN">
-                            <div>
-                                <h4>Riesgos en la IA?</h4>
-                                <p>Grandes referentes dle mundo dudan de la seguridad de la IA y llaman a su detención
-                                </p>
-                            </div>
-                            <div class="fechaN">
-                                <span class="lmas">
-                                    <a>Leer más →</a>
-                                </span>
-                            </div>
-                        </div>
-                    </section>
-                    <section class="cardbody">
-                        <dialog id="modal5">
-                            <div id="transicion5" class="transicion">
-                                <div class="emergente">
-                                    <div id="textos">
-                                        <button onclick="cerrarModal('modal5','transicion5')" class="cerrar">X</button>
-                                        <h4>Bing Vision, la nueva función del chatbot de Microsoft capaz de reconocer
-                                            imágenes en segundos</h4>
-                                        <img src="./imagenes noticias/bing2.png" alt="bing">
+
+                            <div class="container_tab" id="newTabFive">
+                                <div class="tab tab_close">
+                                    <div class="close">
+                                        <p>x</p>
+                                    </div>
+                                    <h4>Bing Vision, la nueva función del chatbot de Microsoft capaz de reconocer
+                                        imágenes en segundos</h4>
+                                    <div class="inf">
+                                        <span class="autor">
+                                            <p >Autor: Juan Manuel Delgado</p>
+                                            <p>Publicado el, 26/06/2023</p>
+                                        </span>
+                                        <picture class="pictures" >
+                                            <img src="./imagenes noticias/bings.jpg" alt="bing">
+                                        </picture>
                                         <p>
-                                        <h4>Microsoft está llevando la experiencia de búsqueda visual a un nuevo nivel
-                                            con Bing Chat, que introduce el reconocimiento de imágenes en el chatbot.
-                                        </h4>
-                                        Microsoft continúa mejorando su chat conversacional <u>Bing Chat</u> para
-                                        ofrecer una experiencia de comunicación más eficiente a los usuarios. Con una
-                                        interfaz intuitiva y funciones avanzadas,<b>la IA de Windows se está
-                                            convirtiendo en una herramienta poderosa para la productividad.</b>
-                                        <br><br>
-                                        La compañía está llevando su chatbot a un nuevo nivel al introducir una
-                                        característica que aumentará considerablemente su valor, se trata del
-                                        <b>reconocimiento de imágenes.</b>
-                                        <br><br>
-                                        Esta nueva función permitirá a los usuarios cargar imágenes en lugar de texto
-                                        para realizar consultas, brindando una experiencia más eficiente. Se llama Bing
-                                        Vision, está en fase de pruebas para un selecto grupo de usuarios y se espera
-                                        que se implemente de manera más amplia en los próximos meses.
-                                        <br><br>
-                                        <h4>Microsoft presenta Bing Vision</h4>
-                                        Bing Vision viene integrado en Bing Chat, y en lugar de tener que describir una
-                                        imagen con palabras, los usuarios podrán simplemente cargarla y dejar que la
-                                        inteligencia artificial de Bing la identifique y proporcione información
-                                        relevante.
-                                        <br><br>
-                                        Cabe señalar que los resultados iniciales de las pruebas han sido prometedores,
-                                        con ejemplos que van desde identificar templos egipcios a partir de fotos hasta
-                                        reconocer ecuaciones matemáticas complejas. Por supuesto, está función saca a
-                                        relucir el potencial de la IA para ayudarnos a comprender y resolver problemas
-                                        en cuestión de segundos.
-                                        <br><br>
-                                        Por el momento, Bing Vision solo está disponible para un grupo limitado de
-                                        usuarios. Sin embargo, según Mikhail Parakhin, jefe de publicidad y servicios
-                                        web de Microsoft, menciona que la característica se implementará ampliamente en
-                                        las próximas semanas.
-                                        <br><br>
-                                        La capacidad de realizar consultas visuales con la nueva función integrada en
-                                        Bing Chat tiene numerosas aplicaciones prácticas, así como beneficios
-                                        potenciales. Simplemente, tendrías que cargar la imagen y obtendrás no solo la
-                                        ubicación, sino también información adicional.
-                                        <br><br>
-                                        El reconocimiento de imágenes es solo una de muchas mejoras que han introducido
-                                        recientemente, que se suma a la posibilidad de cambiar el tono de interacción y
-                                        Copiloto en Windows 11.
-                                        <br><br>
-                                        Microsoft continúa demostrando su compromiso de mejorar y ampliar las
-                                        capacidades de su inteligencia artificial basada en ChatGPT, estableciendo una
-                                        base sólida para futuros avances en la interacción humano-máquina, además de la
-                                        comprensión visual del mundo que nos rodea gracias a Bing Vision.
+                                            <h3>Microsoft está llevando la experiencia de búsqueda visual a un nuevo nivel
+                                                con Bing Chat, que introduce el reconocimiento de imágenes en el chatbot.
+                                            </h3>
+                                            Microsoft continúa mejorando su chat conversacional <u>Bing Chat</u> para
+                                            ofrecer una experiencia de comunicación más eficiente a los usuarios. Con una
+                                            interfaz intuitiva y funciones avanzadas,<b>la IA de Windows se está
+                                                convirtiendo en una herramienta poderosa para la productividad.</b>
+                                            <br><br>
+                                            La compañía está llevando su chatbot a un nuevo nivel al introducir una
+                                            característica que aumentará considerablemente su valor, se trata del
+                                            <b>reconocimiento de imágenes.</b>
+                                            <br><br>
+                                            Esta nueva función permitirá a los usuarios cargar imágenes en lugar de texto
+                                            para realizar consultas, brindando una experiencia más eficiente. Se llama Bing
+                                            Vision, está en fase de pruebas para un selecto grupo de usuarios y se espera
+                                            que se implemente de manera más amplia en los próximos meses.
+                                            <br><br>
+                                            <h3>Microsoft presenta Bing Vision</h3>
+                                            Bing Vision viene integrado en Bing Chat, y en lugar de tener que describir una
+                                            imagen con palabras, los usuarios podrán simplemente cargarla y dejar que la
+                                            inteligencia artificial de Bing la identifique y proporcione información
+                                            relevante.
+                                            <br><br>
+                                            Cabe señalar que los resultados iniciales de las pruebas han sido prometedores,
+                                            con ejemplos que van desde identificar templos egipcios a partir de fotos hasta
+                                            reconocer ecuaciones matemáticas complejas. Por supuesto, está función saca a
+                                            relucir el potencial de la IA para ayudarnos a comprender y resolver problemas
+                                            en cuestión de segundos.
+                                            <br><br>
+                                            Por el momento, Bing Vision solo está disponible para un grupo limitado de
+                                            usuarios. Sin embargo, según Mikhail Parakhin, jefe de publicidad y servicios
+                                            web de Microsoft, menciona que la característica se implementará ampliamente en
+                                            las próximas semanas.
+                                            <br><br>
+                                            La capacidad de realizar consultas visuales con la nueva función integrada en
+                                            Bing Chat tiene numerosas aplicaciones prácticas, así como beneficios
+                                            potenciales. Simplemente, tendrías que cargar la imagen y obtendrás no solo la
+                                            ubicación, sino también información adicional.
+                                            <br><br>
+                                            El reconocimiento de imágenes es solo una de muchas mejoras que han introducido
+                                            recientemente, que se suma a la posibilidad de cambiar el tono de interacción y
+                                            Copiloto en Windows 11.
+                                            <br><br>
+                                            Microsoft continúa demostrando su compromiso de mejorar y ampliar las
+                                            capacidades de su inteligencia artificial basada en ChatGPT, estableciendo una
+                                            base sólida para futuros avances en la interacción humano-máquina, además de la
+                                            comprensión visual del mundo que nos rodea gracias a Bing Vision.
                                         </p>
                                     </div>
                                 </div>
                             </div>
-                        </dialog>
-                        <div onclick="openModal('modal5','transicion5')" class="cardN">
-                            <div>
-                                <h4>Nueva Funcion de ChatBot Bing</h4>
-                                <p>Mira las nuevas funciones del chatbot bing desarrollado por Microsoft para sus
-                                    usuarios.</p>
-                            </div>
-                            <div class="fechaN">
-                                <span class="lmas">
-                                    <a>Leer más →</a>
-                                </span>
-                            </div>
-                        </div>
-                    </section>
-                    <section class="cardbody">
-                        <dialog id="modal6">
-                            <div id="transicion6" class="transicion">
-                                <div class="emergente">
-                                    <div id="textos">
-                                        <button onclick="cerrarModal('modal6','transicion6')" class="cerrar">X</button>
-                                        <h4>Este ordenador gaming de Lenovo con una RTX 3060 de 12GB está ahora rebajado
-                                            a 1.100 euros</h4>
-                                        <img src="./imagenes noticias/rtx3060.png" alt="ordenador gaming">
+
+                            <div class="container_tab" id="newTabSix">
+                                <div class="tab tab_close">
+                                    <div class="close">
+                                        <p>x</p>
+                                    </div>
+                                    <h4>Este ordenador gaming de Lenovo con una RTX 3060 de 12GB está ahora rebajado a 1.100 euros</h4>
+                                    <div class="inf">
+                                        <span class="autor">
+                                            <p >Autor: Juan Manuel Delgado</p>
+                                            <p>Publicado el, 26/06/2023</p>
+                                        </span>
+                                        <picture class="pictures" >
+                                            <img src="./imagenes noticias/rtx3060.png" alt="ordenador gaming">
+                                        </picture>
                                         <p>
-                                        <h4 style="font-size: 15px">Un pepino de ordenador a muy buen precio para tus
-                                            noches de vicio en el verano</h4>
-                                        Si quieres un ordenador para jugar o hacer streaming en Twitch, pero no quieres
-                                        comerte la cabeza eligiendo todas las piezas, ni montarlo o, simplemente, temes
-                                        romper todo antes siquiera de conectarlo, lo mejor es que te hagas con una torre
-                                        ya preparada.
-                                        <br><br>
-                                        Este ordenador para jugar de Lenovo tiene una configuración muy equilibrada, y
-                                        además nos gusta la caja y, sobre todo la rebaja a la que lo podemos encontrar
-                                        ahora mismo. Pasa de 1.500 euros a sólo 1.100 en Amazon.
-                                        <br><br>
-                                        <h4 style="font-size: 15px">Qué tiene el Lenovo Legion T5 de 7 Gen</h4>
-                                        Vayamos primero a lo más importante para un gamer: la potencia. Y este Lenovo T5
-                                        Gen 7 no está necesitado de ella. Cuenta con un Intel i7-12700F que no hará
-                                        cuello de botella a la gráfica, y que nos asegurará un gran rendimiento en
-                                        juegos o edición de vídeo.
-                                        <br><br>
-                                        Tiene 16 GB de RAM y en la placa base podremos instalar hasta 128 GB, por lo que
-                                        es imposible que nos quedemos cortos en el futuro.
-                                        <br><br>
-                                        Lo mejor, no obstante, es su tarjeta gráfica Nvidia GeForce RTX 3060 de 12GB
-                                        GDDR6, que nos asegura un rendimiento excepcional jugando a Full HD junto a una
-                                        pantalla de 144 hz si somos gamers competitivos o jugar a 60 fps y 4K de
-                                        resolución si lo que más nos importa es la calidad gráfica
-                                        <br><br>
-                                        En almacenamiento tampoco va corto, ya que cuenta con 1 TB SSD que, obviamente,
-                                        se puede ampliar. La caja es buena y hay espacio para instalar más hardware o
-                                        limpiarlo con facilidad. Tiene refrigeración líquida y ventiladores ARGB para
-                                        configurar sus luces led a tu gusto.
-                                        <br>
-                                        Este ordenador hecho a piezas tendría un precio similar, pero al comprarlo en
-                                        Amazon y ser algo preconfigurado nos ahorraremos muchos potenciales dolores de
-                                        cabeza. No obstante, te recomendamos consultar nuestra selección de modelos de
-                                        ordenador de sobremesa para que elijas el que mejor te convenga.
+                                            <h3 style="font-size: 15px">Un pepino de ordenador a muy buen precio para tus
+                                                noches de vicio en el verano</h3>
+                                            Si quieres un ordenador para jugar o hacer streaming en Twitch, pero no quieres
+                                            comerte la cabeza eligiendo todas las piezas, ni montarlo o, simplemente, temes
+                                            romper todo antes siquiera de conectarlo, lo mejor es que te hagas con una torre
+                                            ya preparada.
+                                            <br><br>
+                                            Este ordenador para jugar de Lenovo tiene una configuración muy equilibrada, y
+                                            además nos gusta la caja y, sobre todo la rebaja a la que lo podemos encontrar
+                                            ahora mismo. Pasa de 1.500 euros a sólo 1.100 en Amazon.
+                                            <br><br>
+                                            <h3 style="font-size: 15px">Qué tiene el Lenovo Legion T5 de 7 Gen</h3>
+                                            Vayamos primero a lo más importante para un gamer: la potencia. Y este Lenovo T5
+                                            Gen 7 no está necesitado de ella. Cuenta con un Intel i7-12700F que no hará
+                                            cuello de botella a la gráfica, y que nos asegurará un gran rendimiento en
+                                            juegos o edición de vídeo.
+                                            <br><br>
+                                            Tiene 16 GB de RAM y en la placa base podremos instalar hasta 128 GB, por lo que
+                                            es imposible que nos quedemos cortos en el futuro.
+                                            <br><br>
+                                            Lo mejor, no obstante, es su tarjeta gráfica Nvidia GeForce RTX 3060 de 12GB
+                                            GDDR6, que nos asegura un rendimiento excepcional jugando a Full HD junto a una
+                                            pantalla de 144 hz si somos gamers competitivos o jugar a 60 fps y 4K de
+                                            resolución si lo que más nos importa es la calidad gráfica
+                                            <br><br>
+                                            En almacenamiento tampoco va corto, ya que cuenta con 1 TB SSD que, obviamente,
+                                            se puede ampliar. La caja es buena y hay espacio para instalar más hardware o
+                                            limpiarlo con facilidad. Tiene refrigeración líquida y ventiladores ARGB para
+                                            configurar sus luces led a tu gusto.
+                                            <br>
+                                            Este ordenador hecho a piezas tendría un precio similar, pero al comprarlo en
+                                            Amazon y ser algo preconfigurado nos ahorraremos muchos potenciales dolores de
+                                            cabeza. No obstante, te recomendamos consultar nuestra selección de modelos de
+                                            ordenador de sobremesa para que elijas el que mejor te convenga.
+                                            </p>
                                         </p>
                                     </div>
                                 </div>
                             </div>
-                        </dialog>
-                        <div onclick="openModal('modal6','transicion6')" class="cardN">
-                            <div>
-                                <h4>Ordenador gaming Lenovo rebajado 1100€!</h4>
-                                <p>Este ordenador gaming de Lenovo con una RTX 3060 de 12GB está ahora rebajado a 1.100
-                                    euros</p>
-                            </div>
-                            <div class="fechaN">
-                                <span class="lmas">
-                                    <a>Leer más →</a>
-                                </span>
-                            </div>
-                        </div>
-                    </section>
-                    <section class="cardbody">
-                        <dialog id="modal7">
-                            <div id="transicion7" class="transicion">
-                                <div class="emergente">
-                                    <div id="textos">
-                                        <button onclick="cerrarModal('modal7','transicion7')" class="cerrar">X</button>
-                                        <h4>Con este truco podrías hacer que la señal de tu WiFi sea hasta tres veces
-                                            más potente</h4>
-                                        <img src="./imagenes noticias/wifi.png" alt="wifi">
+
+                            <div class="container_tab" id="newTabSeven">
+                                <div class="tab tab_close">
+                                    <div class="close">
+                                        <p>x</p>
+                                    </div>   
+                                    <h4>Con este truco podrías hacer que la señal de tu WiFi sea hasta tres vecesmás potente</h4>
+                                    <div class="inf">
+                                        <span class="autor">
+                                            <p >Autor: Raúl Barrón</p>
+                                            <p>Publicado el, 30/06/2023</p>
+                                        </span>
+                                        <picture class="pictures" >
+                                            <img src="./imagenes noticias/wifi.png" alt="wifi">
+                                        </picture>
                                         <p>
                                             La cobertura WiFi puede llegar a ser un quebradero de cabeza. Dependiendo de
                                             la distribución de tu casa, su tamaño, o los materiales que tenga que
@@ -1177,88 +1171,75 @@
                                             router tiene antenas y recubres la lata con papel de aluminio. Asegurándote
                                             de que el papel de aluminio quede lo más plano y liso posible.
                                             <br><br>
-                                        <h4 style="font-size: 15px">Colocación hacia la zona que necesita cobertura</h4>
-                                        Después, coloca el amplificador cerca de tu router WiFi, apuntando la abertura
-                                        de la lata hacia la dirección en la que deseas mejorar la señal. El papel de
-                                        aluminio actuará como un reflector, enfocando la señal WiFi en la dirección
-                                        deseada y aumentando su alcance.
-                                        <br><br>
-                                        Ten en cuenta que muchos routers modernos permite dirigir la señal hacia un
-                                        punto desde su configuración. Este trucos es para routers baratos sin esta
-                                        opcion.
-                                        <br><br>
-                                        Es importante destacar que este amplificador casero puede ayudar a mejorar la
-                                        señal WiFi, pero no es una solución milagrosa. La efectividad del amplificador
-                                        dependerá de varios factores, como la calidad de la señal original y las
-                                        interferencias presentes en tu entorno.
+                                            <h3 style="font-size: 15px">Colocación hacia la zona que necesita cobertura</h3>
+                                            Después, coloca el amplificador cerca de tu router WiFi, apuntando la abertura
+                                            de la lata hacia la dirección en la que deseas mejorar la señal. El papel de
+                                            aluminio actuará como un reflector, enfocando la señal WiFi en la dirección
+                                            deseada y aumentando su alcance.
+                                            <br><br>
+                                            Ten en cuenta que muchos routers modernos permite dirigir la señal hacia un
+                                            punto desde su configuración. Este trucos es para routers baratos sin esta
+                                            opcion.
+                                            <br><br>
+                                            Es importante destacar que este amplificador casero puede ayudar a mejorar la
+                                            señal WiFi, pero no es una solución milagrosa. La efectividad del amplificador
+                                            dependerá de varios factores, como la calidad de la señal original y las
+                                            interferencias presentes en tu entorno.    
                                         </p>
                                     </div>
                                 </div>
                             </div>
-                        </dialog>
-                        <div onclick="openModal('modal7','transicion7')" class="cardN">
-                            <div>
-                                <h4>Como volver tu Wifi mas potente</h4>
-                                <p>Si buscas una solución rápida, barata y práctica para amplificar tu red WiFi, solo
-                                    necesitas una lata de vacía.</p>
-                            </div>
-                            <div class="fechaN">
-                                <span class="lmas">
-                                    <a>Leer más →</a>
-                                </span>
-                            </div>
-                        </div>
-                    </section>
-                    <section class="cardbody">
-                        <dialog id="modal8">
-                            <div id="transicion8" class="transicion">
-                                <div class="emergente">
-                                    <div id="textos">
-                                        <button onclick="cerrarModal('modal8','transicion8')" class="cerrar">X</button>
-                                        <h4>Intel presenta Falcon Shores, su potente chip de IA para plantar cara a
-                                            NVIDIA</h4>
-                                        <p>
-                                            <em>El fabricante reveló los primeros detalles de su chip de IA de próxima
-                                                generación que impulsará el entrenamiento de modelos de inteligencia
-                                                artificial.</em>
-                                            <br><br>
+
+                            <div class="container_tab" id="newTabEigth">
+                                <div class="tab tab_close">
+                                    <div class="close">
+                                        <p>x</p>
+                                    </div>   
+                                    <h4>Intel presenta Falcon Shores, su potente chip de IA para plantar cara a NVIDIA</h4>
+                                    <div class="inf">
+                                        <span class="autor">
+                                            <p >Autor: Luis Miranda</p>
+                                            <p>Publicado el, 22/04/2023</p>
+                                        </span>
+                                        <picture class="pictures" >
                                             <img src="./imagenes noticias/intel.png" alt="intel procesador">
-                                            <br>
-                                            Intel anunció sus planes para adentrarse en el desarrollo de chips para
-                                            potenciar aplicaciones de inteligencia artificial. Tras años de retrasos y
-                                            un movimiento que amplió la brecha con NVIDIA, el fabricante está decidido a
-                                            volver. Intel lanzará Falcon Shores, un chip de IA que buscará competir de
-                                            frente una vez que aterrice en 2025.
-                                            <br><br>
-                                            Durante su participación en la conferencia ISC de ordenadores de alto
-                                            rendimiento, Intel presentó un GPU de hasta 288 GB de memoria. Falcon Shores
-                                            está diseñado para acelerar el entrenamiento de aprendizaje profundo y
-                                            admite computación de punto flotante de 8 bits. El GPU de próxima generación
-                                            formará parte de Max, una familia de chips para ordenadores de alto
-                                            rendimiento (HPC).
-                                            <br><br>
-                                            En términos de rendimiento, Falcon Shores cuenta con 288 GB de memoria HBM3
-                                            con un ancho de banda de hasta 9,8 TB/s. El nuevo chip de IA de Intel admite
-                                            tipos de datos que van de FP64 a BFLOAT16 o FP8 y soporta Compute Express
-                                            Link (CXL), un estándar que permite compartir recursos para un mayor
-                                            rendimiento. De acuerdo con Intel, Falcon Shores se basa en una arquitectura
-                                            modular en mosaico que permite implementar configuraciones de CPU y
-                                            múltiples GPU discretas.
-                                            <br><br>
-                                            <img src="./imagenes noticias/especificaciones intel.png"
-                                                alt="especificaciones del procesador">
-                                            <br>
-                                            Intel confirmó que su nuevo chip de IA estará disponible a partir de 2025.
-                                            Falcon Shores surgirá de las cenizas de Rialto Bridge, un GPU con el que
-                                            pensaba acortar la distancia con NVIDIA. En una presentación realizada en
-                                            mayo, la empresa confirmó que Rialto sería el sucesor de Ponte Vecchio y
-                                            aterrizaría a mediados de 2023, seguido de Falcon Shores en 2024.
-                                            <br><br>
-                                            Para sorpresa de algunos, Intel canceló los planes hace unas semanas y
-                                            anunció que no veríamos un chip para IA antes de 2025.
-                                            <br><br>
-                                        <h4>Con su nuevo chip de IA, Intel va por NVIDIA, aunque tal vez sea un poco
-                                            tarde</h4>
+                                        </picture>
+                                        <p>                                        
+                                        <em>El fabricante reveló los primeros detalles de su chip de IA de próxima
+                                        generación que impulsará el entrenamiento de modelos de inteligencia
+                                        artificial.</em>
+                                        <br><br>
+                                         Intel anunció sus planes para adentrarse en el desarrollo de chips para
+                                        potenciar aplicaciones de inteligencia artificial. Tras años de retrasos y
+                                        un movimiento que amplió la brecha con NVIDIA, el fabricante está decidido a
+                                        volver. Intel lanzará Falcon Shores, un chip de IA que buscará competir de
+                                        frente una vez que aterrice en 2025.
+                                        <br><br>
+                                        Durante su participación en la conferencia ISC de ordenadores de alto
+                                        rendimiento, Intel presentó un GPU de hasta 288 GB de memoria. Falcon Shores
+                                        está diseñado para acelerar el entrenamiento de aprendizaje profundo y
+                                        admite computación de punto flotante de 8 bits. El GPU de próxima generación
+                                        formará parte de Max, una familia de chips para ordenadores de alto
+                                        rendimiento (HPC).
+                                        <br><br>
+                                        En términos de rendimiento, Falcon Shores cuenta con 288 GB de memoria HBM3
+                                        con un ancho de banda de hasta 9,8 TB/s. El nuevo chip de IA de Intel admite
+                                        tipos de datos que van de FP64 a BFLOAT16 o FP8 y soporta Compute Express
+                                        Link (CXL), un estándar que permite compartir recursos para un mayor
+                                        rendimiento. De acuerdo con Intel, Falcon Shores se basa en una arquitectura
+                                        modular en mosaico que permite implementar configuraciones de CPU y
+                                        múltiples GPU discretas.
+                                        <br><br>
+                                        Intel confirmó que su nuevo chip de IA estará disponible a partir de 2025.
+                                        Falcon Shores surgirá de las cenizas de Rialto Bridge, un GPU con el que
+                                        pensaba acortar la distancia con NVIDIA. En una presentación realizada en
+                                        mayo, la empresa confirmó que Rialto sería el sucesor de Ponte Vecchio y
+                                        aterrizaría a mediados de 2023, seguido de Falcon Shores en 2024.
+                                        <br><br>
+                                        Para sorpresa de algunos, Intel canceló los planes hace unas semanas y
+                                        anunció que no veríamos un chip para IA antes de 2025.
+                                        <br><br>
+                                        <h4>Con su nuevo chip de IA, Intel va por NVIDIA, aunque tal vez sea un poco tarde</h4>
                                         En una entrevista con Reuters, Jeff McVeigh, director interino del grupo de
                                         Gráficos y Sistemas Informáticos Acelerados (AXG), dijo que la compañía se está
                                         tomando su tiempo para desarrollar nuevos chips. Falcon Shores es pieza clave en
@@ -1283,60 +1264,51 @@
                                         inteligencia artificial. El A100 se ha convertido en el caballo de batalla para
                                         las supercomputadoras que se utilizan para entrenar modelos de lenguaje extenso
                                         (LLM). Empresas como Stability AI emplean hasta 5.400 A100 para Stable
-                                        Diffusion, de acuerdo con un reporte de State of AI.
+                                        Diffusion, de acuerdo con un reporte de State of AI.   
                                         </p>
                                     </div>
                                 </div>
                             </div>
-                        </dialog>
-                        <div onclick="openModal('modal8','transicion8')" class="cardN">
-                            <div>
-                                <h4>Intel presenta un Chip para IA</h4>
-                                <p>El fabricante reveló los detalles del chip que impulsara los modelos de Inteligencia
-                                    Artificial</p>
-                            </div>
-                            <div class="fechaN">
-                                <span class="lmas">
-                                    <a>Leer más →</a>
-                                </span>
-                            </div>
-                        </div>
-                    </section>
-                    <section class="cardbody">
-                        <dialog id="modal9">
-                            <div id="transicion9" class="transicion">
-                                <div class="emergente">
-                                    <div id="textos">
-                                        <button onclick="cerrarModal('modal9','transicion9')" class="cerrar">X</button>
-                                        <h4>Microsoft por fin acaba con la peor función de Windows 11</h4>
-                                        <img src="./imagenes noticias/windows11.png" alt="windows11">
-                                        <p>
-                                            Microsoft está a punto de poner fin a una de las peores funciones que
-                                            llegaron con Windows 11: la integración de Microsoft Teams, que permite
-                                            acceder al chat de la plataforma de llamadas directamente desde la barra de
-                                            tareas. Así lo ha confirmado la propia compañía en las notas de la última
-                                            versión de prueba de su sistema operativo.
-                                            <br><br>
-                                            Teams, eso sí, no desaparecerá completamente de Windows 11, pero sí se
-                                            reemplazará por la aplicación gratuita de la plataforma de mensajería
-                                            videollamadas. Microsoft, de hecho, confirma que Microsoft Teams – Free
-                                            estará “anclado de forma predeterminada a la barra de tareas”. El programa,
-                                            eso sí, se podrá desanclar como cualquier otra aplicación.
-                                            <br><br>
-                                            Hasta ahora, reiteramos, Microsoft Teams estaba plenamente integrado en
-                                            Windows 11 con una especie de modo de chat para uso particular. Los
-                                            usuarios, por tanto, podían acceder al servicio directamente desde la barra
-                                            de tareas para conversar con amigos o familiares. El problema es que la
-                                            integración no siempre ha sido muy completa; las funciones eran limitadas
-                                            respecto a la versión que utilizan las empresas.
-                                            <br><br>
-                                            Por otro lado, eliminar manualmente la integración de Teams en Windows 11 es
-                                            un proceso bastante más complejo que el de cualquier otra app. Es necesario
-                                            desactivar la opción en los ajustes del sistema.
-                                            <br><br>
-                                        <h4 style="font-size: 15px">Microsoft Teams dejará de estar integrado en Windows
-                                            11</h4>
-                                        <img src="./imagenes noticias/microsoft teams.png">
+
+                            <div class="container_tab" id="newTabNine">
+                                <div class="tab tab_close">
+                                    <div class="close">
+                                        <p>x</p>
+                                    </div>   
+                                    <h4>Microsoft por fin acaba con la peor función de Windows 11</h4>
+                                    <div class="inf">
+                                        <span class="autor">
+                                            <p >Autor:Rubén Chicharro</p>
+                                            <p>Publicado el, 15/06/2023</p>
+                                        </span>
+                                        <picture class="pictures" >
+                                            <img src="./imagenes noticias/windows11.png" alt="windows11">
+                                        </picture>
+                                        <p>                                        
+                                        Microsoft está a punto de poner fin a una de las peores funciones que
+                                        llegaron con Windows 11: la integración de Microsoft Teams, que permite
+                                        acceder al chat de la plataforma de llamadas directamente desde la barra de
+                                        tareas. Así lo ha confirmado la propia compañía en las notas de la última
+                                        versión de prueba de su sistema operativo.
+                                        <br><br>
+                                        Teams, eso sí, no desaparecerá completamente de Windows 11, pero sí se
+                                        reemplazará por la aplicación gratuita de la plataforma de mensajería
+                                        videollamadas. Microsoft, de hecho, confirma que Microsoft Teams – Free
+                                        estará “anclado de forma predeterminada a la barra de tareas”. El programa,
+                                        eso sí, se podrá desanclar como cualquier otra aplicación.
+                                        <br><br>
+                                        Hasta ahora, reiteramos, Microsoft Teams estaba plenamente integrado en
+                                        Windows 11 con una especie de modo de chat para uso particular. Los
+                                        usuarios, por tanto, podían acceder al servicio directamente desde la barra
+                                        de tareas para conversar con amigos o familiares. El problema es que la
+                                        integración no siempre ha sido muy completa; las funciones eran limitadas
+                                        respecto a la versión que utilizan las empresas.
+                                        <br><br>
+                                        Por otro lado, eliminar manualmente la integración de Teams en Windows 11 es
+                                        un proceso bastante más complejo que el de cualquier otra app. Es necesario
+                                        desactivar la opción en los ajustes del sistema.
+                                        <br><br>
+                                        <h3 style="font-size: 15px">Microsoft Teams dejará de estar integrado en Windows 11</h3>                                        
                                         <br>
                                         No está claro, eso sí, por qué Microsoft ha decidido eliminar la integración en
                                         Windows 11 y simplemente optar por incluir la aplicación de Microsoft Teams. Es
@@ -1359,71 +1331,61 @@
                                     </div>
                                 </div>
                             </div>
-                        </dialog>
-                        <div onclick="openModal('modal9','transicion9')" class="cardN">
-                            <div>
-                                <h4>Microsoft acaba la peor funcion de windows11</h4>
-                                <p>La compañía va a hacer un cambio importante en la integración de Microsoft Teams que
-                                    llegó con Windows 11.</p>
-                            </div>
-                            <div class="fechaN">
-                                <span class="lmas">
-                                    <a>Leer más →</a>
-                                </span>
-                            </div>
-                        </div>
-                    </section>
-                    <section class="cardbody">
-                        <dialog id="modal10">
-                            <div id="transicion10" class="transicion">
-                                <div class="emergente">
-                                    <div id="textos">
-                                        <button onclick="cerrarModal('modal10','transicion10')"
-                                            class="cerrar">X</button>
-                                        <h4>Acusan a OpenAI de robar datos personales para entrenar a ChatGPT</h4>
+
+                            <div class="container_tab" id="newTabTen">
+                                <div class="tab tab_close">
+                                    <div class="close">
+                                        <p>x</p>
+                                    </div>   
+                                    <h4>Acusan a OpenAI de robar datos personales para entrenar a ChatGPT</h4>
+                                    <div class="inf">
+                                        <span class="autor">
+                                            <p >Autor:Gabriel Erard</p>
+                                            <p>Publicado el, 29/06/2023</p>
+                                        </span>
+                                        <picture class="pictures" >
+                                            <img src="./imagenes noticias/openAi.png" alt="openai">
+                                        </picture>
+                                        <p>                                        
                                         <em>Una demanda contra OpenAI acusa a la compañía de recopilar grandes
-                                            cantidades de información —incluidos datos personales— de forma ilegal para
-                                            entrenar a ChatGPT.</em>
-                                        <br>
-                                        <img src="./imagenes noticias/openAi.png" alt="openai">
-                                        <p>
-                                            Una demanda colectiva contra OpenAI ha comenzado a hacer ruido en las
-                                            últimas horas. La compañía de Sam Altman ha sido acusada de recopilar
-                                            grandes cantidades de información de forma ilegal para entrenar a ChatGPT.
-                                            Incluyendo datos personales conseguidos sin consentimiento.
-                                            <br><br>
-                                            Los impulsores de la denuncia, en su mayoría anónimos o identificados solo
-                                            por sus iniciales por temor a represalias, aseguran que OpenAI se valió
-                                            secretamente de la técnica conocida como web scraping para conseguir los
-                                            enormes volúmenes de datos necesarios para potenciar el entrenamiento de
-                                            ChatGPT. Al hacerlo, sostienen, los de Sam Altman violaron múltiples leyes
-                                            de privacidad.
-                                            <br><br>
-                                            "A pesar de los protocolos establecidos para la compra y el uso de
-                                            información personal, los demandados adoptaron un enfoque diferente: el
-                                            robo. Recolectaron sistemáticamente 300.000 millones de palabras de
-                                            internet, libros, artículos, sitios web y publicaciones, incluida la
-                                            información personal obtenida sin consentimiento. OpenAI lo hizo en secreto
-                                            y sin registrarse como broker de datos, como lo exige la ley aplicable",
-                                            indica el documento.
-                                            <br><br>
-                                            Las acusaciones vertidas por los demandantes son muy serias. Si bien se
-                                            conoce que los modelos de inteligencia artificial que potencian a ciertas
-                                            aplicaciones (como ChatGPT o similares) suelen valerse de información
-                                            pública disponible en la web para su entrenamiento, OpenAI supuestamente
-                                            habría ido un paso más allá.
-                                            <br><br>
-                                            Según la demanda colectiva, la startup ha usado la integración de sus
-                                            tecnologías —como GPT-4, el modelo de lenguaje que potencia a ChatGPT— en
-                                            otros productos y servicios para interceptar y acceder ilegalmente a
-                                            material de todo tipo. Se mencionan varios ejemplos, como datos de ubicación
-                                            y vinculados con imágenes personales de Snapchat, información financiera de
-                                            Stripe, gustos musicales y preferencias de Spotify, conversaciones privadas
-                                            de Slack y Microsoft Teams, y hasta registros privados de salud de MyChart.
-                                            <br><br>
-                                        <h4 style="font-size: 15px">Acusan a OpenAI de entrenar a ChatGPT con datos
-                                            personales robados</h4>
-                                        <img src="./imagenes noticias/openAi2.png" alt="computadora con logo de openAi">
+                                        cantidades de información —incluidos datos personales— de forma ilegal para
+                                        entrenar a ChatGPT.</em>
+                                        <br><br>
+                                        Una demanda colectiva contra OpenAI ha comenzado a hacer ruido en las
+                                        últimas horas. La compañía de Sam Altman ha sido acusada de recopilar
+                                        grandes cantidades de información de forma ilegal para entrenar a ChatGPT.
+                                        Incluyendo datos personales conseguidos sin consentimiento.
+                                        <br><br>
+                                        Los impulsores de la denuncia, en su mayoría anónimos o identificados solo
+                                        por sus iniciales por temor a represalias, aseguran que OpenAI se valió
+                                        secretamente de la técnica conocida como web scraping para conseguir los
+                                        enormes volúmenes de datos necesarios para potenciar el entrenamiento de
+                                        ChatGPT. Al hacerlo, sostienen, los de Sam Altman violaron múltiples leyes
+                                        de privacidad.
+                                        <br><br>
+                                        "A pesar de los protocolos establecidos para la compra y el uso de
+                                        información personal, los demandados adoptaron un enfoque diferente: el
+                                        robo. Recolectaron sistemáticamente 300.000 millones de palabras de
+                                        internet, libros, artículos, sitios web y publicaciones, incluida la
+                                        información personal obtenida sin consentimiento. OpenAI lo hizo en secreto
+                                        y sin registrarse como broker de datos, como lo exige la ley aplicable",
+                                        indica el documento.
+                                        <br><br>
+                                        Las acusaciones vertidas por los demandantes son muy serias. Si bien se
+                                        conoce que los modelos de inteligencia artificial que potencian a ciertas
+                                        aplicaciones (como ChatGPT o similares) suelen valerse de información
+                                        pública disponible en la web para su entrenamiento, OpenAI supuestamente
+                                        habría ido un paso más allá.
+                                        <br><br>
+                                        Según la demanda colectiva, la startup ha usado la integración de sus
+                                        tecnologías —como GPT-4, el modelo de lenguaje que potencia a ChatGPT— en
+                                        otros productos y servicios para interceptar y acceder ilegalmente a
+                                        material de todo tipo. Se mencionan varios ejemplos, como datos de ubicación
+                                        y vinculados con imágenes personales de Snapchat, información financiera de
+                                        Stripe, gustos musicales y preferencias de Spotify, conversaciones privadas
+                                        de Slack y Microsoft Teams, y hasta registros privados de salud de MyChart.
+                                        <br><br>
+                                        <h3 style="font-size: 15px">Acusan a OpenAI de entrenar a ChatGPT con datos personales robados</h3>
                                         <br>
                                         La demanda menciona dos leyes estadounidenses que OpenAI supuestamente habría
                                         violado al recopilar información para entrenar a ChatGPT. Se trata de la Ley de
@@ -1438,15 +1400,15 @@
                                         <br><br>
                                         <p style="border-left: 1px solid blue;padding: 0px 5px;">
                                             <em>
-                                                "El desprecio de los demandados por las leyes de privacidad solo se
-                                                compara con su desprecio por el riesgo potencialmente catastrófico para
-                                                la humanidad. Emblemática tanto del riesgo final, como del desprecio
-                                                abierto de los demandados, es esta declaración del CEO del demandado
-                                                OpenAI, Sam Altman: 'La IA probablemente conducirá al fin del mundo,
-                                                pero mientras tanto, habrá grandes empresas'".
-                                            </em>
-                                            <br>
-                                            <sub>Fragmento de la demanda colectiva contra OpenAI.</sub>
+                                        "El desprecio de los demandados por las leyes de privacidad solo se
+                                        compara con su desprecio por el riesgo potencialmente catastrófico para
+                                        la humanidad. Emblemática tanto del riesgo final, como del desprecio
+                                        abierto de los demandados, es esta declaración del CEO del demandado
+                                        OpenAI, Sam Altman: 'La IA probablemente conducirá al fin del mundo,
+                                        pero mientras tanto, habrá grandes empresas'".
+                                        </em>
+                                        <br>
+                                        <sub>Fragmento de la demanda colectiva contra OpenAI.</sub>
                                         </p>
                                         <br>
                                         Quedará por verse cómo avanza esta historia. Por lo pronto, OpenAI no ha hecho
@@ -1459,71 +1421,60 @@
                                     </div>
                                 </div>
                             </div>
-                        </dialog>
-                        <div onclick="openModal('modal10','transicion10')" class="cardN">
-                            <div>
-                                <h4>Acusan a OpenAi por robar datos personales!</h4>
-                                <p>Una demanda para OpenAi por robar datos personales de forma ilegal para entrenar su
-                                    IA</p>
-                            </div>
-                            <div class="fechaN">
-                                <span class="lmas">
-                                    <a>Leer más →</a>
-                                </span>
-                            </div>
-                        </div>
-                    </section>
-                    <section class="cardbody">
-                        <dialog id="modal11">
-                            <div id="transicion11" class="transicion">
-                                <div class="emergente">
-                                    <div id="textos">
-                                        <button onclick="cerrarModal('modal11','transicion11')"
-                                            class="cerrar">X</button>
-                                        <h4>Instagram tendrá su propio ChatGPT y ofrecerá 30 personalidades diferentes
-                                        </h4>
+
+                            <div class="container_tab" id="newTabEleven">
+                                <div class="tab tab_close">
+                                    <div class="close">
+                                        <p>x</p>
+                                    </div>   
+                                    <h4>Instagram tendrá su propio ChatGPT y ofrecerá 30 personalidades diferentes</h4>
+                                    <div class="inf">
+                                        <span class="autor">
+                                            <p >Autor: Gabriel Erard</p>
+                                            <p>Publicado el, 07/06/2023</p>
+                                        </span>
+                                        <picture class="pictures" >
+                                            <img src="./imagenes noticias/instagram.png" alt="telefono con instagram">
+                                        </picture>
+                                        <p>                                        
                                         <em>El reputado leaker Alessandro Paluzzi ha descubierto que Instagram ha
-                                            comenzado a probar la integración con un chatbot de inteligencia artificial,
-                                            a lo ChatGPT. La característica podría ser muy similar a la incorporada
-                                            recientemente por Snapchat.</em>
+                                        comenzado a probar la integración con un chatbot de inteligencia artificial,
+                                        a lo ChatGPT. La característica podría ser muy similar a la incorporada
+                                        recientemente por Snapchat.</em>
                                         <br><br>
-                                        <img src="./imagenes noticias/instagram.png" alt="telefono con instagram">
-                                        <p>
-                                            Instagram parece ser la última red social en subirse al tren de los chatbots
-                                            de inteligencia artificial. Así lo descubrió el reputado leaker Alessandro
-                                            Paluzzi, quien compartió una captura de pantalla de esta característica, que
-                                            todavía no se encuentra disponible públicamente. Todo apunta a que la red
-                                            social de Meta apunta a seguir los pasos de Snapchat con la incorporación de
-                                            su propio ChatGPT.
-                                            <br><br>
-                                            Los detalles sobre esta nueva integración todavía son escasos, aunque el
-                                            primer vistazo deja algunos elementos interesantes para analizar. Por lo que
-                                            se puede ver en la imagen, los usuarios de Instagram podrían chatear con la
-                                            IA generativa, que sería capaz de responder preguntas y "ofrecer consejos".
-                                            Además, se menciona la posibilidad de elegir entre 30 personalidades
-                                            diferentes para el chatbot.
-                                            <br><br>
-                                            De acuerdo con la filtración, el ChatGPT de Instagram también apuntará a
-                                            brindar ideas para cuando se le realicen ciertas consultas. Específicamente,
-                                            menciona la posibilidad de ayudar a las personas a encontrar la mejor manera
-                                            de expresarse, incluso a la hora de escribir mensajes.
-                                            <br><br>
-                                            El leaker también ha compartido una captura de pantalla de una conversación
-                                            con el chatbot de Instagram. No obstante, solo se aprecia la interfaz de la
-                                            conversación y no el funcionamiento de la característica en sí. Quedará por
-                                            verse si esto finalmente llega al grueso del público, por supuesto. Paluzzi
-                                            tiene una buena y extensa reputación filtrando nuevas características de la
-                                            red social, y no sería extraño que se lance en el corto plazo.
-                                            <br><br>
-                                            La posible integración de una herramienta al estilo ChatGPT en Instagram
-                                            tiene mucho sentido. Snapchat ya hizo algo parecido en febrero pasado con My
-                                            AI, un chatbot de inteligencia artificial con el que los usuarios pueden
-                                            mantener conversaciones. De hecho, Snap Inc. firmó un acuerdo con OpenAI
-                                            para potenciarlo con GPT-3.5.
-                                            <br><br>
-                                        <h4 style="font-size: 15px">Instagram también apuesta a tener su ChatGPT</h4>
-                                        <img src="./imagenes noticias/instagram2.png"
-                                            alt="logo de instagram en un telefono">
+                                        Instagram parece ser la última red social en subirse al tren de los chatbots
+                                        de inteligencia artificial. Así lo descubrió el reputado leaker Alessandro
+                                        Paluzzi, quien compartió una captura de pantalla de esta característica, que
+                                        todavía no se encuentra disponible públicamente. Todo apunta a que la red
+                                        social de Meta apunta a seguir los pasos de Snapchat con la incorporación de
+                                        su propio ChatGPT.
+                                        <br><br>
+                                        Los detalles sobre esta nueva integración todavía son escasos, aunque el
+                                        primer vistazo deja algunos elementos interesantes para analizar. Por lo que
+                                        se puede ver en la imagen, los usuarios de Instagram podrían chatear con la
+                                        IA generativa, que sería capaz de responder preguntas y "ofrecer consejos".
+                                        Además, se menciona la posibilidad de elegir entre 30 personalidades
+                                        diferentes para el chatbot.
+                                        <br><br>
+                                        De acuerdo con la filtración, el ChatGPT de Instagram también apuntará a
+                                        brindar ideas para cuando se le realicen ciertas consultas. Específicamente,
+                                        menciona la posibilidad de ayudar a las personas a encontrar la mejor manera
+                                        de expresarse, incluso a la hora de escribir mensajes.
+                                        <br><br>
+                                        El leaker también ha compartido una captura de pantalla de una conversación
+                                        con el chatbot de Instagram. No obstante, solo se aprecia la interfaz de la
+                                        conversación y no el funcionamiento de la característica en sí. Quedará por
+                                        verse si esto finalmente llega al grueso del público, por supuesto. Paluzzi
+                                        tiene una buena y extensa reputación filtrando nuevas características de la
+                                        red social, y no sería extraño que se lance en el corto plazo.
+                                        <br><br>
+                                        La posible integración de una herramienta al estilo ChatGPT en Instagram
+                                        tiene mucho sentido. Snapchat ya hizo algo parecido en febrero pasado con My
+                                        AI, un chatbot de inteligencia artificial con el que los usuarios pueden
+                                        mantener conversaciones. De hecho, Snap Inc. firmó un acuerdo con OpenAI
+                                        para potenciarlo con GPT-3.5.
+                                        <br><br>
+                                        <h3 style="font-size: 15px">Instagram también apuesta a tener su ChatGPT</h3>
                                         <br>
                                         Meta lleva bastante tiempo trabajando en experiencias de inteligencia artificial
                                         muy capaces, de modo que si avanza en la integración de un ChatGPT en Instagram,
@@ -1555,47 +1506,38 @@
                                     </div>
                                 </div>
                             </div>
-                        </dialog>
-                        <div onclick="openModal('modal11','transicion11')" class="cardN">
-                            <div>
-                                <h4>Instagram tendrá su propio ChatGPT</h4>
-                                <p>Instagram ha comenzado a probar la integración con un chatbot de inteligencia
-                                    artificial, a lo ChatGPT. </p>
-                            </div>
-                            <div class="fechaN">
-                                <span class="lmas">
-                                    <a>Leer más →</a>
-                                </span>
-                            </div>
-                        </div>
-                    </section>
-                    <section class="cardbody">
-                        <dialog id="modal12">
-                            <div id="transicion12" class="transicion">
-                                <div class="emergente">
-                                    <div id="textos">
-                                        <button onclick="cerrarModal('modal12','transicion12')"
-                                            class="cerrar">X</button>
-                                        <h4>PCI-Express 6.0: todo lo que necesitas saber del nuevo estándar en PC</h4>
-                                        <img src="./imagenes noticias/pci.png">
-                                        <br>
-                                        <p>
-                                            Desde hace ya bastante tiempo, en PC se utiliza el estándar PCI-Express para
-                                            la interconexión de dispositivos, si bien es cierto que en la informática
-                                            moderna su uso es casi exclusivo para conectar tarjetas gráficas y
-                                            dispositivos de estado sólido a la placa base. Desde hace poco, la
-                                            especificación PCI-Express 6.0 (también conocida simplemente como PCIe 6.0)
-                                            está entre nosotros, así que en este artículo te vamos a explicar todos sus
-                                            entresijos, novedades y qué mejoras trae con respecto a la quinta
-                                            generación.
-                                            <br><br>
-                                            Como ya supondréis, la numeración «PCI-Express 6.0» se refiere a que estamos
-                                            ante la sexta generación de esta interfaz, y esto significa que hay cinco
-                                            generaciones predecesoras. Con cada nueva generación se implementan una
-                                            serie de mejoras, y aunque por norma general la que recordamos todos es que
-                                            «tiene más rendimiento», en realidad hay muchas otras características a
-                                            tener en cuenta. Pero empecemos desde el principio…
-                                            <br><br>
+
+                            <div class="container_tab" id="newTabTwelve">
+                                <div class="tab tab_close">
+                                    <div class="close">
+                                        <p>x</p>
+                                    </div>   
+                                    <h4>PCI-Express 6.0: todo lo que necesitas saber del nuevo estándar en PC</h4>
+                                    <div class="inf">
+                                        <span class="autor">
+                                            <p >Autor:Rubén Chicharro</p>
+                                            <p>Publicado el, 15/06/2023</p>
+                                        </span>
+                                        <picture class="pictures" >
+                                            <img src="./imagenes noticias/pci.png">
+                                        </picture>
+                                        <p>                                        
+                                        Desde hace ya bastante tiempo, en PC se utiliza el estándar PCI-Express para
+                                        la interconexión de dispositivos, si bien es cierto que en la informática
+                                        moderna su uso es casi exclusivo para conectar tarjetas gráficas y
+                                        dispositivos de estado sólido a la placa base. Desde hace poco, la
+                                        especificación PCI-Express 6.0 (también conocida simplemente como PCIe 6.0)
+                                        está entre nosotros, así que en este artículo te vamos a explicar todos sus
+                                        entresijos, novedades y qué mejoras trae con respecto a la quinta
+                                        generación.
+                                        <br><br>
+                                        Como ya supondréis, la numeración «PCI-Express 6.0» se refiere a que estamos
+                                        ante la sexta generación de esta interfaz, y esto significa que hay cinco
+                                        generaciones predecesoras. Con cada nueva generación se implementan una
+                                        serie de mejoras, y aunque por norma general la que recordamos todos es que
+                                        «tiene más rendimiento», en realidad hay muchas otras características a
+                                        tener en cuenta. Pero empecemos desde el principio…
+                                        <br><br>
                                         <h4 style="font-size: 15px">¿Qué es PCI-Express?</h4>
                                         La PCI Express (Pheriferal Component Interconnect Express) se trata de un bus de
                                         datos de alta velocidad, que se encarga de la comunicación entre los diferentes
@@ -1629,8 +1571,6 @@
                                         Cuidado, porque hablamos del ancho de banda sumado en ambos sentidos, es decir,
                                         de lectura y escritura simultáneamente.
                                         <br><br>
-                                        <img src="./imagenes noticias/pci2.png" alt="entrada pci">
-                                        <br><br>
                                         <h4 style="font-size: 15px">Retrocompatibilidad</h4>
                                         La interfaz PCI Express ha sido siempre compatible hacia atrás con versiones
                                         anteriores del protocolo, lo que significa que podemos conectar una tarjeta PCI
@@ -1661,20 +1601,8 @@
                                     </div>
                                 </div>
                             </div>
-                        </dialog>
-                        <div onclick="openModal('modal12','transicion12')" class="cardN">
-                            <div>
-                                <h4>PCI-Express6.0 El nuevo standard.</h4>
-                                <p>PCI-Express 6.0: todo lo que necesitas saber del nuevo estándar en PC</p>
-                            </div>
-                            <div class="fechaN">
-                                <span class="lmas">
-                                    <a>Leer más →</a>
-                                </span>
-                            </div>
                         </div>
-                    </section>
-                </article>
+                    </article>
                 <!--Fin Modulo Hender-->
                   <!--Tutoriales-->
                 <h2 id="tutos">Tutoriales Bsicos sobre la computacion</h2>
@@ -1709,5 +1637,4 @@
     </main>
 </body>
 <script src="./main.js"></script>
-
 </html>
