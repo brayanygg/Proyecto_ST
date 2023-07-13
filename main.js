@@ -370,18 +370,5 @@ Object.entries(cardToTabMapping).forEach(([cardId, tabId]) => {
     });
   });
 
-  //Modulo Hender
 
-  function openModal(modalId,transicion){
-    var modal = document.getElementById(modalId);
-    var transicion = document.getElementById(transicion);
-    modal.showModal();
-    transicion.style.opacity = "1";
-  };
-  function cerrarModal(modalId,transicion){
-    var close = document.getElementById(modalId);
-    var transicion = document.getElementById(transicion);
-    transicion.style.opacity = "0";
-    close.close();
-  }
 
