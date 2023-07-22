@@ -126,10 +126,10 @@ formuR.addEventListener("submit", (e) =>{
 
 //Modulo de Jesus
 
-// Obtener el elemento del contenedor de las tarjetas por su ID
+// Declaracion de constantes para obtener el elemento del contenedor de las tarjetas por su ID
 const containerCard = document.getElementById('containerCards');
 
-// Crear un arreglo vacío para almacenar las tarjetas
+// Creación de arreglos vacío para almacenar las tarjetas
 let storageCards = [];
 
 // Definición de la clase Card
@@ -214,8 +214,8 @@ class CardNews {
     storageNews.forEach(CardNews => {
         let infNew = `
           <div class="cardNew"> 
-            <h4>${CardNews.title}</h4>
-            <p>${CardNews.text}</p>
+            <h4 class="titlenew" >${CardNews.title}</h4>
+            <p class= "textnew" >${CardNews.text}</p>
             <footer class="ftoNew">
               <button class="open" id="${CardNews.id}">Leer más →</button>
             </footer>
@@ -256,11 +256,11 @@ class CardVids {
     storageVids.forEach(CardVids => {
         let infvids =
             `
-        <div class="cardsVids" >
+        <div class="cardsVids" id="cardsVids" >
             <video controls>
                 <source src="${CardVids.video}" type="video/mp4">
             </video> 
-           <div class="textVids" >
+           <div class="textVids">
                 <h3>${CardVids.title}</h3>
                 <p>${CardVids.text}</p>
             </div>
@@ -348,10 +348,10 @@ Object.entries(cardToTabMapping).forEach(([cardId, tabId]) => {
     // Agregar un evento de clic a la tarjeta
     card.addEventListener("click", () => {
       // Verificar si la ventana tiene un ancho superior a 400px
-      if (!window.matchMedia("(max-width: 400px)").matches) {
+     //// if (!window.matchMedia("(max-width: 400px)").matches) {
         // Llamar a la función openTab para abrir la pestaña correspondiente
         openTab(tabId);
-      }
+     //// }
     });
   
     // Agregar un evento de clic al botón de cerrar

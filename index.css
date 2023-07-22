@@ -819,15 +819,17 @@ a continuacion*/
   .cards footer {
     display: none;
   }
+
+  
+   
 }
   /*Fin modulo(3)*/
 
   /*Inicio modulo(4) hender/Jesus */
   /*NOTICIAS*/
-  
   .news{
     background-color: #2c2c2c07;
-    border-radius: 8px;;    
+    border-radius: 8px;  
     height: 43.5vh;
     overflow: hidden;
     overflow-y: scroll;
@@ -859,7 +861,7 @@ a continuacion*/
   .cardNew{
     border-radius: 8px;
     margin: 12px 8px;
-    height: 18vh;
+    height: auto;
     padding: 9px;
     background-color: #89bee6;
     transition: all 200ms;
@@ -908,15 +910,126 @@ a continuacion*/
     color: #fff;
 
   }
-  .cardNew h4{
+  .titlenew{
     font-size: 1.5em;
     border-bottom: 1px solid #000000;
     padding-bottom: 3px;
     margin-bottom: 3px;
   }
-  .cardNew p{
-    font-size: 1.1em;
+  .textnew{
+    font-size: 1.2em;
+    
   }
+
+  @media(max-width: 900px){
+    .tab {
+      background-color: #f5f5f5;
+      width:85%;
+      height: 90vh;
+      overflow-y: scroll;
+      overflow-x: hidden;
+      transition: all 300ms;
+      transform: translateY(0%);
+      border-radius: 5px;
+    }
+  }
+
+  @media(max-width: 600px){
+      /*NOTICIAS*/
+  #tutos {
+    margin-left: 4px;
+    text-align: center;
+  }
+
+  #notes{
+    margin-left: 40px;
+  }
+
+  #containerTabs{
+    display: none;
+  }
+
+  .container_tab {
+    position: fixed;
+    opacity: 0;
+    visibility: hidden;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #444444bd;
+    left: 37%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
+.tab {
+  background-color: #f5f5f5;
+  width:70%;
+  height: 80vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  transition: all 300ms;
+  transform: translateY(0%);
+  border-radius: 5px;
+}
+
+
+
+  #news{
+  background-color: #ffffff;
+  border-radius: 8px;  
+  height: 64vh;
+  overflow: hidden;
+  overflow-y: scroll;
+  margin-bottom: 25px;
+  }
+
+  .cardNew{
+  border-radius: 8px;
+  width: 24vh;
+  height: auto;
+  padding: 9px;
+  transition: all 200ms;
+  transform: scale(1);
+  box-shadow: 0px 0px 27px -12px rgba(0,0,0,0.75);
+}
+
+
+  #containerCardsNews{
+    display: grid;
+    grid-auto-flow: dense;
+    grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+    background-color: #fff;
+  }
+
+  .cardNew h4{
+    font-size:  1.1em;
+    border-bottom: 1px solid #000000;
+    padding-bottom: 3px;
+    margin-bottom: 3px;
+  }
+  .cardNew p{
+    font-size: 0.9em;
+    margin-bottom: 10px;
+  }
+
+  .textVids p {
+    display: none;
+  }
+
+  #cardsVids{
+    width: 19.8em ;
+    background-color: #2f82a0;
+    border-radius: 8px;
+    box-shadow: 0px 5px 14px -3px rgba(0,0,0,0.75);
+    transform: translateY(0px);
+    transition: all 200ms ease;
+    margin: 5px 5px 12px 5px;
+  }
+  }
+
   /*Final modulo(4)*/
 
 /*Incio modulo(5) Jesus*/
@@ -1064,7 +1177,7 @@ border-radius: 8px 8px 0px 0px;
 
 /* Media queries */
 @media (max-width: 1120px) {
-footer {
+.footer {
   background-color: #328eaf;
   position: relative;
 }
