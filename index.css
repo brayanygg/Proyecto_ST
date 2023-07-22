@@ -22,9 +22,12 @@ body{
 
 /* BARRA DE NAVEGACION */
 .cabecera {
+  position: fixed;
+  width: 100%;
   background-color: #2C84A4;
   color: aliceblue;
   height: 55px;
+  z-index: 2;
 }
 
 h1 {
@@ -378,6 +381,7 @@ z-index: 2;
   font-size: 30px;
   cursor: pointer;
   transition: all 250ms ease;
+  z-index: 2;
 }
 
 .preguntas:hover {
