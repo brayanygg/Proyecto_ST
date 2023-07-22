@@ -68,7 +68,7 @@ h1 {
     color: aliceblue;
     padding: 15px;
     font-size: 1.4em;
-  
+    cursor: pointer;
 }
 .cabecera>nav {
   height: 100%;
@@ -366,6 +366,25 @@ z-index: 2;
   color: red;
   padding-top: 20px;
 }
+
+.preguntas {
+  bottom: 1rem;
+  right: 1rem;
+  position: fixed;
+  padding: 15px;
+  background-color: #2C84A4;
+  border: solid black;
+  border-radius: 25px;
+  font-size: 30px;
+  cursor: pointer;
+  transition: all 250ms ease;
+}
+
+.preguntas:hover {
+  margin-bottom: 5px;
+  transition: all 250ms ease;
+}
+
 /*PRESENTACION*/
 .presentacion {
   background-image: url(./assets/presentacion.jpg);
