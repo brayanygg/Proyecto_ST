@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0">
     <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
     <title>Edutec</title>
 </head>
@@ -30,15 +31,36 @@
                 <li class="registroM">
                     <a href="#">Registrarse</a>
                 </li>
-                <li class="inicioS">
+                <li class="inicioS" >
                     <a href="#">Iniciar sesion</a>
                 </li>
             </ul>
         </nav>
     </header>
-    <div class="preguntas">
-        ?
-    </div>
+    <section class="seccion_dudas">
+        <button class="preguntas">
+            <span class="material-symbols-outlined">mode_comment</span>
+            <span class="material-symbols-outlined">close</span>
+        </button>
+    
+        <div class="chat">
+            <header>
+                <h2>Chat</h2>
+                <span class="cerrar-btn material-symbols-outlined">close</span>
+            </header>
+            <ul class="chatbox">
+                <li class="chatb in">
+                    <span class="material-symbols-outlined">smart_toy</span>
+                    <p>Hola 😄, ¿En que podemos ayudarlo?</p>
+                </li>
+            </ul>
+            <div class="chat-input">
+                <textarea placeholder="Escribe tu duda..." required></textarea>
+                <span id="send-btn" class="material-symbols-outlined">send</span>
+            </div>
+        </div>
+    </section>
+    
     <!-- VENTANA MODAL DEL INICIO DE SESION. -->
    <section class="modal">
         <div class="modal__container">

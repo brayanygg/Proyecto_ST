@@ -2,6 +2,58 @@
 const saludo = document.querySelector(".saludo");
 let user = "";
 
+const chatI = document.querySelector(".chat-input textarea"); 
+const enviarPBtn = document.querySelector(".chat-input span"); 
+const chatbox = document.querySelector(".chatbox"); 
+const abrirChat = document.querySelector(".preguntas");
+const seccionDudas = document.querySelector(".seccion_dudas");
+const cerrarChat = document.querySelector(".cerrar-btn");
+
+let mensajeChat;
+const inHeight = chatI.scrollHeight;
+
+const crearChatLi = (mensajeU, nombreClase) => {
+   const chatLi = document.createElement("li");
+   chatLi.classList.add("chatb", nombreClase);
+   let contenidoChat = nombreClase === "out" ? `<p>${mensajeU}</p>` : `<span class="material-symbols-outlined">smart_toy</span><p>${mensajeU}</p>`;
+   chatLi.innerHTML = contenidoChat;
+   return chatLi;
+}
+const manejoC = () => {
+    mensajeChat = chatI.value.trim();
+    if (!mensajeChat) {
+    return;
+    }
+    chatI.value = "";
+    chatI.style.height = `${inHeight}px`;
+
+    chatbox.appendChild(crearChatLi(mensajeChat, "out"));
+    chatbox.scrollTo(0, chatbox.scrollHeight);
+
+    setTimeout(() => {
+        chatbox.appendChild(crearChatLi("Tu pregunta sera procesada y respondida lo más pronto posible...", "in"));
+        chatbox.scrollTo(0, chatbox.scrollHeight);
+    }, 600);
+}
+chatI.addEventListener("input", () => {
+    chatI.style.height = `${inHeight}px`;
+    chatI.style.height = `${chatI.scrollHeight}px`; 
+});
+chatI.addEventListener("keydown", (e) => {
+    if(e.key === "Enter" && !e.shiftKey && window.innerWidth > 800){
+        e.preventDefault();
+        manejoC();
+    }
+});
+abrirChat.addEventListener("click", () => {
+    seccionDudas.classList.toggle("chat--show");
+});
+cerrarChat.addEventListener("click", () => {
+
+    seccionDudas.classList.remove("chat--show");
+});
+enviarPBtn.addEventListener("click", manejoC);
+
 //DECLARACION DE CONSTANTES PARA LA VENTANA MODAL DEL INICIO DE SESION Y REGISTRO.
 const abrirModal = document.querySelector('.inicioS');
 const modalInicioS = document.querySelector('.modal');
