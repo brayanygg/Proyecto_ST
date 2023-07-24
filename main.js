@@ -2,6 +2,58 @@
 const saludo = document.querySelector(".saludo");
 let user = "";
 
+const chatI = document.querySelector(".chat-input textarea"); 
+const enviarPBtn = document.querySelector(".chat-input span"); 
+const chatbox = document.querySelector(".chatbox"); 
+const abrirChat = document.querySelector(".preguntas");
+const seccionDudas = document.querySelector(".seccion_dudas");
+const cerrarChat = document.querySelector(".cerrar-btn");
+
+let mensajeChat;
+const inHeight = chatI.scrollHeight;
+
+const crearChatLi = (mensajeU, nombreClase) => {
+   const chatLi = document.createElement("li");
+   chatLi.classList.add("chatb", nombreClase);
+   let contenidoChat = nombreClase === "out" ? `<p>${mensajeU}</p>` : `<span class="material-symbols-outlined">smart_toy</span><p>${mensajeU}</p>`;
+   chatLi.innerHTML = contenidoChat;
+   return chatLi;
+}
+const manejoC = () => {
+    mensajeChat = chatI.value.trim();
+    if (!mensajeChat) {
+    return;
+    }
+    chatI.value = "";
+    chatI.style.height = `${inHeight}px`;
+
+    chatbox.appendChild(crearChatLi(mensajeChat, "out"));
+    chatbox.scrollTo(0, chatbox.scrollHeight);
+
+    setTimeout(() => {
+        chatbox.appendChild(crearChatLi("Tu pregunta sera procesada y respondida lo más pronto posible...", "in"));
+        chatbox.scrollTo(0, chatbox.scrollHeight);
+    }, 600);
+}
+chatI.addEventListener("input", () => {
+    chatI.style.height = `${inHeight}px`;
+    chatI.style.height = `${chatI.scrollHeight}px`; 
+});
+chatI.addEventListener("keydown", (e) => {
+    if(e.key === "Enter" && !e.shiftKey && window.innerWidth > 800){
+        e.preventDefault();
+        manejoC();
+    }
+});
+abrirChat.addEventListener("click", () => {
+    seccionDudas.classList.toggle("chat--show");
+});
+cerrarChat.addEventListener("click", () => {
+
+    seccionDudas.classList.remove("chat--show");
+});
+enviarPBtn.addEventListener("click", manejoC);
+
 //DECLARACION DE CONSTANTES PARA LA VENTANA MODAL DEL INICIO DE SESION Y REGISTRO.
 const abrirModal = document.querySelector('.inicioS');
 const modalInicioS = document.querySelector('.modal');
@@ -242,14 +294,14 @@ class CardVids {
     }
     
 
-    let cardsvids1 = new CardVids('vids/Tutorial como cambiar  el disco duro de tu ordenador.mp4', 'Como cambiar el disco duro de un ordenador', 'Cambiar un disco duro puede ser una tarea necesaria para mejorar el rendimiento de tu computadora o cuando el disco existente está dañado o se queda sin espacio. Afortunadamente, reemplazar un disco duro en la mayoría de las computadoras modernas es un proceso relativamente sencillo y no requiere conocimientos técnicos avanzados.', '01/01/2000', 'Ordenadores');
-    let cardsvids2 = new CardVids('vids/Tutorial como cambiar o actualizar la Placa Madre de la Computadora.mp4', 'Como cambiar una placa madre', 'Cambiar la placa madre de una computadora puede ser una tarea crucial para actualizar o reparar el sistema. Aunque puede parecer intimidante, con la guía adecuada es un proceso accesible. Aprende los pasos esenciales, desde desconectar los cables hasta asegurar los tornillos, y experimenta la mejora de rendimiento y funcionalidad de tu PC.', '01/01/2000', 'Ordenadores');
-    let cardsvids3 = new CardVids('vids/Tutorial como cambiar un ventilador de pc.mp4', 'Como cambiar el disipador de un ordenador', 'Cuando el ventilador de tu PC comienza a fallar, cambiarlo es esencial para evitar problemas de sobrecalentamiento. Con unos simples pasos, como desconectar los cables de alimentación y desmontar el ventilador antiguo, puedes instalar uno nuevo. Mejorarás el flujo de aire interno, manteniendo tu computadora funcionando de manera óptima y prolongando su vida útil.', '01/01/2000.', 'Ordenadores');
-    let cardsvids4 = new CardVids('vids/Tutorial como formatear una PC.mp4', 'Como formatear un PC ', 'Formatear una PC es un procedimiento clave para restaurarla a su estado original y eliminar todos los datos almacenados. Con algunos pasos simples, como respaldar tus archivos, acceder a la configuración de inicio y seleccionar la opción de formateo, puedes comenzar con una instalación limpia del sistema operativo, mejorando el rendimiento y la estabilidad de tu computadora.', '01/01/2000', 'Ordenadores');
-    let cardsvids5 = new CardVids('vids/Tutorial como limpiar acelerar al maximo y optimizar una pc.mp4', 'Como limpiar y optimizar un ordenador', 'Optimizar tu ordenador es esencial para mejorar su rendimiento y eficiencia. Con algunos pasos simples, como desinstalar programas innecesarios, limpiar archivos temporales y desfragmentar el disco duro, puedes acelerar el tiempo de carga y la respuesta del sistema. Mantén tu ordenador funcionando de manera óptima y aprovecha al máximo su potencial.',  '01/01/2000', 'Ordenadores ');
-    let cardsvids6 = new CardVids('vids/Tutorial como Limpiar la PC por Dentro.mp4', 'Como limpiar internamente un ordenador', 'En este tutorial, aprenderás a limpiar el interior de tu PC para optimizar su rendimiento. Te guiaremos para eliminar el polvo acumulado en componentes clave como ventiladores y disipadores. Mejorando la refrigeración y reduciendo el ruido, tu ordenador funcionará de manera más eficiente y prolongará su vida útil. ¡Sigue las instrucciones y disfruta de un sistema más rápido!', '01/01/2000', 'Ordenadores');
-    let cardsvids7 = new CardVids('vids/Tutorial como reducir el consumo de cpu y ram.mp4', 'Como reducir el consumo de ram y cpu de un PC', 'Reducir eficientemente el consumo de CPU y RAM es crucial para mejorar el rendimiento de tu ordenador. En este tutorial completo, descubrirás valiosos consejos prácticos, como cerrar aplicaciones innecesarias, desactivar programas de inicio automático y ajustar la configuración del sistema. Aprovecha los recursos de tu PC y disfruta de una experiencia más fluida y eficiente.', '01/01/2000', 'Ordenadores');
-    let cardsvids8 = new CardVids('vids/Tutorial Como Reparar Una Tarjeta De Vídeo (Reflow).mp4', 'Como reparar la tarjeta de video de un PC ', 'Reparar una tarjeta de vídeo defectuosa puede ser increíblemente útil para solucionar problemas de visualización en tu computadora. En este tutorial detallado, te mostraremos los pasos básicos, como verificar las conexiones, limpiar meticulosamente los contactos y actualizar los controladores. Sigue nuestras instrucciones y disfruta de una tarjeta de vídeo funcional', '01/01/2000', 'Ordenadores');
+    let cardsvids1 = new CardVids('', 'Como cambiar el disco duro de un ordenador', 'Cambiar un disco duro puede ser una tarea necesaria para mejorar el rendimiento de tu computadora o cuando el disco existente está dañado o se queda sin espacio. Afortunadamente, reemplazar un disco duro en la mayoría de las computadoras modernas es un proceso relativamente sencillo y no requiere conocimientos técnicos avanzados.', '01/01/2000', 'Ordenadores');
+    let cardsvids2 = new CardVids('', 'Como cambiar una placa madre', 'Cambiar la placa madre de una computadora puede ser una tarea crucial para actualizar o reparar el sistema. Aunque puede parecer intimidante, con la guía adecuada es un proceso accesible. Aprende los pasos esenciales, desde desconectar los cables hasta asegurar los tornillos, y experimenta la mejora de rendimiento y funcionalidad de tu PC.', '01/01/2000', 'Ordenadores');
+    let cardsvids3 = new CardVids('', 'Como cambiar el disipador de un ordenador', 'Cuando el ventilador de tu PC comienza a fallar, cambiarlo es esencial para evitar problemas de sobrecalentamiento. Con unos simples pasos, como desconectar los cables de alimentación y desmontar el ventilador antiguo, puedes instalar uno nuevo. Mejorarás el flujo de aire interno, manteniendo tu computadora funcionando de manera óptima y prolongando su vida útil.', '01/01/2000.', 'Ordenadores');
+    let cardsvids4 = new CardVids('', 'Como formatear un PC ', 'Formatear una PC es un procedimiento clave para restaurarla a su estado original y eliminar todos los datos almacenados. Con algunos pasos simples, como respaldar tus archivos, acceder a la configuración de inicio y seleccionar la opción de formateo, puedes comenzar con una instalación limpia del sistema operativo, mejorando el rendimiento y la estabilidad de tu computadora.', '01/01/2000', 'Ordenadores');
+    let cardsvids5 = new CardVids('', 'Como limpiar y optimizar un ordenador', 'Optimizar tu ordenador es esencial para mejorar su rendimiento y eficiencia. Con algunos pasos simples, como desinstalar programas innecesarios, limpiar archivos temporales y desfragmentar el disco duro, puedes acelerar el tiempo de carga y la respuesta del sistema. Mantén tu ordenador funcionando de manera óptima y aprovecha al máximo su potencial.',  '01/01/2000', 'Ordenadores ');
+    let cardsvids6 = new CardVids('', 'Como limpiar internamente un ordenador', 'En este tutorial, aprenderás a limpiar el interior de tu PC para optimizar su rendimiento. Te guiaremos para eliminar el polvo acumulado en componentes clave como ventiladores y disipadores. Mejorando la refrigeración y reduciendo el ruido, tu ordenador funcionará de manera más eficiente y prolongará su vida útil. ¡Sigue las instrucciones y disfruta de un sistema más rápido!', '01/01/2000', 'Ordenadores');
+    let cardsvids7 = new CardVids('', 'Como reducir el consumo de ram y cpu de un PC', 'Reducir eficientemente el consumo de CPU y RAM es crucial para mejorar el rendimiento de tu ordenador. En este tutorial completo, descubrirás valiosos consejos prácticos, como cerrar aplicaciones innecesarias, desactivar programas de inicio automático y ajustar la configuración del sistema. Aprovecha los recursos de tu PC y disfruta de una experiencia más fluida y eficiente.', '01/01/2000', 'Ordenadores');
+    let cardsvids8 = new CardVids('', 'Como reparar la tarjeta de video de un PC ', 'Reparar una tarjeta de vídeo defectuosa puede ser increíblemente útil para solucionar problemas de visualización en tu computadora. En este tutorial detallado, te mostraremos los pasos básicos, como verificar las conexiones, limpiar meticulosamente los contactos y actualizar los controladores. Sigue nuestras instrucciones y disfruta de una tarjeta de vídeo funcional', '01/01/2000', 'Ordenadores');
     
     storageVids.push(cardsvids1, cardsvids2, cardsvids3, cardsvids4, cardsvids5, cardsvids6, cardsvids7, cardsvids8 );
     
