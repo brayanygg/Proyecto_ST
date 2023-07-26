@@ -76,6 +76,8 @@ const correo = document.getElementById("email");
 const pass = document.getElementById("contra");
 const formuR = document.getElementById("formR");
 const parrafoR = document.getElementById("warnings");
+const msjsection = document.getElementById("filtre")
+
 
 //INICIO DE SESION
 
@@ -120,6 +122,7 @@ formulario.addEventListener("submit", (e) =>{
         user = `Hola,`+ " " + nameL.value;
         modalInicioS.classList.remove('modal--show');
         saludo.innerHTML = user;
+        msjsection.style.display = "none";
     }
 })
 
