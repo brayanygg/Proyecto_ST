@@ -2,6 +2,7 @@
 const saludo = document.querySelector(".saludo");
 let user = "";
 
+//DECLARACION DE CONSTANTES PARA EL CHAT DE PRGUNTAS.
 const chatI = document.querySelector(".chat-input textarea"); 
 const enviarPBtn = document.querySelector(".chat-input span"); 
 const chatbox = document.querySelector(".chatbox"); 
@@ -11,6 +12,46 @@ const cerrarChat = document.querySelector(".cerrar-btn");
 
 let mensajeChat;
 const inHeight = chatI.scrollHeight;
+
+//DECLARACION DE CONSTANTES PARA LA VENTANA MODAL DEL INICIO DE SESION Y REGISTRO.
+const abrirModal = document.querySelector('.inicioS');
+const modalInicioS = document.querySelector('.modal');
+const closeModal = document.querySelector('.modal__close');
+
+const openModalRes = document.querySelector('.registroM');
+const modalRes = document.querySelector('.modalRes');
+const closeModalRes = document.querySelector('.modal__closeRes');
+
+const crearCuenta = document.getElementById("crearC");
+
+//DECLARACION DE CONSTANTES PARA LA VALIDACION DE LOS FORMULARIOS DE REGISTRO E INICIO DE SESION
+const nameL = document.getElementById("nombre");
+const contra = document.getElementById("contraseña");
+const formulario = document.getElementById("form");
+const parrafo = document.getElementById("alertas");
+
+const nombre = document.getElementById("name");
+const correo = document.getElementById("email");
+const pass = document.getElementById("contra");
+const formuR = document.getElementById("formR");
+const parrafoR = document.getElementById("warnings");
+
+const abrirInicioP = document.querySelector(".paralelo-in");
+const abrirRegistroP = document.querySelector(".paralelo-reg");
+const abrirParalelo = document.querySelector(".btn-tog");
+const seccionParalelo = document.querySelector(".cabecera-btn");
+const detector = document.querySelector(".detector");
+
+detector.addEventListener("click", (e) => {
+    if(e.target === detector){
+        seccionParalelo.classList.remove("show--paralelo");
+    }
+})
+abrirParalelo.addEventListener("click", () => {
+    seccionParalelo.classList.toggle("show--paralelo");
+    abrirParalelo.classList.toggle("rotate");
+})
+
 
 const crearChatLi = (mensajeU, nombreClase) => {
    const chatLi = document.createElement("li");
@@ -54,30 +95,12 @@ cerrarChat.addEventListener("click", () => {
 });
 enviarPBtn.addEventListener("click", manejoC);
 
-//DECLARACION DE CONSTANTES PARA LA VENTANA MODAL DEL INICIO DE SESION Y REGISTRO.
-const abrirModal = document.querySelector('.inicioS');
-const modalInicioS = document.querySelector('.modal');
-const closeModal = document.querySelector('.modal__close');
-
-const openModalRes = document.querySelector('.registroM');
-const modalRes = document.querySelector('.modalRes');
-const closeModalRes = document.querySelector('.modal__closeRes');
-
-const crearCuenta = document.getElementById("crearC");
-
-//DECLARACION DE CONSTANTES PARA LA VALIDACION DE LOS FORMULARIOS DE REGISTRO E INICIO DE SESION
-const nameL = document.getElementById("nombre");
-const contra = document.getElementById("contraseña");
-const formulario = document.getElementById("form");
-const parrafo = document.getElementById("alertas");
-
-const nombre = document.getElementById("name");
-const correo = document.getElementById("email");
-const pass = document.getElementById("contra");
-const formuR = document.getElementById("formR");
-const parrafoR = document.getElementById("warnings");
-
 //INICIO DE SESION
+
+abrirInicioP.addEventListener('click', (e)=>{
+    e.preventDefault();
+    modalInicioS.classList.add('modal--show');
+});
 
 //ESCUCHA DEL EVENTO CLICK SOBRE LA BARRA DE NAVEGACION PARA MOSTRAR LA VENTANA MODAL.
 abrirModal.addEventListener('click', (e)=>{
@@ -124,6 +147,11 @@ formulario.addEventListener("submit", (e) =>{
 })
 
 //REGISTRO
+
+abrirRegistroP.addEventListener('click', (e)=>{
+    e.preventDefault();
+    modalRes.classList.add('modal--showRes');
+});
 
 //ESCUCHA DEL EVENTO CLICK SOBRE LA BARRA DE NAVEGACION PARA MOSTRAR LA VENTANA MODAL.
 openModalRes.addEventListener('click', (e)=>{
