@@ -140,6 +140,7 @@ h1 {
 }
 
 .show--paralelo .tog-paralelo {
+  transition: all 400ms ease;
   opacity: 1;
   pointer-events: all;
 }
@@ -155,19 +156,6 @@ h1 {
 .tog-paralelo a {
   font-size: 32px;
   color: #f5f5f5;
-}
-
-
-.saludo {
-  width: auto;
-  height: auto;
-  border-radius: 5px 10px 10px 20px;
-  padding: 10px;
-  position: absolute;
-  top: 15%;
-  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.30);
-  color: #ffffff;
-  margin-left: 10px;
 }
 
 /* SECCION SOBRE NOSOTROS. */
