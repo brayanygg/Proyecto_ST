@@ -95,6 +95,30 @@ cerrarChat.addEventListener("click", () => {
 });
 enviarPBtn.addEventListener("click", manejoC);
 
+//DECLARACION DE CONSTANTES PARA LA VENTANA MODAL DEL INICIO DE SESION Y REGISTRO.
+const abrirModal = document.querySelector('.inicioS');
+const modalInicioS = document.querySelector('.modal');
+const closeModal = document.querySelector('.modal__close');
+
+const openModalRes = document.querySelector('.registroM');
+const modalRes = document.querySelector('.modalRes');
+const closeModalRes = document.querySelector('.modal__closeRes');
+
+const crearCuenta = document.getElementById("crearC");
+
+//DECLARACION DE CONSTANTES PARA LA VALIDACION DE LOS FORMULARIOS DE REGISTRO E INICIO DE SESION
+const nameL = document.getElementById("nombre");
+const contra = document.getElementById("contraseña");
+const formulario = document.getElementById("form");
+const parrafo = document.getElementById("alertas");
+
+const nombre = document.getElementById("name");
+const correo = document.getElementById("email");
+const pass = document.getElementById("contra");
+const formuR = document.getElementById("formR");
+const parrafoR = document.getElementById("warnings");
+const msjsection = document.getElementById("filtre")
+
 //INICIO DE SESION
 
 abrirInicioP.addEventListener('click', (e)=>{
@@ -143,6 +167,7 @@ formulario.addEventListener("submit", (e) =>{
         user = `Hola,`+ " " + nameL.value;
         modalInicioS.classList.remove('modal--show');
         saludo.innerHTML = user;
+        msjsection.style.display = "none";
     }
 })
 
