@@ -790,12 +790,13 @@ a continuacion*/
   font-size: 20px;
   transition: all 500ms ease;
   color: #f5f5f5;
-  transform: translateY(505%);
+  
 }
 
 
 .tecnologia_es:hover .tecText {
   transform: translateY(-110%);
+  
 
 }
 
@@ -808,39 +809,54 @@ a continuacion*/
 }
 
 /*Tec Responsive*/
-@media screen and (max-width: 768px) {
-  .tecnologia_es:hover .tecText {
-    transform: translateY(-300px);
+@media screen and (max-width: 988px){
+  .tecnologia_es{
+      margin: 3em 0em 1em 0em;
+      background-color: #62a7db;
+      border-radius: 20px;
+      overflow: hidden;
+      padding: 10px;
+      transition: all 300ms ease;
+      height: 10vh;
+  }
+    
+  .tecnologia_es:hover{
+    height: auto;
+    transition: all 500ms ease
+  }
+
+  .tecnologia_es h2{
+    font-size: 2em;
+  }
+  .tecnologia_es:hover h2 {
+    transform: none;
+  }
+  .tecSvg{
+    display: none;
   }
 
   .tecText {
-
-    position: static;
-    transform: none;
-    padding: 2em;
-    font-size: 15px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background-color: #2e76b169;
+    transition: all 300ms ease;
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+    transition: all 500ms ease;
+    color: #f5f5f5;
+    transform: translateY(500px);
+  }
+  
+  .tecnologia_es:hover .tecText {
+    transform: translateY(0%);
+      
   }
 
-  .tecSvg {
-    margin-top: 2em;
-  }
-
-  .tec h2 {
-    position: absolute;
-    bottom: 80px;
-  }
-
-  .tecnologia_es:hover h2 {
-    transform: translateY(-1000px);
-  }
 }
-
-@media screen and (max-width: 480px) {
-  .tec h2 {
-    font-size: 32px;
-  }
-}
-
 /*Fin modulo 2*/
 
 /*Incio modulo(3) Jesus*/
@@ -1005,36 +1021,7 @@ a continuacion*/
     margin: 0px 15px;
   }
 
-  .tecnologia_es {
-    margin-top: 1.5em;
-    background-color: #62a7db;
-    border-radius: 145px 145px 10px 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    height: 8vh;
-    box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.30);
-  }
 
-  .wcp {
-    display: block;
-  }
-
-  .tecnologia_es h2 {
-    font-size: 25px;
-    color: #fff;
-  }
-
-  .titleParts {
-    display: none;
-  }
-
-  .tecSvg,
-  .tec,
-  .tecText {
-    display: none;
-  }
 
   .cards {
     position: relative;
@@ -1215,6 +1202,32 @@ a continuacion*/
   }
 }
 
+
+@media(min-width: 1300px){
+
+  .tecText {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #62a7dbab;
+    transition: all 300ms ease;
+    padding: 2em;
+    text-align: center;
+    font-size: 1.5em;
+    transition: all 500ms ease;
+    color: #f5f5f5;
+    
+  }
+  
+  
+  .tecnologia_es:hover .tecText {
+    transform: translateY(-100%);
+    
+  
+  }
+}
 @media(max-width: 600px) {
 
   /*NOTICIAS*/
@@ -1304,7 +1317,7 @@ a continuacion*/
   }
 
   #cardsVids {
-    width: 22.2em;
+    width: auto;
     background-color: #2f82a0;
     border-radius: 8px;
     box-shadow: 0px 5px 14px -3px rgba(0, 0, 0, 0.75);
@@ -1359,7 +1372,7 @@ color: #fff;
   
 }
 .cardsVids {
-  width: 17.5em;
+  width: auto;
   background-color: #2f82a0;
   border-radius: 8px;
   box-shadow: 0px 5px 14px -3px rgba(0, 0, 0, 0.75);
@@ -1717,6 +1730,22 @@ color: #fff;
     font-size: 2em;
     width: 80%;
     text-align: center;
+  }
+
+  .close p {
+    margin: 20px 10px 0px 0px;
+    font-size: 30px;
+    color: #ee0d0d;
+    transition: all 200ms ease;
+    transform: scale(1);
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 400px){
+  .cardsVids {
+    width: 5em;
+    
   }
 }
 

@@ -146,8 +146,8 @@ formulario.addEventListener("submit", (e) =>{
     }else{
         modalInicioS.classList.remove('modal--show');
 
-        saludo.innerHTML = user;
         filtre.style.display = "none";
+        saludo.innerHTML = user;
     }
 })
 
