@@ -89,16 +89,90 @@ h1 {
   margin: 0px 120px;
 }
 
-.saludo {
-  width: auto;
-  height: auto;
-  border-radius: 5px 10px 10px 20px;
-  padding: 10px;
+.cabecera-btn {
+  opacity: 0;
+  pointer-events: none;
+  margin-top: 55px;
+  position: fixed;
+  z-index: 3;
+}
+.show--paralelo {
+  opacity: 1;
+  pointer-events: all;
+}
+.btn-tog {
+  opacity: 0;
+  pointer-events: none;
+  height: 50px;
+  width: 50px;
+  background: transparent;
+  color: #fff;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  margin-left: 15px;
+  position: fixed;
+  z-index: 2;
+}
+.activate {
+  transform: rotate(90deg);
+}
+.btn-tog span {
+  font-size: 32px;
   position: absolute;
-  top: 15%;
-  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.30);
-  color: #ffffff;
-  margin-left: 10px;
+}
+.activate span:first-child,
+.btn-tog span:last-child {
+  opacity: 0;
+}
+
+.activate span:last-child {
+  opacity: 1;
+} 
+.detector {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.show--paralelo .detector {
+  opacity: 1;
+  pointer-events: all;
+  position: fixed;
+  background-color: #444444bd;
+  width: 100vmax;
+
+}
+.tog-paralelo {
+  opacity: 0;
+  pointer-events: none;
+  margin-top: 18px;
+  width: 300px;
+  height: 100vh;
+  background-color: #2C84A4;
+  border: solid #2C84A4;
+}
+
+.show--paralelo .tog-paralelo {
+  transition: all 400ms ease;
+  opacity: 1;
+  pointer-events: all;
+}
+.tog-paralelo li {
+  text-align: center;
+  margin-top: 40px;
+  padding: 10px;
+}
+
+.tog-paralelo li:hover {
+  background-color: #1a6197;
+}
+.tog-paralelo a {
+  font-size: 32px;
+  color: #f5f5f5;
 }
 
 /* SECCION SOBRE NOSOTROS. */
@@ -146,7 +220,7 @@ h1 {
   transition: opacity .6s .6s;
   --transform: translateY(-100vh);
   --transition: transform .8s;
-  z-index: 2;
+  z-index: 3;
 }
 
 .modal--show {
@@ -271,9 +345,11 @@ h1 {
   opacity: 0;
   pointer-events: none;
   transition: opacity .6s .6s;
-  --transform: translateY(-100vh);
-  --transition: transform .8s;
-  z-index: 2;
+
+--transform: translateY(-100vh);
+--transition: transform .8s;
+z-index: 3;
+
 }
 
 .modal--showRes {
@@ -389,6 +465,7 @@ h1 {
   padding-top: 20px;
 }
 
+/* BOTON Y CHAT DE PREGUNTAS. */
 .preguntas {
   bottom: 35px;
   right: 25px;
@@ -601,7 +678,7 @@ h1 {
 o en su defecto buscar una alternativa para ello puede ser con un background como se muestra
 a continuacion*/
 .presentacion article {
-  width: 70%;
+  width: 680px;
   opacity: 1;
   background-color: rgba(40, 98, 138, 0.445);
   box-shadow: 0px 0px 59px 12px rgba(0, 0, 0, 0.75);
@@ -632,7 +709,7 @@ a continuacion*/
   display: block;
   white-space: nowrap;
   border-right: 3px solid;
-  width: 32.5ch;
+  width: 22.5ch;
   overflow: hidden;
   animation: escribir 2.5s steps(35), cursor .3s infinite step-end alternate;
 
@@ -658,6 +735,7 @@ a continuacion*/
   animation: aparecer 2s ease;
   text-align: center;
   font-size: 1.2rem;
+  overflow: hidden;
 }
 
 @keyframes aparecer {
@@ -1540,7 +1618,26 @@ color: #fff;
   }
 }
 
+@media (min-width: 1000px){
+  .cabecera-btn {
+    display: none;
+  }
+}
+@media (max-width: 999px) {
+  .cabecera ul li {
+    opacity: 0;
+    pointer-events: none;
+  }
+  .btn-tog {
+    opacity: 1;
+    pointer-events: all;
+  }
+}
+
 @media (max-width: 768px) {
+  .preguntas {
+    opacity: 0.6;
+  }
   .foot {
     padding: 40px;
   }
@@ -1569,6 +1666,15 @@ color: #fff;
 }
 
 @media (max-width: 480px) {
+  .presentacion {
+    background-position-y: 1950px;
+    background-size: contain;
+    height: 20rem;
+  }
+  .presentacion article{
+    opacity: 0;
+    pointer-events: none;
+  }
   .foot h2 {
     font-size: 40px;
     margin-left: 10px;
