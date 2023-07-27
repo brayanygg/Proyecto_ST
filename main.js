@@ -122,7 +122,7 @@ formulario.addEventListener("submit", (e) =>{
         user = `Hola,`+ " " + nameL.value;
         modalInicioS.classList.remove('modal--show');
         saludo.innerHTML = user;
-        msjsection.style.display = "none";
+        filtre.style.display = "none";
     }
 })
 
