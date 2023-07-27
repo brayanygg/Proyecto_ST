@@ -90,10 +90,19 @@ h1 {
 }
 
 .cabecera-btn {
+  opacity: 0;
+  pointer-events: none;
+  margin-top: 55px;
   position: fixed;
   z-index: 3;
 }
+.show--paralelo {
+  opacity: 1;
+  pointer-events: all;
+}
 .btn-tog {
+  opacity: 0;
+  pointer-events: none;
   height: 50px;
   width: 50px;
   background: transparent;
@@ -106,24 +115,32 @@ h1 {
   transition: all 0.2s ease;
   cursor: pointer;
   margin-left: 15px;
+  position: fixed;
+  z-index: 2;
 }
-.show--paralelo .btn-tog {
+.activate {
   transform: rotate(90deg);
 }
 .btn-tog span {
   font-size: 32px;
   position: absolute;
 }
-.show--paralelo .btn-tog span:first-child,
+.activate span:first-child,
 .btn-tog span:last-child {
   opacity: 0;
 }
 
-.show--paralelo .btn-tog span:last-child {
+.activate span:last-child {
   opacity: 1;
 } 
+.detector {
+  opacity: 0;
+  pointer-events: none;
+}
 
 .show--paralelo .detector {
+  opacity: 1;
+  pointer-events: all;
   position: fixed;
   background-color: #444444bd;
   width: 100vmax;
@@ -1603,14 +1620,17 @@ color: #fff;
 
 @media (min-width: 1000px){
   .cabecera-btn {
-    opacity: 0;
-    pointer-events: none;
+    display: none;
   }
 }
 @media (max-width: 999px) {
   .cabecera ul li {
     opacity: 0;
     pointer-events: none;
+  }
+  .btn-tog {
+    opacity: 1;
+    pointer-events: all;
   }
 }
 
