@@ -635,8 +635,8 @@ z-index: 3;
 /*PRESENTACION*/
 .presentacion {
   background-image: url(./assets/presentacion.jpg);
-  background-position: 90%;
   background-size: cover;
+  background-position-y: 700px;
   background-attachment: fixed;
   height: 35rem;
   display: flex;
@@ -1624,10 +1624,11 @@ color: #fff;
   }
 }
 @media (max-width: 999px) {
-  .cabecera ul li {
-    opacity: 0;
-    pointer-events: none;
+
+  .cabecera li a{
+    display: none;
   }
+
   .btn-tog {
     opacity: 1;
     pointer-events: all;
@@ -1635,6 +1636,11 @@ color: #fff;
 }
 
 @media (max-width: 768px) {
+  .presentacion {
+    height: 28rem;
+    background-position-y: 540px;
+    background-position-x: -40px;
+  }
   .preguntas {
     opacity: 0.6;
   }
@@ -1667,13 +1673,13 @@ color: #fff;
 
 @media (max-width: 480px) {
   .presentacion {
-    background-position-y: 1950px;
+    background-position-y: 330px;
+    background-position-x: center;
     background-size: contain;
-    height: 20rem;
+    height: 18rem;
   }
   .presentacion article{
-    opacity: 0;
-    pointer-events: none;
+    display: none;
   }
   .foot h2 {
     font-size: 40px;
@@ -1724,4 +1730,10 @@ color: #fff;
   }
 }
 
+@media (max-width: 320px) {
+  .presentacion {
+    height: 15rem;
+    background-position-y: 270px;
+  }
+} 
 /*Fin modulo(4)*/
