@@ -145,9 +145,8 @@ formulario.addEventListener("submit", (e) =>{
         parrafo.innerHTML = warnings;
     }else{
         modalInicioS.classList.remove('modal--show');
-
         filtre.style.display = "none";
-        saludo.innerHTML = user;
+
     }
 })
 
@@ -454,6 +453,3 @@ Object.entries(cardToTabMapping).forEach(([cardId, tabId]) => {
       }
     });
   });
-
-
-
