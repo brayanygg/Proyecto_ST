@@ -96,10 +96,12 @@ h1 {
   position: fixed;
   z-index: 3;
 }
+
 .show--paralelo {
   opacity: 1;
   pointer-events: all;
 }
+
 .btn-tog {
   opacity: 0;
   pointer-events: none;
@@ -118,13 +120,16 @@ h1 {
   position: fixed;
   z-index: 2;
 }
+
 .activate {
   transform: rotate(90deg);
 }
+
 .btn-tog span {
   font-size: 32px;
   position: absolute;
 }
+
 .activate span:first-child,
 .btn-tog span:last-child {
   opacity: 0;
@@ -132,7 +137,8 @@ h1 {
 
 .activate span:last-child {
   opacity: 1;
-} 
+}
+
 .detector {
   opacity: 0;
   pointer-events: none;
@@ -146,6 +152,7 @@ h1 {
   width: 100vmax;
 
 }
+
 .tog-paralelo {
   opacity: 0;
   pointer-events: none;
@@ -161,6 +168,7 @@ h1 {
   opacity: 1;
   pointer-events: all;
 }
+
 .tog-paralelo li {
   text-align: center;
   margin-top: 40px;
@@ -170,6 +178,7 @@ h1 {
 .tog-paralelo li:hover {
   background-color: #1a6197;
 }
+
 .tog-paralelo a {
   font-size: 32px;
   color: #f5f5f5;
@@ -346,9 +355,9 @@ h1 {
   pointer-events: none;
   transition: opacity .6s .6s;
 
---transform: translateY(-100vh);
---transition: transform .8s;
-z-index: 3;
+  --transform: translateY(-100vh);
+  --transition: transform .8s;
+  z-index: 3;
 
 }
 
@@ -464,6 +473,7 @@ z-index: 3;
   color: red;
   padding-top: 20px;
 }
+
 
 /* BOTON Y CHAT DE PREGUNTAS. */
 .preguntas {
@@ -783,6 +793,7 @@ a continuacion*/
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 10px;
   background-color: #62a7dbab;
   transition: all 300ms ease;
   padding: 2em;
@@ -790,12 +801,13 @@ a continuacion*/
   font-size: 20px;
   transition: all 500ms ease;
   color: #f5f5f5;
-  transform: translateY(505%);
+
 }
 
 
 .tecnologia_es:hover .tecText {
   transform: translateY(-110%);
+
 
 }
 
@@ -808,37 +820,76 @@ a continuacion*/
 }
 
 /*Tec Responsive*/
-@media screen and (max-width: 768px) {
-  .tecnologia_es:hover .tecText {
-    transform: translateY(-300px);
+@media screen and (max-width: 988px) {
+  .tecnologia_es {
+    margin: 3em 0em 1em 0em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #62a7db;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 10px;
+    transition: all 500ms ease;
+    height: 10vh;
   }
 
-  .tecText {
+  .tecnologia_es:hover {
+    height: 100vh;
+    transition: all 700ms ease;
+    box-shadow: 0px 3px 17px -2px rgba(0, 0, 0, 0.75);
 
-    position: static;
-    transform: none;
-    padding: 2em;
-    font-size: 15px;
   }
 
-  .tecSvg {
-    margin-top: 2em;
+  .tec {
+    background-color: #62a7db;
+    border-radius: 10px;
+    width: 100%;
+    height: 100vh;
+    transform: translatey(16px);
   }
 
-  .tec h2 {
-    position: absolute;
-    bottom: 80px;
+  .tecnologia_es h2 {
+    font-size: 2.5em;
+    margin-top: 1em;
+
   }
 
   .tecnologia_es:hover h2 {
-    transform: translateY(-1000px);
+    transform: none;
+    background-color: #457599;
   }
-}
 
-@media screen and (max-width: 480px) {
-  .tec h2 {
-    font-size: 32px;
+  .tecnologia_es:hover .tec {
+    background-color: #457599;
+    margin-bottom: 12px;
   }
+
+  .tecSvg {
+    display: none;
+  }
+
+  .tecText {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background-color: #2e76b169;
+    transition: all 300ms ease;
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+    transition: all 200ms ease;
+    color: #f5f5f5;
+    transform: none;
+  }
+
+  .tecnologia_es:hover .tecText {
+    transform: none
+  }
+
 }
 
 /*Fin modulo 2*/
@@ -934,14 +985,11 @@ a continuacion*/
 
 .tab::-webkit-scrollbar {
   width: 8px;
-
 }
 
 .tab::-webkit-scrollbar-thumb {
   background-color: rgba(168, 158, 175, 0.473);
   border-radius: 60px;
-
-
 }
 
 .tab::-webkit-scrollbar-thumb:hover {
@@ -957,7 +1005,7 @@ a continuacion*/
   transition: all 300ms;
   transform: translateY(0%);
   border-radius: 5px;
-  
+
 }
 
 .tab_close {
@@ -1003,37 +1051,6 @@ a continuacion*/
 @media(max-width: 500px) {
   .container_all {
     margin: 0px 15px;
-  }
-
-  .tecnologia_es {
-    margin-top: 1.5em;
-    background-color: #62a7db;
-    border-radius: 145px 145px 10px 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    height: 8vh;
-    box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.30);
-  }
-
-  .wcp {
-    display: block;
-  }
-
-  .tecnologia_es h2 {
-    font-size: 25px;
-    color: #fff;
-  }
-
-  .titleParts {
-    display: none;
-  }
-
-  .tecSvg,
-  .tec,
-  .tecText {
-    display: none;
   }
 
   .cards {
@@ -1215,6 +1232,33 @@ a continuacion*/
   }
 }
 
+
+@media(min-width: 1400px) {
+
+  .tecText {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #62a7dbab;
+    transition: all 300ms ease;
+    padding: 2em;
+    text-align: center;
+    font-size: 1.5em;
+    transition: all 500ms ease;
+    color: #f5f5f5;
+
+  }
+
+
+  .tecnologia_es:hover .tecText {
+    transform: translateY(-100%);
+
+
+  }
+}
+
 @media(max-width: 600px) {
 
   /*NOTICIAS*/
@@ -1304,7 +1348,7 @@ a continuacion*/
   }
 
   #cardsVids {
-    width: 22.2em;
+    width: auto;
     background-color: #2f82a0;
     border-radius: 8px;
     box-shadow: 0px 5px 14px -3px rgba(0, 0, 0, 0.75);
@@ -1329,37 +1373,38 @@ a continuacion*/
   padding: 10px;
   border-radius: 10px;
   position: relative;
-  
+
 }
 
-#filtre{
+#filtre {
   position: absolute;
   display: block;
   z-index: 1;
   width: 100%;
-  height: 150vh;
+  height: 100%;
 }
 
-#clas{
-display: flex;
-justify-content: center;
-align-items: center;
-width: 100%;
-height: 100%;
-border-radius: 8px;
-backdrop-filter: blur(3px);
-color: #fff;
+#clas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  backdrop-filter: blur(3px);
+  color: #fff;
 }
 
 
-.msj{
+.msj {
   font-size: 2em;
   width: 80%;
   text-align: center;
-  margin-right: 5em;
+
 }
+
 .cardsVids {
-  width: 17.5em;
+  width: auto;
   background-color: #2f82a0;
   border-radius: 8px;
   box-shadow: 0px 5px 14px -3px rgba(0, 0, 0, 0.75);
@@ -1618,11 +1663,12 @@ color: #fff;
   }
 }
 
-@media (min-width: 1000px){
+@media (min-width: 1000px) {
   .cabecera-btn {
     display: none;
   }
 }
+
 @media (max-width: 999px) {
 
   .cabecera li a{
@@ -1644,6 +1690,7 @@ color: #fff;
   .preguntas {
     opacity: 0.6;
   }
+
   .foot {
     padding: 40px;
   }
@@ -1678,9 +1725,12 @@ color: #fff;
     background-size: contain;
     height: 18rem;
   }
+
   .presentacion article{
     display: none;
+
   }
+
   .foot h2 {
     font-size: 40px;
     margin-left: 10px;
@@ -1718,15 +1768,76 @@ color: #fff;
     display: block;
   }
 
-  #filtre{
-    height: 260vh ;
+  .tecnologia_es h2 {
+    font-size: 1.8em;
   }
 
-  .msj{
+  .msj {
     font-size: 2em;
     width: 80%;
     text-align: center;
-    margin-left: 5em;
+  }
+
+  .close p {
+    margin: 20px 10px 0px 0px;
+    font-size: 30px;
+    color: #ee0d0d;
+    transition: all 200ms ease;
+    transform: scale(1);
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 670px) {
+  .tecnologia_es h2 {
+    font-size: 2.25em;
+  }
+
+  .tecnologia_es:hover {
+    height: 122vh;
+    transition: all 700ms ease;
+    box-shadow: 0px 3px 17px -2px rgba(0, 0, 0, 0.75);
+
+  }
+}
+
+@media (max-width: 430px) {
+  .tecnologia_es h2 {
+    font-size: 1.7em;
+  }
+
+  .tecnologia_es:hover {
+    height: 112vh;
+    transition: all 700ms ease;
+    box-shadow: 0px 3px 17px -2px rgba(0, 0, 0, 0.75);
+
+  }
+
+  .tecnologia_es {
+    height: 58px;
+  }
+}
+
+@media (max-width: 380px) {
+  .tecnologia_es:hover {
+    height: 130vh;
+    transition: all 700ms ease;
+    box-shadow: 0px 3px 17px -2px rgba(0, 0, 0, 0.75);
+
+  }
+}
+
+@media (max-width: 320px) {
+
+  .tecnologia_es h2 {
+    font-size: 1.3em;
+  }
+
+  .tecnologia_es:hover {
+    height: 155vh;
+    transition: all 700ms ease;
+    box-shadow: 0px 3px 17px -2px rgba(0, 0, 0, 0.75);
+
   }
 }
 
