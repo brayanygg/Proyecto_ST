@@ -3,7 +3,7 @@ const saludo = document.querySelector(".saludo");
 
 //DECLARACION DE CONSTANTES PARA EL CHAT DE PRGUNTAS.
 const chatI = document.querySelector(".chat-input textarea"); 
-const enviarPBtn = document.querySelector(".chat-input span"); 
+const enviarPBtn = document.getElementById("send-btn"); 
 const chatbox = document.querySelector(".chatbox"); 
 const abrirChat = document.querySelector(".preguntas");
 const seccionDudas = document.querySelector(".seccion_dudas");
@@ -56,7 +56,7 @@ abrirParalelo.addEventListener("click", () => {
 const crearChatLi = (mensajeU, nombreClase) => {
    const chatLi = document.createElement("li");
    chatLi.classList.add("chatb", nombreClase);
-   let contenidoChat = nombreClase === "out" ? `<p>${mensajeU}</p>` : `<span class="material-symbols-outlined">smart_toy</span><p>${mensajeU}</p>`;
+   let contenidoChat = nombreClase === "out" ? `<p>${mensajeU}</p>` : `<img src="./assets/icons/smart_toy.svg" alt="Robot"><p>${mensajeU}</p>`;
    chatLi.innerHTML = contenidoChat;
    return chatLi;
 }
