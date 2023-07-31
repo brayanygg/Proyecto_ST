@@ -97,6 +97,19 @@ h1 {
   z-index: 3;
 }
 
+.saludo {
+  position: fixed;
+  right: 1rem;
+  top: 1rem;
+  padding: 5px;
+  border-radius: 30px;
+  border: solid #0073b1;
+  z-index: 2;
+  background-color: white;
+  display: none;
+}
+
+
 .show--paralelo {
   opacity: 1;
   pointer-events: all;
@@ -125,17 +138,17 @@ h1 {
   transform: rotate(90deg);
 }
 
-.btn-tog span {
-  font-size: 32px;
+.btn-tog img {
+  width: 32px;
   position: absolute;
 }
 
-.activate span:first-child,
-.btn-tog span:last-child {
+.activate img:first-child,
+.btn-tog img:last-child {
   opacity: 0;
 }
 
-.activate span:last-child {
+.activate img:last-child {
   opacity: 1;
 }
 
@@ -499,16 +512,17 @@ h1 {
   transform: rotate(90deg);
 }
 
-.preguntas span {
+.preguntas img {
+  width: 30px;
   position: absolute;
 }
 
-.chat--show .preguntas span:first-child,
-.preguntas span:last-child {
+.chat--show .preguntas img:first-child,
+.preguntas img:last-child {
   opacity: 0;
 }
 
-.chat--show .preguntas span:last-child {
+.chat--show .preguntas img:last-child {
   opacity: 1;
 }
 
@@ -553,7 +567,7 @@ h1 {
   font-size: 1.4rem;
 }
 
-.chat header span {
+.chat header img {
   position: absolute;
   right: 20px;
   top: 50%;
@@ -574,9 +588,8 @@ h1 {
   display: flex;
 }
 
-.chatbox .in span {
-  height: 32px;
-  width: 32px;
+.chatbox .in img {
+  width: 26px;
   color: #fff;
   align-self: center;
   background: #2C84A4;
@@ -628,7 +641,7 @@ h1 {
   padding: 16px 15px 16px 0;
 }
 
-.chat-input span {
+.chat-input img {
   align-self: flex-end;
   height: 55px;
   line-height: 55px;
@@ -638,7 +651,8 @@ h1 {
   visibility: hidden;
 }
 
-.chat-input textarea:valid~span {
+.chat-input textarea:valid~img {
+  width: 28px;
   visibility: visible;
 }
 
@@ -1764,7 +1778,8 @@ a continuacion*/
     height: 90%;
   }
 
-  .chat header span {
+  .chat header img {
+    width: 30px;
     display: block;
   }
 

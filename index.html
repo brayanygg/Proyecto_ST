@@ -6,8 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0">
+    <link rel="icon" href="./assets/icons/logo.png">
     <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
     <title>Edutec</title>
 </head>
@@ -37,8 +36,8 @@
     </header>
 
     <button class="btn-tog">
-        <span class="material-symbols-outlined">menu</span>
-        <span class="material-symbols-outlined">close</span>
+        <img src="./assets/icons/menu.svg" alt="menu">
+        <img src="./assets/icons/close.svg" alt="cerrar">
     </button>
 
     <section class="cabecera-btn">
@@ -62,27 +61,32 @@
         </div>
     </section>
 
+    <section class="saludo">
+        <p class="message">
+
+        </p>
+    </section>
     <!-- BOTON DE CHAT PARA PREGUNTAS. -->
     <section class="seccion_dudas">
         <button class="preguntas">
-            <span class="material-symbols-outlined">mode_comment</span>
-            <span class="material-symbols-outlined">close</span>
+            <img src="./assets/icons/mode_comment.svg" alt="chat de preguntas">
+            <img src="./assets/icons/close.svg" alt="cerrar chat de preguntas">
         </button>
 
         <div class="chat">
             <header>
                 <h2>Chat</h2>
-                <span class="cerrar-btn material-symbols-outlined">close</span>
+                <img class="cerrar-btn" src="./assets/icons/close.svg" alt="cerrar chat de preguntas">
             </header>
             <ul class="chatbox">
                 <li class="chatb in">
-                    <span class="material-symbols-outlined">smart_toy</span>
+                    <img src="./assets/icons/smart_toy.svg" alt="Robot">
                     <p>Hola 😄, ¿En que podemos ayudarlo?</p>
                 </li>
             </ul>
             <div class="chat-input">
                 <textarea placeholder="Escribe tu duda..." required></textarea>
-                <span id="send-btn" class="material-symbols-outlined">send</span>
+                <img id="send-btn" src="./assets/icons/send.svg" alt="enviar">
             </div>
         </div>
     </section>
@@ -93,9 +97,9 @@
             <h1>Inciar sesión</h1>
             <form action="" method="POST" id="form">
                 <label for="username">Usuario</label>
-                <input type="text" placeholder="Ingrese Usuario" id="nombre">
+                <input type="text" placeholder="Ingrese Usuario" id="nombre" required>
                 <label for="password">Contraseña</label>
-                <input type="password" placeholder="Ingrese Contraseña" id="contraseña">
+                <input type="password" placeholder="Ingrese Contraseña" id="contraseña" required>
                 <a href="#" id="crearC">No tienes una cuenta?</a>
                 <button type="submit">Ingresar</button>
                 <p class="warnings" id="alertas">
@@ -112,11 +116,11 @@
             <h1>Registrarse</h1>
             <form action="" class="registro" id="formR">
                 <label for="correo">Correo</label>
-                <input type="text" placeholder="Ingrese Correo" id="email">
+                <input type="text" placeholder="Ingrese Correo" id="email" required>
                 <label for=" username">Usuario</label>
-                <input type="text" placeholder="Ingrese Usuario" id="name">
+                <input type="text" placeholder="Ingrese Usuario" id="name" required>
                 <label for="password">Contraseña</label>
-                <input type="password" placeholder="Ingrese Contraseña" id="contra">
+                <input type="password" placeholder="Ingrese Contraseña" id="contra" required>
                 <button type="submit">Registrarse</button>
                 <p class="warnings" id="warnings">
 
