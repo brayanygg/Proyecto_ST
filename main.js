@@ -41,6 +41,7 @@ const abrirRegistroP = document.querySelector(".paralelo-reg");
 const abrirParalelo = document.querySelector(".btn-tog");
 const seccionParalelo = document.querySelector(".cabecera-btn");
 const detector = document.querySelector(".detector");
+const msjsection = document.getElementById("filtre");
 
 //VARIABLES PARA ALMACENAR USUARIOS Y CONTRASEÑAS.
 let nombreU = "";
@@ -167,6 +168,7 @@ formulario.addEventListener("submit", (e) =>{
         areaSaludo.style.display = "block";
         mensajeS.innerHTML = salute;
         modalInicioS.classList.remove('modal--show');
+        filtre.style.display = "none";
     }
 })
 
@@ -272,7 +274,7 @@ class Card {
 }
 
 // Creación de instancias de la clase Card
-let card1 = new Card('procesadorCard', './assets/ComputersPartsImg/Pocesador.jpg', 'Procesador', 'Es el cerebro de todo el funcionamiento del sistema, el encargado de dirigir todas las tareas que lleva a cabo el equipo y de ejecutar el código de los diferentes programas, coordinando las operaciones de entrada/salida, realizando cálculos, tomando decisiones y controla el flujo de datos dentro del..', '01/01/2000');
+let card1 = new Card('procesadorCard', './assets/ComputersPartsImg/Pocesador.jpg', 'Procesador', 'Es el cerebro de todo el funcionamiento del sistema, el encargado de dirigir todas las tareas que lleva a cabo el equipo y de ejecutar el código de los diferentes programas, coordinando las operaciones de entrada/salida, realizando cálculos, tomando decisiones y controla el flujo de datos dentro del..', '01/01/2023');
 let card2 = new Card('memoriaRamCard', './assets/ComputersPartsImg/Memoria Ram.jpg', 'Memoria RAM', 'Es un tipo de memoria volátil y de acceso aleatorio utilizada por los computadores para almacenar temporalmente los datos y las instrucciones que se están utilizando en ese momente permite acceder y leer los datos de manera rápida, lo que facilita el funcionamiento eficiente de los programas...', '01/01/2000');
 let card3 = new Card('motherboardCard', './assets/ComputersPartsImg/tarjeta-madre.jpg', 'Tarjeta Madre', 'La tarjeta madre es la placa principal de una computadora. Conecta y coordina todos los componentes esenciales, como el procesador, la memoria y los dispositivos, permitiendo su funcionamiento integrado y eficiente para ejecutar programas y almacenar datos temporalmente.', '01/01/2000');
 let card4 = new Card('powerSupplyCard', './assets/ComputersPartsImg/Fuentedepoder.jpg ', 'Fuente de Poder', 'Es un componente fundamental en un sistema informático que suministra la energía eléctrica necesaria para alimentar y hacer funcionar todos los demás componentes, como el procesador, la tarjeta gráfica o dispositivos de almacenamiento para un correcto funcion...', '01/01/2000');

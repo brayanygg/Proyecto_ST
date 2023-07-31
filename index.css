@@ -13,7 +13,7 @@ a {
 
 html {
   scroll-behavior: smooth;
-
+  
 }
 
 body {
@@ -202,9 +202,10 @@ h1 {
   display: flex;
   align-items: center;
   flex-direction: column;
-
 }
-
+.all{
+  margin: 0px 200px;
+}
 .sobreNos_titulo {
   display: flex;
   justify-content: center;
@@ -213,6 +214,22 @@ h1 {
   font-size: 2.5rem;
   margin-top: 3rem;
 }
+
+.vidsPradre{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height:100;
+  
+}
+
+.vidsPre{
+  width: 100%;
+  height: 100%;
+}
+
+
 
 .sobreNos_principal figure {
   background-image: url("./assets/aboutUs.jpg");
@@ -225,9 +242,13 @@ h1 {
 
 .sobreNos_principal p {
   margin-top: 3rem;
-  text-align: center;
+  
 }
 
+.textAc{
+  font-size: 30px;
+  padding-bottom: 40px;
+}
 /* VENTANA MODAL DEL INICIO DE SESION */
 .modal {
   position: fixed;
