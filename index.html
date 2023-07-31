@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="./assets/icons/logo.png">
     <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
     <title>Edutec</title>
 </head>
@@ -60,6 +61,11 @@
         </div>
     </section>
 
+    <section class="saludo">
+        <p class="message">
+
+        </p>
+    </section>
     <!-- BOTON DE CHAT PARA PREGUNTAS. -->
     <section class="seccion_dudas">
         <button class="preguntas">
@@ -91,9 +97,9 @@
             <h1>Inciar sesión</h1>
             <form action="" method="POST" id="form">
                 <label for="username">Usuario</label>
-                <input type="text" placeholder="Ingrese Usuario" id="nombre">
+                <input type="text" placeholder="Ingrese Usuario" id="nombre" required>
                 <label for="password">Contraseña</label>
-                <input type="password" placeholder="Ingrese Contraseña" id="contraseña">
+                <input type="password" placeholder="Ingrese Contraseña" id="contraseña" required>
                 <a href="#" id="crearC">No tienes una cuenta?</a>
                 <button type="submit">Ingresar</button>
                 <p class="warnings" id="alertas">
@@ -110,11 +116,11 @@
             <h1>Registrarse</h1>
             <form action="" class="registro" id="formR">
                 <label for="correo">Correo</label>
-                <input type="text" placeholder="Ingrese Correo" id="email">
+                <input type="text" placeholder="Ingrese Correo" id="email" required>
                 <label for=" username">Usuario</label>
-                <input type="text" placeholder="Ingrese Usuario" id="name">
+                <input type="text" placeholder="Ingrese Usuario" id="name" required>
                 <label for="password">Contraseña</label>
-                <input type="password" placeholder="Ingrese Contraseña" id="contra">
+                <input type="password" placeholder="Ingrese Contraseña" id="contra" required>
                 <button type="submit">Registrarse</button>
                 <p class="warnings" id="warnings">
 

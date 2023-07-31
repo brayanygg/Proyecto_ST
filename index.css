@@ -97,6 +97,19 @@ h1 {
   z-index: 3;
 }
 
+.saludo {
+  position: fixed;
+  right: 1rem;
+  top: 1rem;
+  padding: 5px;
+  border-radius: 30px;
+  border: solid #0073b1;
+  z-index: 2;
+  background-color: white;
+  display: none;
+}
+
+
 .show--paralelo {
   opacity: 1;
   pointer-events: all;
