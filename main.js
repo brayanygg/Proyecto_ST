@@ -101,8 +101,6 @@ enviarPBtn.addEventListener("click", manejoC);
 
 //DECLARACION DE CONSTANTES PARA LA VENTANA MODAL DEL INICIO DE SESION Y REGISTRO.
 
-const msjsection = document.getElementById("filtre")
-
 
 //INICIO DE SESION
 
@@ -166,10 +164,9 @@ formulario.addEventListener("submit", (e) =>{
         parrafo.innerHTML = warnings;
     }else{
         salute = "hola, " + nameL.value;
-        modalInicioS.classList.remove('modal--show');
-        filtre.style.display = "none";
         areaSaludo.style.display = "block";
         mensajeS.innerHTML = salute;
+        modalInicioS.classList.remove('modal--show');
     }
 })
 
