@@ -271,7 +271,7 @@ class Card {
         this.text = text;
         this.date = date;
     }
-}
+} 
 
 // Creación de instancias de la clase Card
 let card1 = new Card('procesadorCard', './assets/ComputersPartsImg/Pocesador.jpg', 'Procesador', 'Es el cerebro de todo el funcionamiento del sistema, el encargado de dirigir todas las tareas que lleva a cabo el equipo y de ejecutar el código de los diferentes programas, coordinando las operaciones de entrada/salida, realizando cálculos, tomando decisiones y controla el flujo de datos dentro del..', '01/01/2023');
