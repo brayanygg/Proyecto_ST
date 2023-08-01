@@ -242,12 +242,15 @@ h1 {
 
 .sobreNos_principal p {
   margin-top: 3rem;
-  
 }
 
 .textAc{
   font-size: 30px;
   margin-bottom: 30px;
+}
+
+.sobreNos_principal img {
+  width: 650px;
 }
 /* VENTANA MODAL DEL INICIO DE SESION */
 .modal {
@@ -1754,6 +1757,9 @@ a continuacion*/
 }
 
 @media (max-width: 480px) {
+  .sobreNos_principal img {
+    width: 360px;
+  }
   .presentacion {
     background-position-y: 330px;
     background-position-x: center;
